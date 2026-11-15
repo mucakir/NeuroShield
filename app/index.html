@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeuroShield Crew Health</title>
+  <meta name="description" content="Camera-free neuro-physiological health monitoring for astronauts — Team Paragon, NASA Space Apps 2026.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2 4 7v8c0 7.5 5.1 13.4 12 15 6.9-1.6 12-7.5 12-15V7z' fill='%235eb3ff'/%3E%3Cpath d='M7 17h5l2-5 3 9 2-4h6' stroke='%230b1220' stroke-width='2.2' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 2 4 7v8c0 7.5 5.1 13.4 12 15 6.9-1.6 12-7.5 12-15V7z" fill="#5eb3ff"/><path d="M7 17h5l2-5 3 9 2-4h6" stroke="#0b1220" stroke-width="2.2" fill="none" stroke-linejoin="round"/></svg>
+    <div><b>NeuroShield</b><span>Crew Health Monitor</span></div>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="live">Live Monitor</button>
+    <button class="tab" data-tab="checkin">Daily Check-in</button>
+    <button class="tab" data-tab="logbook">Crew Logbook</button>
+    <button class="tab" data-tab="bloodwork">Bloodwork <span class="real-tag" title="Real astronaut data (NASA OSDR)">real</span></button>
+    <button class="tab" data-tab="spacewx">Space Weather <span class="real-tag" title="Real NOAA data, live">real</span></button>
+    <button class="tab" data-tab="assistant">AI Assistant</button>
+    <button class="tab" data-tab="guide">Guide</button>
+  </nav>
+  <div class="top-right">
+    <label class="crew-pick">Crew <select id="crewSel"></select></label>
+    <span class="chip" id="envChip">ISS</span>
+    <span class="chip xp" id="xpChip" title="Health XP and check-in streak">★ 0 XP</span>
+  </div>
+</header>
+
+<main>
+  <!-- ============================== LIVE ============================== -->
+  <section class="view active" id="view-live">
+    <div class="toolbar">
+      <div class="seg" id="missionSeg" role="group" aria-label="Mission"></div>
+      <select id="scenarioSel" aria-label="Scenario"></select>
+      <button class="btn primary" id="playBtn">▶ Play</button>
+      <button class="btn" id="restartBtn" title="Restart">↺</button>
+      <label class="mini">Speed
+        <select id="speedSel"><option value="1">1×</option><option value="5">5×</option><option value="20" selected>20×</option><option value="60">60×</option></select>
+      </label>
+      <label class="mini">Window
+        <select id="winSel"><option value="60">1 min</option><option value="180" selected>3 min</option><option value="900">All</option></select>
+      </label>
+      <div class="timeline">
+        <div class="tl-labels" id="tlLabels"></div>
+        <input type="range" id="seek" min="0" max="900" value="0" aria-label="Timeline">
+      </div>
+      <span class="mono" id="clock">00:00</span>
+      <button class="btn ghost" id="deviceBtn" title="Connect a live sensor stream (WebSocket)">⚡ Device</button>
+      <button class="btn ghost" id="soundBtn" aria-label="Audible alerts (off)">🔈</button>
+    </div>
+    <div class="scenario-info"><b id="scTitle"></b> <span id="scDesc"></span> <span class="phase" id="phase"></span></div>
+    <div class="crew-note" id="crewNote"></div>
+    <div class="filters" id="filters"></div>
+
+    <div class="live-grid">
+      <div class="cards" id="cards"><p class="muted no-caution" id="noCautions" hidden>All values are inside their normal (green) range right now. Cards appear here as soon as a value turns amber or red.</p></div>
+      <aside class="side">
+        <div class="panel score-panel">
+          <div class="gauge-wrap">
+            <svg viewBox="0 0 120 70" class="gauge"><path d="M10 62 A50 50 0 0 1 110 62" class="g-bg"/><path id="gArc" d="M10 62 A50 50 0 0 1 110 62" class="g-fg"/></svg>
+            <div class="gauge-num"><span id="scoreNum">–</span><small id="scoreWord">Health score</small></div>
+          </div>
+          <div class="sysbars" id="sysbars"></div>
+        </div>
+        <div class="panel">
+          <h3>Body status <small>click a region</small></h3>
+          <div class="bodywrap"><div id="bodymap"></div><div id="bodyInfo" class="body-info"></div></div>
+        </div>
+        <div class="panel">
+          <h3>Alerts &amp; guidance</h3>
+          <div id="alerts" class="alerts"><p class="muted">No active alerts.</p></div>
+        </div>
+        <div class="panel">
+          <h3>Event log</h3>
+          <ol id="events" class="events"></ol>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================ CHECK-IN ============================ -->
+  <section class="view" id="view-checkin">
+    <div class="checkin-grid">
+      <div class="panel">
+        <h3>Today's routine <small>tick a task when it is done · saving the form also ticks the ones it covers · “How?” shows the steps</small></h3>
+        <div class="routine-now" id="routineNow"></div>
+        <ul id="tasks" class="tasks"></ul>
+        <div class="streak" id="streak"></div>
+        <div class="badges" id="badges"></div>
+      </div>
+      <div class="stack">
+        <div class="panel">
+          <h3>Reaction self-test <small>short PVT · 10 trials</small></h3>
+          <p class="muted">Click (or press space) as soon as the counter appears. Sleep loss slows reaction time and causes lapses (&gt; 500 ms).</p>
+          <div id="pvt" class="pvt" tabindex="0"><span>Click to start</span></div>
+          <div id="pvtResult" class="muted"></div>
+        </div>
+        <div class="panel">
+          <h3>Check-in calendar <small>hover a day for details</small></h3>
+          <div class="cal-nav"><button class="btn" id="calPrev" aria-label="Previous month">‹</button><b id="calTitle"></b><button class="btn" id="calNext" aria-label="Next month">›</button></div>
+          <div class="cal" id="cal"></div>
+          <div class="cal-legend"><span><i class="cal-full"></i>complete</span><span><i class="cal-part"></i>partial</span><span><i class="cal-miss"></i>missed</span><span><i class="cal-today"></i>today</span></div>
+          <div class="cal-sum muted" id="calSum"></div>
+        </div>
+      </div>
+      <div class="panel wide">
+        <h3>Daily log entry <small id="entryFor"></small></h3>
+        <form id="entryForm" class="entry-form"></form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= LOGBOOK ============================ -->
+  <section class="view" id="view-logbook">
+    <div class="toolbar">
+      <label class="mini">Metric <select id="metricSel"></select></label>
+      <span class="legend"><i class="lg-normal"></i>normal limit <i class="lg-warn"></i>caution limit <i class="lg-anom"></i>anomaly <i class="lg-watch"></i>watch</span>
+      <span class="spacer"></span>
+      <button class="btn ghost" id="exportBtn">⤓ Export CSV</button>
+    </div>
+    <div class="log-grid">
+      <div>
+        <div class="panel"><h3 id="lbTitle"></h3><canvas id="lbChart" class="lbchart"></canvas></div>
+        <div class="panel">
+          <h3>Anomaly map <small><i class="hk hk-alert"></i>alert (outside caution limit) <i class="hk hk-flag"></i>anomaly vs own baseline <i class="hk hk-z"></i>distance from own baseline · hover for details · click a row to plot it</small></h3>
+          <div id="heat" class="heat"></div>
+        </div>
+        <div class="panel">
+          <h3>Image log <small>photos added with the daily log · click one to compare it with the earlier photo of the same kind</small></h3>
+          <div class="im-filter" id="imFilter"></div>
+          <div class="im-compare" id="imCompare"></div>
+          <div class="im-strip" id="imStrip"></div>
+        </div>
+        <div class="panel">
+          <h3>Recent entries <small>last 50, newest first</small></h3>
+          <div class="tablewrap"><table id="lbTable" class="tbl"></table></div>
+          <div class="pager" id="lbPager"></div>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="panel"><h3>Detected episodes</h3><div id="episodes"></div></div>
+        <div class="panel"><h3>Radiation budget <small>cumulative dose</small></h3><div id="radBox"></div></div>
+        <div class="panel"><h3>Detector check <small>synthetic ground truth</small></h3><div id="evalBox"></div></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============================== GUIDE ============================= -->
+  <!-- ============================ BLOODWORK (real) ===================== -->
+  <section class="view" id="view-bloodwork">
+    <div class="panel real-note">
+      <h3>Real astronaut blood tests <small>NASA Open Science Data Repository · Inspiration4, 3 days in orbit at 585 km, September 2021</small></h3>
+      <p>Clinical blood panels of the four Inspiration4 crew members, taken 92, 44 and 3 days before launch (L-) and 1, 45, 82 and 194 days after return (R+). NeuroShield treats the three preflight samples as each person's own baseline and scores every later sample against it, the same way the Crew Logbook works.</p>
+      <p><b>Demo assumption:</b> the four real Inspiration4 astronauts stand in for our crew, in order: <b>C001 = Crew A</b>, <b>C002 = Crew B</b>, <b>C003 = Crew C</b>, <b>C004 = Crew D</b>. Choose the crew member in the header. The values and the lab reference ranges (some differ by sex) are those of the real donor.</p>
+      <p class="muted" id="bwSrc"></p>
+    </div>
+    <div class="panel">
+      <h3>Crew-wide change the day after landing <small>analytes where at least 3 of 4 crew moved ≥ 1.5 σ the same way on R+1</small></h3>
+      <div class="sigs" id="bwSig"></div>
+    </div>
+    <div class="panel">
+      <h3>All analytes <small id="bwSum"></small></h3>
+      <div class="tablewrap"><table id="bwTable" class="tbl bw"></table></div>
+    </div>
+  </section>
+
+  <!-- ========================= SPACE WEATHER (real) ==================== -->
+  <section class="view" id="view-spacewx">
+    <div class="sw-grid">
+      <div class="panel" id="swNow"></div>
+      <div class="panel">
+        <h3>Proton flux, last 7 days <small><i class="key a"></i>≥10 MeV <i class="key v"></i>≥100 MeV · log scale</small></h3>
+        <canvas id="swChart" class="sw-chart"></canvas>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>What each storm level means for the crew</h3>
+      <div class="tablewrap"><table id="swScale" class="tbl guide"></table></div>
+      <p class="muted" id="swSrc"></p>
+    </div>
+  </section>
+
+  <!-- =========================== AI ASSISTANT ========================== -->
+  <section class="view" id="view-assistant">
+    <div class="ai-wrap">
+      <div class="ai-head">
+        <div><h2>NeuroShield Assistant</h2><div class="muted" id="aiWho"></div></div>
+        <span class="ai-badge" title="No language model is connected yet; answers are built from your data by rules.">offline demo · no model connected</span>
+      </div>
+      <div class="ai-ctx" id="aiCtx"></div>
+      <div class="ai-chat">
+        <div class="ai-log" id="aiLog" aria-live="polite"></div>
+        <div class="ai-empty" id="aiEmpty">
+          <h3>How can I help today?</h3>
+          <p class="muted">I read your logbook, detected episodes, radiation dose and the live session, and answer in plain language. Ask anything, or start with:</p>
+          <div class="ai-chips" id="aiChips"></div>
+        </div>
+      </div>
+      <div class="ai-input">
+        <textarea id="aiInput" rows="1" placeholder="Ask about your sleep, stress, heart, radiation, exercise…" aria-label="Message"></textarea>
+        <button class="btn primary" id="aiSend" aria-label="Send">Send ↵</button>
+      </div>
+      <p class="ai-disclaimer">The assistant is not a doctor and does not diagnose. Talk to your Crew Medical Officer or flight surgeon about anything that worries you.</p>
+
+      <div class="panel ai-future">
+        <h3>Next step: a small language model on board <small>planned, not yet connected</small></h3>
+        <p>Today the answers above are assembled by rules from the crew member's own data. The plan is to let a <b>small language model run on the spacecraft's own computer</b> (on-premise), next to NeuroShield, and write these answers in natural language.</p>
+        <div class="ai-why">
+          <div><b>Works without Earth</b>At Mars a question to the ground takes up to 24 minutes for a reply; an on-board model answers in seconds and keeps working during communication blackouts.</div>
+          <div><b>Health data stays on board</b>Medical records never leave the vehicle; nothing is sent to a cloud service.</div>
+          <div><b>Simple hardware</b>A 4-billion-parameter model runs on an ordinary laptop without a GPU, so it fits the power, mass and radiation-hardened computing limits of a spacecraft.</div>
+          <div><b>Reads the whole mission</b>A long context window lets it read a crew member's full logbook at once and explain trends, not just single values.</div>
+        </div>
+        <div class="ai-model">
+          <div class="ai-model-h"><b>Our choice: MedGemma 1.5 4B (Google)</b><span>open weights · medical</span></div>
+          <table>
+            <tr><td>Version</td><td>Released in January 2026. Built on Gemma 3, focused on medicine, open weights.</td></tr>
+            <tr><td>Hardware</td><td>4 billion parameters. About 3.3 GB with Q4 quantisation in Ollama, so it runs on an ordinary laptop with 8 GB RAM and no GPU. On a CPU alone it is somewhat slow, but fast enough for answers of a few sentences.</td></tr>
+            <tr><td>Capability</td><td>About 69 % on the MedQA medical question-answering benchmark. Clearly better than the previous version at answering questions about patient records. A 128K-token context window is enough to read an astronaut's 60-day logbook in one go.</td></tr>
+            <tr><td>Licence</td><td>Distributed under the Health AI Developer Foundations terms and <b>not approved for direct clinical use</b>, so it would explain and suggest, while decisions stay with the Crew Medical Officer and the flight surgeon.</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="view-guide">
+    <div class="panel">
+      <h3>The five hazards of human spaceflight → what NeuroShield measures</h3>
+      <div class="hazards" id="hazards"></div>
+    </div>
+    <div class="panel">
+      <h3>NASA Human Research Program risks → NeuroShield coverage <small>source: nasa.gov/hrp/risks</small></h3>
+      <div class="tablewrap"><table class="tbl guide" id="riskTbl"></table></div>
+    </div>
+    <div class="panel">
+      <h3>Datasets <small>reviewed for NeuroShield on 14 Nov 2026 · all free to download without an access request · links checked on that date</small></h3>
+      <p class="muted ds-legend"><span class="ds-st use">In use</span> real data inside the app today · <span class="ds-st plan">Planned</span> reviewed; next step is to validate the named detector on it · <span class="ds-st proxy">Proxy</span> no open labelled dataset exists for this signal, so a related one stands in · <span class="ds-st info">Reviewed</span> checked, not used yet</p>
+      <div class="tablewrap"><table class="tbl guide ds" id="dsTbl"></table></div>
+      <div class="ds-cite">
+        <b>How to cite</b>
+        <p>NASA EDA: “Data and visualizations are courtesy of the Environmental Data Application (EDA) (https://visualization.osdr.nasa.gov/eda/)”, accessed 14 Nov 2026 (the site shows no version number). Inspiration4 blood panels: NASA Open Science Data Repository, OSD-569 and OSD-575. PhysioNet datasets: cite the original paper named on each dataset page plus PhysioNet (Goldberger et al., 2000). Other datasets: cite the paper and licence given on their pages; check each licence before redistributing data.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Health indicators, reference ranges and how they are measured</h3>
+      <div class="tablewrap"><table class="tbl guide" id="guideTbl"></table></div>
+    </div>
+    <div class="panel">
+      <h3>How the health score works</h3>
+      <p>Each indicator gets a sub-score: <b>100</b> inside the normal (green) band, falling to <b>60</b> at the caution limit and to <b>0</b> beyond it. A body-system score blends the average and the worst indicator (40/60) so a single dangerous value is never averaged away. The overall score is the weighted mean of the systems and is capped at 75 while a caution alert is active and at 45 during a critical alert.</p>
+      <p class="muted">NeuroShield is a decision-support prototype for NASA Space Apps 2026. Crew physiology in the Live Monitor and the logbook is synthetic; the cabin environment, radiation, space weather and blood panels use real NASA and NOAA data (see Datasets). It does not replace the flight surgeon or medical procedures.</p>
+    </div>
+  </section>
+</main>
+
+<dialog id="demoDlg">
+  <form method="dialog">
+    <h3>Adding crew members is not available in the demo</h3>
+    <p>This demo version works with the four built-in crew members (A–D) and their generated mission data, so new profiles cannot be created.</p>
+    <p class="muted">In the full version each astronaut gets a profile with their own baseline, logbook and live sensor stream, created by the flight surgeon before launch.</p>
+    <menu><button value="ok" class="btn primary">OK</button></menu>
+  </form>
+</dialog>
+
+<dialog id="deviceDemoDlg">
+  <form method="dialog">
+    <h3>Not available in the demo yet</h3>
+    <p>Connecting a live device is not possible in the demo version yet. The Live Monitor plays the built-in mission scenarios instead.</p>
+    <p class="muted">In the full version the NeuroShield wearable streams its readings once per second and the monitor analyses them in real time.</p>
+    <menu><button value="ok" class="btn primary">OK</button></menu>
+  </form>
+</dialog>
+
+<dialog id="deviceDlg">
+  <form method="dialog">
+    <h3>Connect a live sensor stream</h3>
+    <p class="muted">The NeuroShield wearable (or any source) can push JSON frames once per second over WebSocket, e.g.<br><code>{"HR":72,"SPO2":97,"EEG_FI":1.1,"RSO2":68,"CO2":2100}</code></p>
+    <input id="wsUrl" value="ws://localhost:8765" spellcheck="false">
+    <menu><button value="cancel" class="btn">Cancel</button><button value="ok" class="btn primary" id="wsGo">Connect</button></menu>
+  </form>
+</dialog>
+
+<div id="remind" class="remind" hidden role="status" aria-live="polite"></div>
+<script src="js/data_bundle.js"></script>
+<script src="js/real_rec.js"></script>
+<script src="js/lab.js"></script>
+<script src="js/util.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/score.js"></script>
+<script src="js/stream.js"></script>
+<script src="js/anomaly.js"></script>
+<script src="js/bodymap.js"></script>
+<script src="js/live.js"></script>
+<script src="js/logbook.js"></script>
+<script src="js/images.js"></script>
+<script src="js/checkin.js"></script>
+<script src="js/real_data.js"></script>
+<script src="js/bloodwork.js"></script>
+<script src="js/spacewx.js"></script>
+<script src="js/assistant.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

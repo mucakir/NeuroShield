@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NeuroShield — IEEE paper</title>
+<link rel="stylesheet" href="ieee.css">
+</head>
+<body>
+<header class="front">
+  <h1>NeuroShield: A Camera-Free, Explainable Health Self-Assessment Tool for Astronauts Across Station, Lunar and Martian Missions</h1>
+  <div class="authors">
+    <div class="author">Mehmet Ulaş Çakır<br><i>Entrepreneur &amp; Innovator</i><br><i>Team Paragon Lead</i><br>Teknopark Ankara, Türkiye<br>m.u.cakir@gmail.com</div>
+    <div class="author">Ece Özge Çakır<br><i>10th Grade Student, Robert College</i><br><i>Team Paragon Researcher</i><br>Istanbul, Türkiye<br>eceozgecakir@gmail.com</div>
+    <div class="author">Dr. Rıfat Uğurlutan<br><i>Aerospace Medicine &amp; Biophysics</i><br><i>Team Paragon Consultant</i><br>Türkiye<br>drrifatugurlutan@gmail.com</div>
+    <div class="author">Dr. Emre Ayvaz<br><i>Team Paragon Consultant</i><br>Türkiye<br>emre_ayvaz@hotmail.com</div>
+  </div>
+</header>
+
+<div class="cols">
+<p class="abstract"><b><i>Abstract</i>—With NASA’s Artemis program having flown a crew around the Moon and human missions to Mars in planning, crews will spend longer in a hostile environment and further from help on Earth. NASA’s Human Research Program (HRP) maps this exposure into five hazards: space radiation, isolation and confinement, distance from Earth, gravity fields, and hostile closed environments. The NASA Space Apps 2026 challenge “Create Health Monitoring Software for Astronauts on Space Missions” asks for a visual tool that lets astronauts assess their own health and guides them towards treatment and improvement. We present NeuroShield, an offline web application that answers this call. It fuses camera-free wearable sensing (EEG, fNIRS, PPG/SpO<sub>2</sub>, electrodermal activity, head IMU), the challenge’s core indicators (blood pressure, heart rate, glucose, temperature, sleep, mood), habitat telemetry and crew photographs. Twenty-one explainable rules, each with cited guidance and delay-aware escalation, run in 12 scenarios for each of three missions (ISS, Moon, Mars; 36 scenarios at the gravity of each environment), and a personal logbook detects anomalies against each astronaut’s own baseline. NASA data are core to the tool: real ISS cabin CO<sub>2</sub> and radiation dose from the Open Science Data Repository (OSDR), and Inspiration4 blood tests scored against each astronaut’s preflight baseline. On a synthetic benchmark of 32 400 labelled seconds the live rules reach 93.3 % sensitivity and 90.1 % specificity, with no alerts in nominal scenarios, and the logbook detector finds all 18 injected events. On six open human datasets we test and calibrate the limits on real recordings, and we report where the rules are weak.</b></p>
+<p class="keywords"><b><i>Index Terms</i>—space medicine, astronaut health, self-assessment, wearable sensors, EEG, fNIRS, explainable alerts, anomaly detection, gamification, NASA open data.</b></p>
+
+<h2>Introduction</h2>
+<p>Space missions are becoming more ambitious. NASA’s Artemis program has accomplished a crewed lunar flyby, and NASA and others plan to send humans to Mars {{cite:spaceapps}}. Longer missions mean more exposure to what the HRP groups into five hazards: space radiation, isolation and confinement, distance from Earth, gravity fields, and hostile closed environments {{cite:hrp,hsrisks}}. These hazards contribute to immune changes, bone density loss, cardiovascular events, inadequate nutrition, spaceflight-associated neuro-ocular syndrome (SANS) {{cite:lee}}, sleep deficiency and behavioural-health conditions {{cite:patel,afshin,twins}}.</p>
+<p>On the International Space Station (ISS), flight surgeons follow crew health almost in real time. On a Mars mission, one-way light time of up to about 22 min and communication blackouts mean the crew must assess its own health and act first {{cite:patel,hodkinson}}. In the words of the challenge, astronauts “must be capable of making health assessments on themselves during a mission, to prevent and treat health problems that may arise” {{cite:spaceapps}}. NASA’s artificial-intelligence workshops likewise call for autonomous, explainable “precision space health” {{cite:scott}}.</p>
+<p>Existing operator-monitoring products do not transfer to spacecraft. Camera-based driver monitoring, now mandatory in new European cars {{cite:eu2144}}, needs a clear view of the face. Helmets, visors and masks block that view, and cameras only see late signs such as eyelid closure. Periodic examinations give snapshots but miss fast events such as cabin depressurisation or G-induced loss of consciousness (G-LOC).</p>
+<p>NeuroShield began as our team’s wearable, camera-free operator-safety platform for ground transport and aviation. Here we adapt it to astronauts and to the challenge. Our contributions are:</p>
+<ol>
+<li>a mapping of the challenge’s questions and the HRP hazards onto indicators that can be measured in flight, with reference ranges whose basis is cited and linked;</li>
+<li>an open, dependency-free application with live multimodal monitoring, an explainable health score, 21 condition rules with guidance, a scheduled and gamified daily routine with step-by-step instructions, a personal logbook with anomaly detection and photo comparison, and an assistant that drafts advice from the crew member’s own data;</li>
+<li>integration of NASA open data (OSDR environmental telemetry, Inspiration4 clinical panels) and NOAA space weather as core inputs, not decorations;</li>
+<li>a reproducible synthetic benchmark across three missions plus validation and calibration on six open human datasets.</li>
+</ol>
+
+<h2>Aim and Scope</h2>
+<p>The challenge defines its objective as “a visual tool that helps astronauts assess their own health during space missions and provides guidance on treatments and health improvements” {{cite:spaceapps}}. It allows any input—“keyboard text, mouse clicks, or camera images”—as long as it represents a health indicator, “such as blood sugar levels in mg/dL or ultrasound images”. It names useful indicators (blood pressure, heart rate, blood sugar, body temperature, daily sleep hours and mood) and suggests that the tool should not “assume that astronauts know everything about how to assess their health”, should prompt measurements as part of the mission routine, and may use gamification, dynamic charts, color coding and a clickable human figure. It closes with five guiding questions, which define the scope of this work. Table I shows how NeuroShield answers each of them.</p>
+<p>The scope is the crew-side decision support: what to measure, how to read it, when to act and when to involve the flight surgeon. NeuroShield is not a medical device and does not diagnose. Clinical validation, regulatory approval and integration with flight hardware are outside the scope of this prototype.</p>
+
+<figure class="tbl">
+<figcaption>TABLE I<br><span class="sc">Challenge Questions and How NeuroShield Answers Them</span></figcaption>
+<table>
+<tr><th>Challenge question {{cite:spaceapps}}</th><th>NeuroShield answer</th></tr>
+<tr><td>Which measurements can be performed in space?</td><td>26 live and 31 daily indicators, each with its sensor or device (wearable headband, cuffless BP, CGM, sleep band, dosimeter, habitat telemetry, OCT, ultrasound, self-report)</td></tr>
+<tr><td>Why is an exam needed?</td><td>Each indicator states why it matters in space and which HRP risk it covers; a risk-coverage table links all hazards</td></tr>
+<tr><td>How do hazards affect the indicators?</td><td>36 scenarios reproduce each hazard at the gravity of ISS, Moon and Mars; a hazard → indicator map in the guide</td></tr>
+<tr><td>When does a result warrant attention from the crew or flight surgeons?</td><td>Green/amber/red bands with cited limits; alerts with persistence and hysteresis; escalation that depends on the signal delay</td></tr>
+<tr><td>What actions can prevent a critical condition?</td><td>Numbered, cited actions in every alert; a timed daily routine with “How?” steps; personal advice in the assistant</td></tr>
+</table>
+</figure>
+
+<h2>Background and Related Work</h2>
+<h3>Spaceflight hazards and measurable indicators</h3>
+<p><i>Cardiovascular.</i> Microgravity shifts fluid towards the head and deconditions the cardiovascular system; six-month missions increase arterial stiffness and induce in-flight insulin resistance {{cite:hughson16}}, and ISS heart-rate studies show altered autonomic regulation {{cite:baevsky}}. On return to gravity, orthostatic intolerance is common; a fall of ≥ 20 mmHg systolic on standing defines orthostatic hypotension {{cite:freeman}}. We use the 2017 ACC/AHA blood-pressure categories {{cite:whelton}} and the RMSSD norms of Shaffer and Ginsberg {{cite:shaffer}}.</p>
+<p><i>Thermal and immune.</i> Core temperature rises by about 1 °C during long missions {{cite:stahn}}, and immune dysregulation with viral reactivation is common {{cite:crucian}}; Artemis II collects dry saliva to track it {{cite:immune}}.</p>
+<p><i>Metabolic, nutrition and bone.</i> Low energy intake accelerates bone and muscle loss, and bone demineralisation raises renal-stone risk, mitigated by hydration and resistive exercise {{cite:smith15,loehr}}. We adopt the CGM consensus thresholds of 70 and 54 mg/dL {{cite:battelino}} and the ADA “15-15” rule {{cite:ada}}.</p>
+<p><i>Sleep, cognition, behaviour and vision.</i> Astronauts sleep about 6 h per night despite 8.5 h scheduled {{cite:barger}}. The psychomotor vigilance test (PVT) is the most sensitive test of sleep loss {{cite:basner11}} and is part of the NASA Cognition battery {{cite:basner15}}. Isolation affects mood and teamwork {{cite:stuster,kanas}}. SANS is graded from fundus or OCT images with the Frisén scale {{cite:frisen,lee}}.</p>
+<p><i>Habitat environment.</i> On the ISS, headache odds roughly double per 1 mmHg of CO<sub>2</sub> {{cite:law}}; CO<sub>2</sub> and CO limits are set by the spacecraft maximum allowable concentrations {{cite:smac}} and NASA-STD-3001 {{cite:std3001}}. Radiation dose rates rise sharply in solar particle events {{cite:zeitlin,cucinotta,berger}}. SpO<sub>2</sub> below 90 % indicates hypoxaemia {{cite:who}}, for which aviation training prescribes immediate oxygen {{cite:faa}}; decompression sickness limits extravehicular activity (EVA) {{cite:conkin}}.</p>
+
+<h3>Wearable neuro-physiological monitoring</h3>
+<p>The EEG ratio (θ+α)/β rises with drowsiness {{cite:lal,jap}}; frontal theta and parietal alpha track workload {{cite:gevins}}. Functional near-infrared spectroscopy (fNIRS) measures prefrontal oxygenation in operators {{cite:ayaz,tufts}} and has been flown with helicopter pilots {{cite:kikukawa}}; regional cerebral saturation (rSO<sub>2</sub>) indexes brain oxygenation {{cite:murkin}}. Under sustained +G<sub>z</sub> cerebral perfusion falls and G-LOC follows a known time–intensity curve {{cite:whinnery}}. Electrodermal activity (EDA) reflects sympathetic arousal {{cite:boucsein}}, and head–vehicle motion mismatch underlies disorientation and motion sickness {{cite:clement,kennedy}}.</p>
+
+<h3>Decision support and anomaly detection</h3>
+<p>Space-health AI roadmaps stress autonomy, explainability and personalisation {{cite:scott}}. For small, noisy per-person samples the median absolute deviation (MAD) is more robust than the standard deviation {{cite:leys}}, and a modified z-score of 3.5 is a common outlier rule {{cite:iglewicz,chandola}}. Table II compares NeuroShield with existing approaches.</p>
+
+<figure class="tbl">
+<figcaption>TABLE II<br><span class="sc">Comparison of Crew Health Monitoring Approaches</span></figcaption>
+<table>
+<tr><th>Approach</th><th>Works under helmet/ mask</th><th>Lead time</th><th>Coverage</th><th>Guidance</th></tr>
+<tr><td>Cabin camera DMS {{cite:eu2144}}</td><td>No</td><td>After eyelid closure</td><td>Drowsiness, distraction</td><td>Alarm only</td></tr>
+<tr><td>Single EEG headband {{cite:lal,jap}}</td><td>Yes</td><td>Seconds–min</td><td>Fatigue</td><td>Alarm only</td></tr>
+<tr><td>Periodic exams / tests {{cite:basner15}}</td><td>Yes</td><td>None (snapshot)</td><td>Broad, discrete</td><td>Via ground</td></tr>
+<tr><td><b>NeuroShield (ours)</b></td><td><b>Yes</b></td><td><b>Minutes before signs</b></td><td><b>Physiology, habitat, images; 21 conditions</b></td><td><b>On board, cited, delay-aware</b></td></tr>
+</table>
+</figure>
+
+<h2>System Design</h2>
+<p>Fig. 1 shows the architecture. All logic runs in the browser as plain JavaScript, with no build step and no network access, so the tool also works on an air-gapped spacecraft laptop. A single JSON file defines every indicator: unit, normal band, caution band, chart axis, sensor, explanation and literature basis with links. The application, the dataset generator and the evaluation scripts all read this file.</p>
+
+<figure class="col">
+<svg viewBox="0 0 340 236" xmlns="http://www.w3.org/2000/svg" font-family="Times New Roman, serif" font-size="8.2">
+  <defs><marker id="ar" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#333"/></marker></defs>
+  <g fill="#f3f3f3" stroke="#333" stroke-width="0.7">
+    <rect x="4" y="6" width="104" height="58" rx="3"/><rect x="4" y="70" width="104" height="44" rx="3"/>
+    <rect x="4" y="120" width="104" height="44" rx="3"/><rect x="4" y="170" width="104" height="44" rx="3"/>
+  </g>
+  <g font-weight="bold"><text x="9" y="17">Wearable (helmet/cap)</text><text x="9" y="81">Vital-sign devices</text><text x="9" y="131">Habitat sensors</text><text x="9" y="181">Self-report &amp; tests</text></g>
+  <text x="9" y="28">EEG (θ, α, β) · fNIRS rSO₂</text><text x="9" y="38">PPG: HR, HRV, SpO₂, resp.</text><text x="9" y="48">EDA (GSR) · head IMU</text><text x="9" y="58">haptic + audio alert</text>
+  <text x="9" y="92">BP cuff / PTT · CGM</text><text x="9" y="102">thermometer · mass</text>
+  <text x="9" y="142">CO₂ · ppO₂ · pressure</text><text x="9" y="152">CO · dosimeter · vehicle IMU</text>
+  <text x="9" y="192">sleep · mood · stress</text><text x="9" y="202">PVT · symptoms</text>
+  <g fill="#e6eefb" stroke="#333" stroke-width="0.7">
+    <rect x="130" y="40" width="92" height="70" rx="3"/><rect x="130" y="150" width="92" height="60" rx="3"/>
+  </g>
+  <g font-weight="bold"><text x="135" y="52">Stream engine (1 Hz)</text><text x="135" y="162">Daily logbook</text></g>
+  <text x="135" y="64">time alignment</text><text x="135" y="74">window stats (mean/min/max)</text><text x="135" y="84">personal baseline (60 s)</text><text x="135" y="94">WebSocket / replay</text>
+  <text x="135" y="174">robust z (14-day, MAD)</text><text x="135" y="184">drift vs days 4–14</text><text x="135" y="194">episodes + classification</text>
+  <g fill="#fdf1e3" stroke="#333" stroke-width="0.7"><rect x="244" y="6" width="92" height="50" rx="3"/><rect x="244" y="64" width="92" height="40" rx="3"/><rect x="244" y="112" width="92" height="98" rx="3"/></g>
+  <g font-weight="bold"><text x="249" y="18">Rule engine (21)</text><text x="249" y="76">Health score</text><text x="249" y="124">Crew interface</text></g>
+  <text x="249" y="30">persistence, hysteresis</text><text x="249" y="40">root-cause suppression</text><text x="249" y="50">cited guidance</text>
+  <text x="249" y="88">indicator → system</text><text x="249" y="98">→ overall (0–100)</text>
+  <text x="249" y="136">live cards + dashed limits</text><text x="249" y="146">clickable body map</text><text x="249" y="156">alerts &amp; guidance</text><text x="249" y="166">check-in, XP, streaks</text><text x="249" y="176">anomaly map, export</text><text x="249" y="190" font-style="italic">escalate to flight</text><text x="249" y="200" font-style="italic">surgeon (store &amp; fwd)</text>
+  <g stroke="#333" stroke-width="0.8" fill="none" marker-end="url(#ar)">
+    <path d="M108 35 L130 60"/><path d="M108 92 L130 80"/><path d="M108 142 L130 100"/><path d="M108 192 L130 185"/><path d="M108 100 L130 170"/>
+    <path d="M222 60 L244 32"/><path d="M222 80 L244 84"/><path d="M290 56 L290 64"/><path d="M290 104 L290 112"/><path d="M222 180 L244 170"/>
+  </g>
+</svg>
+<figcaption>Fig. 1. NeuroShield architecture. Continuous signals feed the 1 Hz stream engine. Daily measurements and self-reports feed the logbook. Both drive the crew interface.</figcaption>
+</figure>
+
+<h3>Missions, environments and crew</h3>
+<p>The crew member selects the mission (ISS, Moon at 0.17 g, Mars at 0.38 g) and one of 12 scenarios. Each scenario is set in a concrete environment: the station and its EVAs, a lunar base, lander, pressurised rover and moonwalk, a Mars base, rover and EVA, Earth entry after a long stay, Orion’s lunar return, and Mars entry, descent and landing. Gravity, radiation shielding and the one-way signal delay (0.5 s at the ISS, about 1.3 s at the Moon and 12 min in our Mars scenario) change with the environment. Four crew members have their own baselines and play different roles in each scenario: in a slow cabin leak, one notices early and dons the mask, another is asleep and masks up late. Hovering over the mission label explains the gravity and the delay.</p>
+
+<h3>Sensing layer and data model</h3>
+<p>The live stream carries 26 channels at 1 Hz. Raw EEG and fNIRS are processed on the wearable; the tool receives derived, baseline-normalised indices: the drowsiness index (θ+α)/β {{cite:jap}}, a workload index {{cite:gevins}} and prefrontal rSO<sub>2</sub> {{cite:murkin}}. This keeps bandwidth low and protects the neural signal. A WebSocket input accepts frames from the NeuroShield hardware; a replay mode streams the datasets. The daily logbook holds 31 indicators; sensors and devices fill most of them automatically, and the crew member reports only mood, stress, team cohesion, motion sickness, food, water and symptoms, and may attach photographs (skin, eye fundus/OCT, wound, ultrasound). Table III lists selected limits.</p>
+
+<figure class="tbl">
+<figcaption>TABLE III<br><span class="sc">Selected Indicators and Reference Ranges</span></figcaption>
+<table>
+<tr><th>Indicator</th><th>Normal</th><th>Caution</th><th>Basis</th></tr>
+<tr><td>Heart rate (bpm)</td><td>50–100</td><td>40–120</td><td>{{cite:shaffer}}</td></tr>
+<tr><td>HRV, RMSSD (ms)</td><td>≥13</td><td>≥10</td><td>{{cite:shaffer,nsr}}</td></tr>
+<tr><td>Systolic / diastolic BP (mmHg)</td><td>90–129 / 60–79</td><td>≤139 / ≤89</td><td>{{cite:whelton}}</td></tr>
+<tr><td>SpO<sub>2</sub> (%)</td><td>≥95</td><td>≥90</td><td>{{cite:who}}</td></tr>
+<tr><td>Body temperature (°C)</td><td>36.1–37.5</td><td>35.5–38.0</td><td>{{cite:stahn}}</td></tr>
+<tr><td>Glucose, CGM (mg/dL)</td><td>70–140</td><td>54–180</td><td>{{cite:battelino}}</td></tr>
+<tr><td>EEG (θ+α)/β (×baseline)</td><td>0.7–1.3</td><td>0.5–1.6</td><td>{{cite:lal,jap,eegdrowsy}}</td></tr>
+<tr><td>fNIRS rSO<sub>2</sub> (%)</td><td>60–80</td><td>50–85</td><td>{{cite:murkin}}</td></tr>
+<tr><td>Cabin CO<sub>2</sub> (ppm)</td><td>≤3950</td><td>≤5300</td><td>{{cite:law,smac}}</td></tr>
+<tr><td>Sleep (h/day)</td><td>7–9.5</td><td>6–11</td><td>{{cite:barger,sleepedf}}</td></tr>
+<tr><td>PVT reaction time (ms)</td><td>180–300</td><td>150–360</td><td>{{cite:basner11}}</td></tr>
+</table>
+</figure>
+
+<h3>Health score and color coding</h3>
+<p>For indicator <i>i</i> with value <i>x</i>, the sub-score <i>s<sub>i</sub></i> is 100 inside the normal band [<i>n<sub>l</sub></i>, <i>n<sub>h</sub></i>]; in the caution band it falls linearly to 60 at the caution limit, and beyond that limit to 0 over one more band width <i>w</i>. Above the band, for example,</p>
+<p class="eq"><i>s<sub>i</sub></i> = 100 − 40 (<i>x</i> − <i>n<sub>h</sub></i>)/<i>w</i>, &nbsp;&nbsp;<i>n<sub>h</sub></i> &lt; <i>x</i> ≤ <i>c<sub>h</sub></i><span class="eqn">(1)</span></p>
+<p>Each indicator belongs to one of six body systems (neuro-cognitive, cardiovascular, respiratory/O<sub>2</sub>, metabolic, thermal/immune, habitat). The system score blends the mean and the worst indicator,</p>
+<p class="eq"><i>S<sub>k</sub></i> = 0.4 · mean<sub><i>i</i>∈<i>k</i></sub> <i>s<sub>i</sub></i> + 0.6 · min<sub><i>i</i>∈<i>k</i></sub> <i>s<sub>i</sub></i><span class="eqn">(2)</span></p>
+<p>so that one dangerous value is never averaged away. The overall score is a weighted mean of the systems; an active alert caps its system at 70 (caution) or 35 (critical) and the overall score at 75 or 45. Cards, the score gauge, the per-system bars and a clickable human figure are colored green, amber or red; clicking a body region explains its function, its indicators and the related hazard. A “Cautions” filter shows only the indicators that have left the green band.</p>
+
+<h3>Explainable condition rules and guidance</h3>
+<p>Twenty-one rules cover hypoxia, cabin depressurisation, G-LOC precursors, drowsiness/microsleep, cognitive overload, acute stress, spatial disorientation, high CO<sub>2</sub>, toxic CO, hypoglycaemia, fever, decompression sickness, suit pressure, cabin heat, cold cabin, noise, solar particle events, hypertension, orthostatic hypotension, tachycardia and bradycardia. Each rule is a readable predicate over window statistics (mean, minimum, maximum, slope and change from the personal baseline). Three mechanisms keep alerts trustworthy: <i>persistence</i> (a rule fires only after its condition has held for 3–30 s), <i>hysteresis</i> (escalation is immediate, but downgrading and clearing take longer), and <i>root-cause suppression</i> (generic signs such as drowsiness or tachycardia are suppressed while a specific cause such as hypoxia or G-LOC is active, EEG fatigue rules are gated off under high +G<sub>z</sub>, and the stress rule is gated off during physical effort).</p>
+<p>Every alert shows why it fired, numbered actions and their source, for example oxygen and a buddy check for hypoxia {{cite:faa}}, the anti-G straining manoeuvre {{cite:whinnery}}, a strategic nap and blue-enriched light for drowsiness {{cite:rosekind,brainard}}, paced breathing for overload {{cite:lehrer}}, the 15-15 rule for hypoglycaemia {{cite:ada}} and the storm shelter in a solar particle event {{cite:std3001}}. Escalation depends on distance: at the ISS the flight surgeon leads; when the round trip exceeds a minute, the Crew Medical Officer leads and NeuroShield sends the alert package to Earth.</p>
+
+<h3>Daily logbook and anomaly detection</h3>
+<p>For indicator <i>m</i> on day <i>t</i>, a robust z-score compares the value with the history <i>H<sub>t</sub></i>, up to 14 previous unflagged days within 21 days:</p>
+<p class="eq"><i>z<sub>t</sub></i> = (<i>x<sub>t</sub></i> − med <i>H<sub>t</sub></i>) / max(1.4826 · MAD <i>H<sub>t</sub></i>, σ<sub>m</sub>)<span class="eqn">(3)</span></p>
+<p>Here σ<sub>m</sub> is a per-indicator noise floor {{cite:leys,iglewicz}}; excluding flagged days keeps an ongoing episode from becoming the new normal. A down-weighted score against the in-flight baseline (days 4–14) catches slow drifts such as body-mass loss, and coarse self-reports are flagged when they stay outside their band on at least 3 of 5 days. Anomalous days are merged into episodes and classified by pattern (e.g. temperature↑ with resting HR↑ → possible infection) with guidance. An anomaly map shows every indicator over 60 days: red for values outside the caution limit, amber for anomalies against the person’s own baseline, and shades of blue for the distance from it.</p>
+
+<h3>Self-assessment routine, gamification and images</h3>
+<p>The routine has ten tasks on the station clock (morning vitals 07:00, fasting glucose, dry saliva sample, sleep sync, mood check-in, reaction test, monitoring session, food log, exercise and water). Each task shows whether it is due, overdue or done; a reminder appears on every tab with “How to”, “Done” and “Snooze” buttons; and a “How?” button opens three or four plain-language steps, e.g. how to take blood pressure or what “fasting” means (Fig. 3). Completing tasks earns experience points (XP), with a bonus inside the time window, streaks and badges. A 10-trial PVT measures reaction time and lapses {{cite:basner11}}. Photographs added with the daily log are stored on the device and shown in the logbook next to the earlier photo of the same kind with the number of days between them (Fig. 4); NeuroShield compares, it does not diagnose.</p>
+
+<h3>NASA data and assistance</h3>
+<p>The habitat baselines come from real ISS telemetry: the OSDR Environmental Data Application provides five-minute cabin CO<sub>2</sub>, temperature and humidity and daily dose for seven rodent-research missions {{cite:osdreda}}; their medians (CO<sub>2</sub> ≈ 3270 ppm, 22.2 °C, 41 % RH, 0.28 mGy/day) set the simulator, and the 60-day logbook carries 60 real days of mission RR-7, including a real CO<sub>2</sub> excursion. A Bloodwork tab shows the Inspiration4 complete blood count and metabolic panel (OSD-569/575) {{cite:osd569,soma}}, scoring the day-after-landing sample against each astronaut’s preflight mean. A Space Weather tab fetches the GOES proton flux from NOAA and explains the solar-radiation-storm scale for EVA planning {{cite:noaa}}. An assistant tab drafts answers from the crew member’s own logbook, episodes and live data and ends with “I am not a doctor, but…” advice; it is designed to be replaced by an on-board small medical language model such as MedGemma 4B {{cite:medgemma}}, which runs on ordinary hardware without a link to Earth.</p>
+
+<figure class="wide">
+<img src="figures/fig_ui_live.png" alt="Live monitor">
+<figcaption>Fig. 2. Live monitor during the ISS cabin-leak scenario (t = 9:18) for Crew A. Each card shows the current value, the chart with green (normal) and red (caution) dashed limits, and the session mean, minimum and maximum. Right: health score, per-system scores and the clickable body figure. The cast row shows how each crew member experiences the scenario.</figcaption>
+</figure>
+
+<figure class="col"><img src="figures/fig_ui_checkin.png" alt="Daily routine">
+<figcaption>Fig. 3. Daily routine at 07:20 on the station clock: times, status (done on time, due now, later), the “How?” steps of the glucose task, XP per task, streak and badges.</figcaption></figure>
+
+<figure class="col"><img src="figures/fig_ui_images.png" alt="Image log">
+<figcaption>Fig. 4. Image log: a skin photo compared with the earlier photo of the same spot, four days apart. The images shown are illustrative samples drawn by code, not patient images.</figcaption></figure>
+
+<h2>Datasets</h2>
+<h3>Synthetic benchmark</h3>
+<p>No public dataset combines astronaut EEG/fNIRS, vital signs and habitat telemetry with condition labels, so we built a deterministic generator. Each signal is a personal baseline plus autoregressive noise plus literature-informed responses with physiological lags (e.g. SpO<sub>2</sub> follows cabin ppO<sub>2</sub> with an 8-s lag; rSO<sub>2</sub> falls with (<i>G<sub>z</sub></i> − 1)<sup>1.3</sup> {{cite:whinnery}}). The 12 scenarios (Table IV) are generated for ISS, Moon and Mars with gravity-specific adjustments, 900 s at 1 Hz each, and for each of the four crew members with their own baselines, roles and timing; every second carries a ground-truth label. The logbook has 4 crew × 60 days with early-flight adaptation and injected events (sleep deprivation, a solar particle event, the real RR-7 CO<sub>2</sub> excursion, cabin microbial growth, infection, blood-pressure rise with optic-disc swelling, and body-mass loss with low mood).</p>
+
+<figure class="tbl">
+<figcaption>TABLE IV<br><span class="sc">Live Scenarios (each for ISS, Moon and Mars; 900 s, 1 Hz)</span></figcaption>
+<table>
+<tr><th>Scenario</th><th>Driving change</th></tr>
+<tr><td>Nominal day</td><td>routine work</td></tr>
+<tr><td>Fatigue → microsleep</td><td>EEG slowing, head nods</td></tr>
+<tr><td>Cognitive overload</td><td>docking, manual landing, medical emergency</td></tr>
+<tr><td>Hypoxia</td><td>slow cabin/habitat leak, mask at 11:30</td></tr>
+<tr><td>High-G / G-LOC precursor</td><td>Earth entry, lunar return, Mars EDL</td></tr>
+<tr><td>Spatial disorientation</td><td>head–vehicle mismatch (rover)</td></tr>
+<tr><td>CO<sub>2</sub> build-up</td><td>scrubber failure</td></tr>
+<tr><td>Hypoglycaemia</td><td>exercise after a skipped meal</td></tr>
+<tr><td>Fever</td><td>viral reactivation (time-compressed)</td></tr>
+<tr><td>Solar particle event</td><td>dose increase, storm shelter</td></tr>
+<tr><td>EVA decompression risk</td><td>suit pressure, N<sub>2</sub> tissue ratio</td></tr>
+<tr><td>Thermal failure</td><td>cabin heat or cold cabin</td></tr>
+</table>
+</figure>
+
+<h3>Real human recordings</h3>
+<p>We reviewed open datasets and used those that can be downloaded without an access request (Table V). Three are replayed in a “Lab” mission of the live monitor, where each crew member replays a different real person and only the recorded channels are shown; the others calibrate limits.</p>
+
+<figure class="tbl">
+<figcaption>TABLE V<br><span class="sc">Open Datasets Used for Validation and Calibration</span></figcaption>
+<table>
+<tr><th>Dataset</th><th>Content</th><th>Use</th></tr>
+<tr><td>Non-EEG {{cite:noneeg,physionet}}</td><td>20 people; HR, SpO<sub>2</sub>, EDA; rest, exercise, emotional and cognitive stress</td><td>Stress rule, Lab replay</td></tr>
+<tr><td>PRCP {{cite:prcp}}</td><td>10 people; beat-to-beat BP, ECG; tilt and standing</td><td>Orthostatic rule, Lab replay</td></tr>
+<tr><td>BIDMC {{cite:bidmc}}</td><td>53 ICU patients; HR, RR, SpO<sub>2</sub> at 1 Hz</td><td>Clinical reference, Lab replay</td></tr>
+<tr><td>Cybersickness {{cite:cyber}}</td><td>159 VR sessions, 54 people; EDA, HR, scene rotation, SSQ</td><td>Disorientation rule, Lab replay</td></tr>
+<tr><td>NSR RR {{cite:nsr}}</td><td>54 healthy 24-h ECGs</td><td>RMSSD band</td></tr>
+<tr><td>EEG drowsiness {{cite:eegdrowsy,cao19}}</td><td>11 people, 2022 alert/drowsy epochs</td><td>Drowsiness index</td></tr>
+<tr><td>Sleep-EDF {{cite:sleepedf}}</td><td>153 scored nights</td><td>Sleep limits</td></tr>
+<tr><td>Tufts fNIRS2MW {{cite:tufts}}</td><td>forehead fNIRS, 0–3-back (1 of 68 subjects)</td><td>Workload trend</td></tr>
+<tr><td>OSDR EDA, OSD-569/575 {{cite:osdreda,osd569}}</td><td>ISS cabin CO<sub>2</sub>, dose; Inspiration4 blood tests</td><td>Habitat baselines, Bloodwork</td></tr>
+</table>
+</figure>
+
+<h2>Evaluation</h2>
+<p><i>Protocol.</i> A Node.js script runs the unmodified browser modules over every scenario and logbook. At each second, a positive prediction is any active alert, and a positive label is any state other than nominal, except routine 1.5–4.5 G load during entry. We report per-second sensitivity and specificity, onset latency and the minimum health score. A logbook episode matches a ground-truth event of the same kind (habitat or physiological) if they overlap within ±1 day.</p>
+
+<figure class="tbl">
+<figcaption>TABLE VI<br><span class="sc">Live Rule Engine Results, ISS Scenarios (Reference Crew)</span></figcaption>
+<table class="num">
+<tr><th>Scenario</th><th>First abn. label (s)</th><th>First alert (s)</th><th>Δ (s)</th><th>Sens.</th><th>Spec.</th><th>Min score</th></tr>
+<tr><td>Nominal</td><td>–</td><td>none</td><td>–</td><td>–</td><td>1.00</td><td>100</td></tr>
+<tr><td>Fatigue</td><td>347</td><td>376</td><td>+29</td><td>0.95</td><td>1.00</td><td>45</td></tr>
+<tr><td>Overload</td><td>212</td><td>216</td><td>+4</td><td>0.99</td><td>0.97</td><td>45</td></tr>
+<tr><td>Hypoxia</td><td>328</td><td>232<sup>a</sup></td><td>−96</td><td>1.00</td><td>0.45</td><td>45</td></tr>
+<tr><td>High-G</td><td>395</td><td>394</td><td>−1</td><td>1.00</td><td>0.97</td><td>45</td></tr>
+<tr><td>Disorient.</td><td>288</td><td>301</td><td>+13</td><td>0.96</td><td>0.96</td><td>45</td></tr>
+<tr><td>CO<sub>2</sub></td><td>288</td><td>313</td><td>+25</td><td>0.96</td><td>1.00</td><td>45</td></tr>
+<tr><td>Hypoglyc.</td><td>417</td><td>204<sup>b</sup></td><td>−213</td><td>0.96</td><td>0.59</td><td>45</td></tr>
+<tr><td>Fever</td><td>378</td><td>546</td><td>+168</td><td>0.68</td><td>1.00</td><td>75</td></tr>
+<tr><td>SPE</td><td>237</td><td>250</td><td>+13</td><td>0.98</td><td>0.93</td><td>75</td></tr>
+<tr><td>EVA DCS</td><td>140</td><td>149</td><td>+9</td><td>0.97</td><td>1.00</td><td>45</td></tr>
+<tr><td>Thermal</td><td>157</td><td>225</td><td>+68</td><td>0.89</td><td>0.91</td><td>45</td></tr>
+<tr><td><b>ISS (10 800 s)</b></td><td></td><td></td><td></td><td><b>0.931</b></td><td><b>0.897</b></td><td></td></tr>
+<tr><td><b>Moon (10 800 s)</b></td><td></td><td></td><td></td><td><b>0.931</b></td><td><b>0.902</b></td><td></td></tr>
+<tr><td><b>Mars (10 800 s)</b></td><td></td><td></td><td></td><td><b>0.936</b></td><td><b>0.903</b></td><td></td></tr>
+<tr><td><b>All 36 scenarios</b></td><td></td><td></td><td></td><td><b>0.933</b></td><td><b>0.901</b></td><td></td></tr>
+</table>
+<p class="tnote"><sup>a</sup>Cabin-pressure alert before SpO<sub>2</sub> falls. <sup>b</sup>A tachycardia caution during exercise; the critical hypoglycaemia alert follows at 586 s, 3 s after the severe-hypoglycaemia label.</p>
+</figure>
+
+<p><i>Live alerts.</i> Over all 36 scenarios (32 400 s) the per-second sensitivity is 93.3 % and specificity 90.1 % (Table VI); results are almost identical for ISS, Moon and Mars. Replaying each crew member’s own track gives 93.5–95.2 % sensitivity and 92.8–95.1 % specificity, and crew members who are not affected in a scenario raise no alerts. Nominal scenarios produce no alert. In the fatigue scenario (Fig. 5) the drowsiness caution appears at 376 s and the critical alert at 523 s, 279 s and 132 s before the first labelled microsleep (655 s): EEG slowing precedes the head nods a camera would see. In the leak scenario (Fig. 6) the cabin-pressure rule warns 96 s before SpO<sub>2</sub> leaves its normal band; these early alerts count as false positives per second, which explains the low specificity there. Fever is the weakest case (68 %), because the rule waits for 38 °C.</p>
+
+<figure class="col"><img src="figures/fig_fatigue.svg" alt="Fatigue">
+<figcaption>Fig. 5. Fatigue → microsleep scenario (ISS). Grey shading marks ground-truth drowsy and microsleep periods; vertical lines mark alert onsets (amber: caution, red: critical); green dashed lines are normal limits and red dotted lines caution limits.</figcaption></figure>
+
+<figure class="col"><img src="figures/fig_hypoxia.svg" alt="Hypoxia">
+<figcaption>Fig. 6. Slow cabin leak (ISS). The pressure rule fires before SpO<sub>2</sub> and rSO<sub>2</sub> fall; oxygen is donned at 11:30 and saturation recovers.</figcaption></figure>
+
+<p><i>Health score.</i> The score averages 96.0 ± 11.4 in nominal seconds and 60.2 ± 17.5 in abnormal ones, and reaches the critical cap (45) in most scenarios.</p>
+<p><i>Logbook.</i> The detector finds all 18 injected events across 240 crew-days with two unmatched single-day episodes (Crew C day 7, Crew D day 9, both early-flight adaptation). Crew D’s progressive body-mass loss is found through drift (Fig. 7) together with the muscle-strength, mood and team-cohesion decline that accompanies it.</p>
+
+<figure class="wide">
+<img src="figures/fig_ui_logbook.png" alt="Logbook">
+<figcaption>Fig. 7. Crew D logbook. Top: body-mass change against its normal (green) and caution (red) limits; red circles mark anomalies, amber circles watch values and shaded columns detected episodes. Bottom: anomaly map of 31 indicators over 60 days (red: outside the caution limit; amber: anomaly against the own baseline; blue: distance from the baseline), showing the solar particle event (day 20), the real RR-7 CO<sub>2</sub> excursion (days 37–44), cabin microbial growth (days 50–56) and the late mass, strength, energy-intake and mood decline.</figcaption>
+</figure>
+
+<p><i>Real recordings.</i> On real data the rules behave as follows. <i>Stress (Non-EEG):</i> the stress rule, which needs an HR rise with a clear EDA rise, is active 22.8 % of the cognitive-stress time versus 3.6 % at rest and fires in 9 of 20 people; short emotional clips go unnoticed. Wrist HR and EDA alone are a weak stress signal, which is why NeuroShield adds the EEG workload index. <i>Orthostatic (PRCP):</i> healthy volunteers compensate on tilting (median HR +11 bpm, systolic change 0 mmHg); the rule, based on the consensus definition {{cite:freeman}}, never fires while supine and fires in 5 of 59 head-up manoeuvres. An earlier absolute limit (systolic &lt; 90 mmHg) flagged two healthy people at rest and was removed. <i>Clinical reference (BIDMC):</i> the monitor alerts in 14 of 53 intensive-care patients, 22.1 % of the time, mostly for low SpO<sub>2</sub>. <i>Cybersickness:</i> following the dataset’s own analysis, the median Simulator Sickness Questionnaire score {{cite:kennedy}} is 22.4; the rise in EDA during a session tracks sickness best (ρ = 0.38 with SSQ, 0.51 with nausea; AUC 0.78 for SSQ ≥ 40 vs &lt; 20), HR change does not (ρ = 0.00), and more scene rotation makes the same person sicker (ρ = 0.51 within person). The disorientation rule, built for sharp head–vehicle mismatch above 15 °/s, fires in only 5 of 33 sick sessions: VR sickness builds from moderate, cumulative conflict.</p>
+<p><i>Calibration.</i> In 15 234 five-minute windows of healthy 24-h ECGs, the median RMSSD is 21 ms and the 10th percentile 13 ms; our original normal limit of 20 ms put 46 % of healthy windows in caution, so we lowered it to 13 ms. In the EEG drowsiness set, the (θ+α)/β index of drowsy epochs is 1.61 times the person’s alert level (AUC 0.70 for single 3-s epochs). In Sleep-EDF, adults under 50 sleep a median 7.3 h with 92 % efficiency, consistent with our sleep bands. In the first Tufts fNIRS subject, oxygenated haemoglobin on one forehead channel rises with n-back level (ρ = 0.73, AUC 0.97 for 2–3-back vs 0–1-back blocks).</p>
+
+<h2>Discussion</h2>
+<p><i>Early, camera-free warning.</i> Physiological and habitat signals reveal developing hazards minutes before external signs appear, in exactly the situations where cameras fail (visors, masks, darkness) and crews cannot wait for ground support.</p>
+<p><i>Explainability and honesty.</i> We used transparent rules and robust statistics instead of a trained classifier. Every alert names its triggering values, limits and sources, so a crew member or flight surgeon can audit and adjust it {{cite:scott}}. Testing on real recordings made the tool better and showed its limits: two limits were changed on evidence, one rule was redesigned, and the weak cases (stress from wrist sensors, VR sickness) are reported rather than hidden.</p>
+<p><i>Limitations.</i> The main benchmark is synthetic, so it shows that the logic is consistent, not that it is clinically valid. The real recordings come from Earth, not from astronauts, and the fNIRS check uses one subject. Thresholds are population values; EEG and fNIRS indices need individual calibration, and microgravity shifts several baselines {{cite:stahn}}. Fever is detected late, and the disorientation rule misses slowly building sickness. The tool supports decisions and is not a medical device.</p>
+<p><i>Future work.</i> We plan to (i) connect the NeuroShield wearable through the existing WebSocket interface and test with volunteers on a motion simulator; (ii) add a cumulative motion-sickness score and a temperature-trend infection rule; (iii) learn personal thresholds and compare the rules with learned models; (iv) connect an on-board small language model; and (v) test usability with analog-mission crews.</p>
+
+<h2>Conclusion</h2>
+<p>NeuroShield turns the hazards catalogued by NASA’s HRP into a practical self-assessment tool, as the NASA Space Apps 2026 challenge asks. It shows live multimodal signals against cited limits, condenses them into an explainable health score and a clickable body figure, detects 21 conditions with guidance and delay-aware escalation, finds day-to-day anomalies against each astronaut’s own baseline, and builds on real NASA data. We have prepared a working demo that delivers each feature the challenge suggests (Table VII), together with the application, the dataset generators and the evaluation scripts, so that others can reproduce, extend and validate the approach with real crew data.</p>
+
+<figure class="tbl">
+<figcaption>TABLE VII<br><span class="sc">Challenge Features Delivered in the Demo</span></figcaption>
+<table>
+<tr><th>Challenge feature {{cite:spaceapps}}</th><th>Demo</th></tr>
+<tr><td>Different environments: spacecraft, station, rover, planetary or lunar base</td><td>ISS, Moon and Mars missions. Environments: ISS, ISS EVA, lunar base, lunar lander, lunar rover, lunar EVA, Mars base, Mars rover, Mars EVA, return to Earth (Earth entry, lunar return) and Mars entry, descent and landing; 12 scenarios, each adjusted to the gravity of its environment</td></tr>
+<tr><td>Prompts for measurements and actions as part of the mission routine</td><td>A timed daily routine with due/overdue status, reminders on every tab (“How to”, “Done”, “Snooze”) and a count on the Daily Check-in tab</td></tr>
+<tr><td>Gamification</td><td>Experience points per task with an on-time bonus, streaks, badges and an XP counter in the header</td></tr>
+<tr><td>Dynamic charts of indicators over time</td><td>Second-by-second charts in the live monitor; 60-day chart and anomaly map in the crew logbook; pre- and post-flight sparklines in Bloodwork</td></tr>
+<tr><td>Color coding for status at a glance</td><td>Green, amber and red cards, health score, body figure and anomaly map; a “Cautions” filter</td></tr>
+<tr><td>Simple instructions and explanations of measurements, indicators and risks</td><td>A guide with every indicator’s range, how it is measured, why it matters in space and its linked source; an HRP risk table; explanations on hover; numbered actions in every alert; “How?” steps for each task; an AI assistant</td></tr>
+</table>
+</figure>
+
+<h2 class="nonum">Acknowledgment</h2>
+<p>This work was prepared for the NASA Space Apps Challenge 2026 by Team Paragon. It builds on the NeuroShield wearable operator-safety concept developed by Paragon Uzay ve Havacılık A.Ş. We thank the providers of the open datasets used here. An AI assistant (Anthropic Claude) was used to help write the software and edit the text; the authors reviewed and take responsibility for the content.</p>
+
+<h2 class="nonum">References</h2>
+<ol class="refs">{{references}}</ol>
+</div>
+</body>
+</html>

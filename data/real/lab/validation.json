@@ -1,0 +1,74 @@
+{
+ "generated": "2026-11-14T18:30:33.157Z",
+ "noneeg": {
+  "subjects": 20,
+  "phases": {
+   "nominal": {
+    "n": 22930,
+    "stress": 819,
+    "any": 2090,
+    "subjectsHit": 14,
+    "stressPct": 3.6,
+    "anyPct": 9.1
+   },
+   "physical_stress": {
+    "n": 6525,
+    "stress": 848,
+    "any": 1799,
+    "subjectsHit": 8,
+    "stressPct": 13,
+    "anyPct": 27.6
+   },
+   "emotional_stress": {
+    "n": 8483,
+    "stress": 7,
+    "any": 662,
+    "subjectsHit": 1,
+    "stressPct": 0.1,
+    "anyPct": 7.8
+   },
+   "cognitive_stress": {
+    "n": 7091,
+    "stress": 1620,
+    "any": 1932,
+    "subjectsHit": 9,
+    "stressPct": 22.8,
+    "anyPct": 27.2
+   }
+  }
+ },
+ "prcp": {
+  "headUpAlertPct": 0.8,
+  "supineAlertPct": 0,
+  "manoeuvres": 59,
+  "manoeuvresWithAlert": 5,
+  "hrRiseMedian": 11,
+  "sbpChangeMedian": 0,
+  "records": 10
+ },
+ "bidmc": {
+  "patients": 53,
+  "patientsWithAlert": 14,
+  "alertTimePct": 22.1,
+  "byRule": {
+   "hypoxia": 18.5,
+   "tachy": 3.6
+  }
+ },
+ "cybersickness": {
+  "sessions": 159,
+  "sick": {
+   "sessions": 33,
+   "disorientationTimePct": 1.2,
+   "sessionsWithDisorientation": 5,
+   "sessionsWithAnyAlert": 13
+  },
+  "mild": {
+   "sessions": 72,
+   "disorientationTimePct": 0.8,
+   "sessionsWithDisorientation": 7,
+   "sessionsWithAnyAlert": 15
+  },
+  "anyAlertTimePct": 4.1
+ }
+}

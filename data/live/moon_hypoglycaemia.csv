@@ -1,0 +1,901 @@
+t,HR,RMSSD,SBP,DBP,SPO2,RR,TEMP,GLU,EEG_FI,EEG_WL,RSO2,GSR,NOD,GZ,VMIS,CO2,PPO2,PCAB,CO,DOSE,TR,PSUIT,NEUT,CABT,RH,SPL,label,phase
+0,67,43,116,75,97.7,13.3,36.82,92,1.04,0.99,69.0,3.95,0,0.18,3.6,3282,21.27,101.28,2.0,13.7,,,7.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+1,66,43,116,76,98.2,13.4,36.81,93,0.97,1.0,69.5,3.88,0,0.19,3.1,3274,21.27,101.3,2.0,13.9,,,6.9,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+2,67,45,116,75,98.3,13.9,36.81,92,0.91,0.92,70.1,3.92,0,0.18,2.0,3259,21.3,101.29,2.0,12.4,,,7.0,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+3,65,46,116,74,98.2,13.8,36.81,93,0.89,1.01,69.4,3.96,0,0.16,2.7,3249,21.34,101.29,2.2,13.3,,,6.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+4,65,46,117,74,98.4,14.0,36.83,92,0.94,1.07,70.5,3.94,0,0.15,4.6,3246,21.38,101.3,2.3,11.9,,,6.5,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+5,65,47,117,74,98.0,13.8,36.82,92,0.96,1.13,69.6,3.78,0,0.15,4.6,3265,21.35,101.29,2.1,13.6,,,7.0,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+6,65,49,116,75,98.0,14.0,36.82,92,1.0,1.09,69.7,3.72,0,0.17,4.0,3258,21.34,101.29,2.0,11.7,,,7.1,22.1,42,56,nominal,regolith shovelling for shielding after a skipped meal
+7,65,49,117,75,97.9,14.4,36.81,92,1.05,1.06,69.4,3.8,0,0.15,2.5,3260,21.31,101.31,2.2,12.9,,,8.1,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+8,65,50,117,75,98.0,15.0,36.8,92,1.07,1.04,69.4,3.77,0,0.15,2.2,3263,21.28,101.31,1.9,11.7,,,7.0,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+9,65,49,117,75,98.6,15.0,36.81,93,1.11,1.09,70.0,3.88,0,0.16,1.3,3267,21.22,101.32,2.0,13.5,,,7.1,22.1,42,56,nominal,regolith shovelling for shielding after a skipped meal
+10,64,47,118,75,98.5,14.6,36.81,92,0.96,1.07,69.3,3.96,0,0.15,2.6,3247,21.25,101.32,2.0,14.1,,,7.1,22.1,42,56,nominal,regolith shovelling for shielding after a skipped meal
+11,64,47,118,74,98.6,13.8,36.81,92,0.93,1.11,69.2,4.0,0,0.16,4.2,3260,21.26,101.31,1.9,14.3,,,7.5,22.1,41,57,nominal,regolith shovelling for shielding after a skipped meal
+12,64,47,119,74,98.5,14.0,36.81,92,0.99,1.09,70.2,3.86,0,0.11,2.7,3254,21.23,101.31,1.9,13.4,,,7.7,22.1,42,57,nominal,regolith shovelling for shielding after a skipped meal
+13,66,48,118,75,98.4,13.9,36.8,92,1.04,1.03,70.6,3.87,0,0.12,4.0,3248,21.16,101.32,1.9,13.7,,,6.9,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+14,65,46,118,75,98.4,14.0,36.8,92,1.03,1.04,69.9,3.85,0,0.13,3.7,3251,21.18,101.3,1.8,14.3,,,7.2,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+15,66,46,117,75,98.1,14.1,36.81,92,0.99,1.06,70.0,3.83,0,0.16,2.9,3234,21.18,101.29,1.9,13.5,,,7.5,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+16,65,44,117,75,97.9,13.8,36.82,92,0.94,1.03,69.8,3.95,0,0.16,3.3,3238,21.17,101.29,1.7,14.5,,,7.0,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+17,66,46,116,75,98.1,14.0,36.81,92,0.99,1.04,69.4,3.88,0,0.17,4.1,3244,21.15,101.3,1.8,13.9,,,6.8,22.2,42,57,nominal,regolith shovelling for shielding after a skipped meal
+18,67,48,117,75,98.3,14.5,36.8,92,1.01,1.02,69.8,3.95,0,0.12,4.1,3253,21.1,101.3,1.7,13.0,,,7.1,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+19,66,47,118,76,98.2,14.6,36.8,92,1.01,1.06,70.4,3.98,0,0.14,3.5,3256,21.16,101.29,1.6,11.5,,,6.6,22.2,42,57,nominal,regolith shovelling for shielding after a skipped meal
+20,66,47,118,76,98.0,14.9,36.8,92,0.97,1.04,70.7,4.07,0,0.18,2.4,3268,21.15,101.3,1.9,10.8,,,6.6,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+21,66,45,117,75,97.5,14.9,36.8,92,0.85,1.08,70.9,3.84,0,0.14,3.9,3263,21.13,101.28,1.9,12.8,,,6.9,22.2,42,57,nominal,regolith shovelling for shielding after a skipped meal
+22,66,43,117,75,97.8,14.9,36.79,92,0.97,1.06,70.4,3.92,0,0.17,4.5,3242,21.17,101.31,1.9,11.6,,,7.3,22.1,42,58,nominal,regolith shovelling for shielding after a skipped meal
+23,66,42,118,75,97.5,14.6,36.8,91,0.93,1.04,70.5,3.96,0,0.19,2.9,3246,21.23,101.3,1.9,10.9,,,7.2,22.2,42,57,nominal,regolith shovelling for shielding after a skipped meal
+24,66,43,120,75,98.2,14.7,36.8,91,0.96,1.05,69.4,4.0,0,0.17,3.7,3275,21.23,101.3,1.7,10.8,,,7.0,22.1,42,56,nominal,regolith shovelling for shielding after a skipped meal
+25,66,44,119,75,98.8,14.5,36.8,92,0.93,1.08,68.4,4.02,0,0.16,3.1,3266,21.21,101.3,1.8,11.3,,,7.5,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+26,68,45,120,75,98.5,14.2,36.79,91,0.9,1.02,68.2,3.95,0,0.21,1.7,3280,21.23,101.3,1.7,12.5,,,7.9,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+27,68,49,120,75,98.2,13.7,36.79,91,0.88,1.06,68.8,4.11,0,0.22,1.7,3276,21.24,101.32,1.6,14.8,,,8.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+28,69,48,120,76,98.5,13.5,36.81,91,0.95,1.12,69.0,4.14,0,0.16,1.6,3271,21.26,101.31,1.6,15.5,,,8.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+29,69,48,119,76,98.3,13.8,36.81,91,0.9,1.0,68.4,4.19,0,0.14,2.1,3294,21.19,101.31,1.6,13.4,,,8.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+30,69,46,121,75,98.2,13.8,36.79,91,0.98,1.09,69.2,4.15,0,0.15,3.4,3282,21.2,101.3,1.6,13.1,,,8.2,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+31,69,47,121,74,97.8,13.3,36.79,91,0.88,1.03,69.7,4.17,0,0.16,4.5,3288,21.19,101.3,1.6,12.8,,,8.2,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+32,69,48,122,74,97.9,13.6,36.79,91,0.84,1.03,69.8,4.24,0,0.18,4.5,3292,21.2,101.29,1.6,11.6,,,8.9,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+33,69,49,123,74,97.8,13.7,36.78,91,0.86,1.02,70.2,4.33,0,0.22,2.8,3282,21.19,101.27,1.7,9.6,,,8.8,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+34,69,50,123,75,97.8,13.4,36.8,91,1.0,0.99,70.3,4.36,0,0.2,2.5,3274,21.19,101.28,1.7,11.5,,,7.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+35,72,49,123,75,98.0,14.1,36.79,91,0.97,0.95,70.2,4.15,0,0.15,1.4,3263,21.17,101.28,1.7,11.8,,,7.2,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+36,72,49,122,75,98.0,14.5,36.8,91,0.99,0.86,70.1,4.09,0,0.16,2.9,3257,21.21,101.29,1.6,12.6,,,7.8,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+37,70,50,122,74,97.4,14.4,36.79,91,0.96,0.8,70.5,3.93,0,0.13,2.5,3277,21.16,101.31,1.6,13.8,,,7.5,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+38,69,50,120,74,97.7,14.2,36.8,92,0.93,0.89,70.4,3.82,0,0.18,3.4,3278,21.14,101.3,1.7,12.6,,,7.2,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+39,68,48,120,74,97.9,14.4,36.78,92,0.96,1.06,71.4,3.91,0,0.24,2.8,3279,21.14,101.26,1.5,13.2,,,7.1,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+40,69,49,121,75,98.1,14.6,36.76,92,1.01,1.1,70.4,3.94,0,0.2,2.4,3279,21.14,101.28,1.4,12.3,,,6.6,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+41,69,49,120,76,98.0,14.3,36.77,92,1.03,1.11,70.5,3.86,0,0.2,2.8,3281,21.1,101.24,1.6,15.1,,,7.4,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+42,69,51,121,77,98.2,14.4,36.77,92,1.02,1.07,69.7,4.03,0,0.17,4.1,3267,21.12,101.24,1.6,15.1,,,7.1,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+43,68,52,122,76,98.0,14.6,36.78,92,1.04,1.05,70.3,4.16,0,0.21,3.6,3287,21.19,101.25,1.6,13.8,,,8.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+44,69,51,124,76,98.1,14.5,36.79,92,1.0,1.03,70.8,4.35,0,0.18,2.5,3278,21.19,101.24,1.8,11.9,,,8.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+45,69,50,126,75,98.3,14.2,36.77,92,0.88,1.0,70.9,4.54,0,0.14,1.8,3255,21.13,101.24,2.1,12.9,,,8.6,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+46,69,51,124,76,98.3,14.2,36.75,92,0.9,0.93,70.5,4.36,0,0.2,2.8,3269,21.15,101.25,2.0,12.5,,,9.3,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+47,70,47,124,76,98.4,14.7,36.75,92,0.94,0.95,71.0,4.55,0,0.18,3.0,3278,21.12,101.24,2.0,13.0,,,9.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+48,69,44,124,76,98.7,14.9,36.76,92,0.99,0.88,70.4,4.5,0,0.22,3.8,3272,21.18,101.23,1.8,14.2,,,8.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+49,68,44,124,77,98.6,14.2,36.77,92,0.9,0.9,70.8,4.63,0,0.15,3.8,3272,21.13,101.23,1.8,13.3,,,8.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+50,67,46,124,77,98.6,13.9,36.78,92,1.02,1.03,71.0,4.63,0,0.11,3.7,3293,21.15,101.24,1.9,12.7,,,8.5,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+51,70,45,122,77,98.4,14.0,36.78,92,1.04,1.06,71.1,4.73,0,0.16,3.2,3305,21.19,101.25,2.1,12.2,,,8.7,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+52,69,44,121,75,98.0,14.1,36.79,92,0.99,1.05,70.8,4.66,0,0.18,1.7,3295,21.19,101.24,2.1,13.3,,,8.8,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+53,69,46,120,74,97.9,14.3,36.8,92,1.02,1.01,70.4,4.57,0,0.19,2.6,3309,21.23,101.24,2.1,12.3,,,7.9,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+54,69,45,120,74,98.2,13.9,36.81,92,1.04,1.01,70.1,4.42,0,0.22,2.5,3305,21.24,101.26,2.1,12.1,,,8.7,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+55,68,45,120,73,97.8,13.5,36.79,92,0.96,1.04,70.1,4.33,0,0.19,3.3,3286,21.22,101.26,2.2,11.1,,,8.5,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+56,68,46,120,73,97.8,13.1,36.79,91,0.87,1.0,70.4,4.32,0,0.19,3.5,3287,21.23,101.26,2.2,11.8,,,8.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+57,69,46,120,72,97.6,13.2,36.81,92,0.97,1.04,69.4,4.31,0,0.16,2.1,3282,21.21,101.28,2.2,12.0,,,7.8,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+58,69,47,120,71,97.6,12.4,36.81,92,0.96,1.05,69.7,4.39,0,0.19,3.3,3298,21.23,101.27,2.2,12.3,,,7.5,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+59,67,44,120,71,97.6,12.8,36.82,92,0.92,1.1,70.1,4.45,0,0.18,3.0,3284,21.24,101.26,2.0,13.5,,,7.6,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+60,68,44,119,71,98.2,13.1,36.83,92,1.04,1.07,69.8,4.31,0,0.15,3.9,3274,21.26,101.29,2.0,13.2,,,7.1,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+61,67,43,119,71,97.8,13.3,36.83,92,1.1,0.95,67.9,4.23,0,0.16,3.3,3259,21.23,101.3,2.2,14.9,,,7.0,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+62,67,45,120,71,98.2,13.4,36.85,92,1.08,0.98,67.5,4.17,0,0.19,3.5,3274,21.24,101.33,2.3,15.5,,,7.2,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+63,68,43,119,72,98.2,13.3,36.85,92,1.04,1.02,67.5,4.02,0,0.23,4.3,3278,21.25,101.32,2.2,15.2,,,7.3,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+64,68,41,119,72,97.9,13.9,36.83,92,0.91,1.04,67.8,4.14,0,0.16,3.8,3294,21.34,101.32,2.5,14.4,,,7.9,22.1,41,57,nominal,regolith shovelling for shielding after a skipped meal
+65,68,42,119,72,98.2,13.6,36.83,93,0.91,1.0,68.0,4.15,0,0.17,2.3,3291,21.3,101.32,2.5,15.1,,,8.0,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+66,66,44,120,72,98.1,13.6,36.82,93,1.02,1.02,69.0,4.05,0,0.19,3.7,3308,21.29,101.34,2.3,14.5,,,7.2,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+67,66,43,120,72,98.5,13.8,36.81,93,1.0,0.96,68.5,4.14,0,0.15,3.9,3318,21.28,101.36,2.3,13.6,,,6.7,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+68,68,44,121,72,98.5,14.1,36.8,93,0.91,0.94,68.5,4.08,0,0.18,5.5,3317,21.23,101.34,2.2,13.8,,,7.3,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+69,67,46,120,72,98.7,13.6,36.79,93,0.94,0.96,69.5,4.13,0,0.19,4.6,3290,21.27,101.33,2.1,12.7,,,6.8,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+70,67,47,119,72,98.5,13.6,36.79,93,0.94,1.03,69.3,4.12,0,0.14,3.7,3299,21.26,101.37,1.9,13.0,,,6.8,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+71,65,51,121,71,98.0,13.7,36.78,93,0.98,1.04,69.2,4.24,0,0.18,3.1,3318,21.21,101.37,1.9,13.4,,,6.5,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+72,66,49,122,72,98.1,14.2,36.78,94,1.0,1.03,69.8,4.31,0,0.16,3.9,3308,21.22,101.38,1.9,11.5,,,7.0,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+73,67,48,121,74,98.0,14.2,36.77,93,0.96,0.99,70.0,4.14,0,0.2,1.9,3288,21.21,101.4,2.0,13.0,,,7.5,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+74,67,48,120,73,97.7,14.9,36.77,93,1.0,0.95,70.4,4.14,0,0.14,3.7,3289,21.24,101.4,1.9,12.7,,,6.4,22.2,42,57,nominal,regolith shovelling for shielding after a skipped meal
+75,68,47,120,73,98.0,14.7,36.77,93,0.99,0.88,70.5,3.94,0,0.15,3.1,3264,21.25,101.42,1.6,14.6,,,7.0,22.2,42,57,nominal,regolith shovelling for shielding after a skipped meal
+76,69,47,120,73,97.8,14.4,36.76,93,0.97,0.94,70.8,3.84,0,0.12,3.9,3259,21.25,101.43,1.7,15.5,,,7.5,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+77,68,44,120,73,98.3,14.7,36.75,93,0.97,1.02,70.0,3.74,0,0.12,2.5,3277,21.25,101.44,1.9,13.9,,,7.3,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+78,68,42,120,72,97.9,15.2,36.76,93,0.93,1.03,70.4,3.75,0,0.18,3.8,3268,21.24,101.43,1.8,15.0,,,7.6,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+79,66,42,120,73,97.4,15.4,36.76,93,0.9,1.0,69.9,3.9,0,0.21,3.6,3279,21.25,101.43,1.9,11.8,,,7.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+80,66,44,119,72,97.6,14.9,36.77,93,0.97,1.05,70.2,4.12,0,0.17,3.5,3280,21.26,101.42,2.2,12.2,,,7.6,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+81,67,44,119,71,98.1,14.8,36.76,93,1.04,0.92,70.9,4.0,0,0.18,2.8,3270,21.27,101.41,2.3,13.7,,,7.1,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+82,67,48,119,73,97.9,14.6,36.76,93,0.98,0.88,70.7,4.1,0,0.19,2.4,3284,21.33,101.37,2.1,14.6,,,7.6,22.1,40,55,nominal,regolith shovelling for shielding after a skipped meal
+83,67,50,119,73,97.8,14.6,36.78,92,1.06,0.94,71.4,3.88,0,0.17,3.6,3281,21.31,101.37,2.0,15.1,,,8.3,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+84,67,46,119,74,98.2,14.0,36.77,92,0.99,0.95,70.8,4.06,0,0.18,2.2,3257,21.3,101.35,2.0,15.1,,,7.1,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+85,67,47,118,74,98.6,14.2,36.78,92,1.04,0.96,71.0,4.08,0,0.18,2.9,3274,21.31,101.34,2.1,13.1,,,7.5,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+86,67,46,117,74,98.4,13.3,36.78,92,1.05,0.96,70.4,4.2,0,0.15,2.5,3276,21.37,101.32,2.2,15.3,,,7.7,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+87,68,46,115,74,98.2,13.3,36.78,92,1.06,1.0,70.9,4.28,0,0.14,3.6,3283,21.35,101.31,2.2,12.8,,,7.7,22.1,40,55,nominal,regolith shovelling for shielding after a skipped meal
+88,67,45,115,73,98.1,14.0,36.79,92,1.13,1.01,70.6,4.32,0,0.11,4.0,3274,21.39,101.31,2.3,12.3,,,7.0,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+89,66,45,116,73,98.3,14.3,36.79,92,1.1,0.99,69.7,4.35,0,0.16,4.2,3293,21.36,101.32,2.5,11.1,,,7.9,22.1,40,55,nominal,regolith shovelling for shielding after a skipped meal
+90,66,44,117,73,98.4,14.2,36.79,91,1.12,0.98,69.5,4.32,0,0.18,2.6,3288,21.34,101.33,2.5,11.9,,,7.1,22.1,40,55,nominal,regolith shovelling for shielding after a skipped meal
+91,67,45,116,74,97.9,14.1,36.81,91,1.04,1.02,69.5,4.38,0,0.18,3.9,3284,21.32,101.32,2.5,11.9,,,8.2,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+92,66,44,115,74,98.1,14.2,36.83,91,1.09,1.04,68.6,4.34,0,0.13,3.1,3297,21.31,101.32,2.4,12.0,,,8.2,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+93,67,44,115,73,97.9,14.2,36.82,91,1.06,0.97,68.6,4.32,0,0.17,3.8,3277,21.29,101.32,2.4,11.8,,,8.3,22.1,41,57,nominal,regolith shovelling for shielding after a skipped meal
+94,67,45,115,74,98.3,13.4,36.81,92,1.03,1.01,68.6,4.29,0,0.12,3.1,3274,21.27,101.31,2.4,11.7,,,8.7,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+95,67,44,115,75,98.1,13.8,36.8,92,1.02,0.97,68.9,4.16,0,0.21,4.2,3272,21.24,101.29,2.5,12.7,,,9.4,22.1,41,57,nominal,regolith shovelling for shielding after a skipped meal
+96,67,44,115,75,97.5,14.1,36.81,92,1.03,1.04,69.2,4.21,0,0.16,6.4,3258,21.3,101.27,2.5,13.1,,,9.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+97,68,46,115,74,97.7,14.2,36.82,92,1.03,1.01,69.7,4.24,0,0.14,5.8,3285,21.26,101.26,2.2,13.8,,,9.2,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+98,69,44,115,74,97.4,14.0,36.81,92,0.99,1.04,69.5,4.19,0,0.15,4.0,3278,21.25,101.26,2.2,14.1,,,8.5,22.2,42,58,nominal,regolith shovelling for shielding after a skipped meal
+99,69,42,115,74,97.7,14.3,36.83,92,0.94,1.03,69.7,4.14,0,0.16,4.0,3267,21.24,101.29,1.9,13.7,,,8.2,22.3,42,57,nominal,regolith shovelling for shielding after a skipped meal
+100,68,43,114,74,97.6,14.0,36.83,92,1.02,1.0,69.8,4.19,0,0.15,5.0,3256,21.2,101.28,2.1,13.0,,,6.9,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+101,67,42,115,76,98.2,13.8,36.81,92,0.93,0.99,70.6,4.09,0,0.14,4.0,3271,21.22,101.29,2.2,12.6,,,7.2,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+102,67,42,117,76,98.6,14.5,36.82,92,1.02,0.94,70.7,4.02,0,0.15,3.0,3260,21.24,101.27,2.2,13.1,,,7.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+103,67,43,117,76,98.5,14.9,36.82,92,1.02,0.9,70.9,4.0,0,0.13,3.0,3255,21.21,101.26,2.2,14.1,,,8.2,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+104,69,42,117,77,98.3,14.9,36.82,92,1.05,0.96,70.2,4.17,0,0.13,3.1,3262,21.17,101.26,2.3,14.9,,,7.5,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+105,68,41,118,76,98.1,14.9,36.82,93,1.08,1.0,69.1,4.4,0,0.19,3.3,3261,21.14,101.26,2.3,14.9,,,7.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+106,69,43,119,76,98.2,15.2,36.83,93,1.1,0.97,69.2,4.33,0,0.19,3.4,3244,21.18,101.25,2.1,12.6,,,6.7,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+107,69,46,121,75,98.1,15.6,36.84,92,1.01,0.98,69.2,4.26,0,0.22,2.9,3217,21.21,101.25,2.0,13.1,,,7.7,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+108,72,44,121,75,97.7,14.9,36.86,92,0.98,1.06,69.2,4.28,0,0.22,2.3,3221,21.21,101.27,2.1,14.6,,,7.2,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+109,74,43,120,75,97.5,15.3,36.85,92,1.01,1.02,69.8,4.31,0,0.19,3.2,3217,21.19,101.29,2.4,12.9,,,8.2,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+110,76,43,118,73,97.5,15.3,36.85,92,1.01,1.05,69.5,4.31,0,0.19,3.7,3217,21.17,101.26,2.3,14.2,,,9.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+111,76,43,118,74,97.7,16.3,36.87,92,1.01,0.97,69.0,4.53,0,0.2,3.4,3220,21.26,101.25,2.2,14.4,,,8.6,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+112,78,43,119,72,97.9,16.5,36.87,92,0.97,0.96,68.3,4.76,0,0.15,2.3,3231,21.24,101.26,2.4,15.7,,,7.9,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+113,80,43,118,72,98.3,16.7,36.89,92,1.03,0.97,69.5,4.94,0,0.16,2.2,3241,21.24,101.3,2.5,15.2,,,6.8,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+114,83,44,119,73,97.6,16.9,36.9,92,1.0,1.02,69.2,4.95,0,0.17,2.4,3262,21.25,101.3,2.4,15.3,,,6.5,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+115,86,45,120,73,97.8,17.3,36.92,92,0.97,1.0,69.6,4.93,0,0.15,2.4,3278,21.26,101.26,2.4,13.9,,,6.9,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+116,87,44,123,73,98.1,16.7,36.94,92,0.99,0.99,70.0,5.06,0,0.18,3.3,3284,21.22,101.25,2.3,12.2,,,6.7,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+117,91,43,123,74,98.1,16.8,36.96,92,1.01,0.99,70.3,4.98,0,0.16,2.0,3277,21.3,101.28,2.3,12.0,,,7.6,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+118,93,41,123,74,98.3,17.0,36.97,92,0.98,0.95,70.4,5.32,0,0.16,1.7,3274,21.28,101.27,2.2,12.4,,,7.9,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+119,94,39,125,74,98.3,17.2,36.99,91,1.04,0.92,69.8,5.39,0,0.17,0.7,3279,21.27,101.28,2.2,13.2,,,7.6,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+120,94,38,123,74,98.7,16.8,37.01,92,1.0,1.07,69.9,5.46,0,0.22,1.0,3269,21.22,101.27,2.3,13.5,,,7.5,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+121,94,34,124,75,98.7,17.4,37.03,92,0.92,1.09,70.0,5.41,0,0.18,1.9,3289,21.21,101.27,2.5,13.6,,,7.5,22.2,42,57,nominal,regolith shovelling for shielding after a skipped meal
+122,98,32,125,74,98.6,17.9,37.07,92,0.95,0.99,70.2,5.48,0,0.16,2.0,3288,21.27,101.28,2.3,12.2,,,7.2,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+123,101,29,126,74,98.4,18.7,37.09,92,0.93,1.02,69.6,5.6,0,0.18,2.8,3284,21.29,101.29,2.2,12.8,,,7.8,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+124,104,30,127,76,97.9,20.1,37.1,92,1.02,0.88,69.8,5.62,0,0.16,3.1,3292,21.27,101.3,2.0,13.2,,,7.1,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+125,105,30,128,77,98.3,20.3,37.12,92,1.0,0.96,70.0,5.84,0,0.16,4.6,3302,21.29,101.32,2.1,13.4,,,7.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+126,108,31,129,77,98.3,20.7,37.12,92,0.97,0.96,70.4,6.04,0,0.16,4.8,3302,21.3,101.34,1.9,13.7,,,7.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+127,110,30,130,78,97.8,20.5,37.13,92,0.96,1.0,69.5,6.09,0,0.17,4.6,3288,21.29,101.35,1.9,13.9,,,7.3,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+128,113,29,131,77,98.0,20.6,37.13,92,1.03,0.98,69.7,6.27,0,0.18,3.4,3287,21.29,101.37,1.9,13.8,,,7.7,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+129,116,29,129,76,97.8,20.1,37.15,92,0.96,0.92,69.3,6.41,0,0.19,3.1,3251,21.31,101.39,1.9,13.1,,,8.3,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+130,117,30,128,75,97.6,20.3,37.16,92,0.94,0.87,69.4,6.49,0,0.18,0.8,3238,21.26,101.38,1.9,13.4,,,7.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+131,120,29,128,75,97.5,20.6,37.17,92,1.07,0.94,68.7,6.53,0,0.2,1.8,3237,21.3,101.38,2.1,13.4,,,7.5,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+132,123,30,128,75,97.7,21.4,37.17,92,1.06,0.94,68.8,6.41,0,0.22,2.6,3261,21.33,101.36,2.2,14.9,,,7.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+133,123,31,129,74,97.4,21.0,37.18,92,1.12,0.96,70.1,6.65,0,0.18,2.0,3265,21.28,101.36,2.3,14.3,,,7.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+134,124,29,129,75,97.8,21.6,37.19,92,1.04,1.01,70.0,6.64,0,0.17,2.4,3249,21.32,101.39,2.1,15.6,,,7.9,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+135,123,30,129,75,97.8,21.7,37.19,92,1.01,0.96,69.6,6.69,0,0.2,3.2,3257,21.25,101.38,2.0,14.8,,,8.7,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+136,124,29,130,75,98.1,21.5,37.2,92,1.05,0.93,69.2,6.72,0,0.17,3.9,3273,21.26,101.37,2.2,16.1,,,8.4,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+137,127,30,131,75,98.5,21.6,37.21,91,0.99,1.11,68.4,6.74,0,0.19,4.4,3278,21.25,101.35,2.2,15.4,,,7.8,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+138,128,28,131,74,98.1,22.6,37.22,91,0.96,1.1,68.9,6.86,0,0.14,4.9,3290,21.22,101.36,2.1,12.0,,,7.9,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+139,129,28,130,73,98.2,22.5,37.23,91,1.0,1.1,68.5,6.82,0,0.09,3.0,3280,21.15,101.34,2.2,14.4,,,7.5,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+140,129,29,130,73,97.9,23.5,37.23,91,0.99,1.04,69.5,6.85,0,0.12,1.4,3283,21.11,101.35,2.3,15.4,,,7.8,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+141,130,29,129,72,97.5,23.5,37.23,91,0.94,0.99,68.9,6.74,0,0.13,0.8,3270,21.15,101.32,2.0,16.5,,,8.6,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+142,130,29,130,73,97.6,22.9,37.24,91,0.99,1.03,68.9,6.63,0,0.13,2.7,3272,21.13,101.32,2.0,17.8,,,8.2,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+143,130,28,130,72,97.5,22.4,37.22,90,1.06,1.0,68.7,6.59,0,0.13,1.1,3256,21.18,101.32,2.1,17.3,,,7.9,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+144,128,28,129,72,97.7,22.7,37.22,90,1.03,1.01,69.1,6.54,0,0.09,1.8,3281,21.25,101.32,2.1,16.9,,,6.9,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+145,129,28,129,73,97.6,23.2,37.23,90,1.05,0.95,69.3,6.54,0,0.16,2.4,3275,21.25,101.34,2.1,14.8,,,7.3,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+146,128,26,130,74,98.0,22.9,37.22,91,1.01,0.98,69.5,6.55,0,0.19,0.5,3269,21.31,101.36,2.0,14.1,,,7.2,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+147,127,27,130,74,98.0,22.8,37.23,91,1.02,0.93,69.4,6.49,0,0.19,2.3,3252,21.3,101.38,1.8,14.4,,,8.2,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+148,127,26,132,74,98.4,22.4,37.23,90,1.07,0.95,69.8,6.31,0,0.19,2.8,3259,21.29,101.37,1.6,15.8,,,7.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+149,126,25,133,74,98.2,22.5,37.23,90,1.03,0.94,69.8,6.57,0,0.18,3.1,3278,21.25,101.38,1.8,14.0,,,7.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+150,125,25,133,73,98.1,23.0,37.23,91,1.01,0.96,69.8,6.63,0,0.17,3.7,3270,21.3,101.37,2.0,11.8,,,8.6,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+151,125,26,132,74,97.9,22.7,37.21,91,1.03,0.96,70.1,6.72,0,0.17,4.1,3290,21.31,101.36,2.0,10.8,,,9.1,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+152,126,26,132,75,98.1,22.6,37.21,91,0.99,1.14,69.9,6.86,0,0.15,3.3,3292,21.28,101.37,2.0,9.6,,,9.5,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+153,126,25,132,76,98.5,22.9,37.21,91,0.96,1.13,70.3,6.95,0,0.13,1.4,3292,21.31,101.38,2.1,11.2,,,7.6,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+154,126,26,131,76,98.5,22.1,37.22,91,1.04,1.13,70.3,7.0,0,0.17,1.5,3276,21.27,101.39,2.2,11.5,,,7.4,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+155,128,26,131,77,98.2,21.9,37.22,91,0.97,1.17,70.1,7.02,0,0.18,3.1,3267,21.24,101.39,2.1,11.7,,,7.3,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+156,129,24,132,77,98.6,21.5,37.23,91,0.97,1.14,70.2,7.0,0,0.18,3.2,3269,21.2,101.37,1.9,12.8,,,7.8,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+157,130,24,134,78,98.5,21.5,37.23,91,0.95,1.11,69.9,6.94,0,0.2,3.0,3265,21.21,101.37,2.0,13.9,,,7.7,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+158,129,24,133,77,98.0,21.5,37.22,91,0.95,1.12,69.2,7.08,0,0.2,2.4,3260,21.2,101.37,2.0,15.8,,,8.2,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+159,129,24,131,76,98.5,21.3,37.24,91,0.89,1.13,69.4,7.09,0,0.2,2.1,3256,21.21,101.39,1.9,14.3,,,7.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+160,128,23,132,76,98.2,21.1,37.26,91,0.95,0.99,69.7,7.11,0,0.17,2.3,3278,21.21,101.36,1.8,14.2,,,7.4,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+161,128,24,133,75,98.3,21.4,37.26,91,1.0,0.95,69.5,7.16,0,0.16,3.8,3295,21.23,101.36,1.8,14.2,,,7.9,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+162,127,23,134,75,97.8,21.2,37.27,91,0.95,0.98,68.8,7.12,0,0.18,2.5,3301,21.22,101.37,1.9,12.3,,,7.8,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+163,128,23,133,75,98.4,21.0,37.27,91,0.99,1.02,70.1,7.04,0,0.19,3.5,3303,21.24,101.38,1.8,12.4,,,8.7,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+164,126,22,133,75,98.4,21.5,37.27,91,0.95,1.01,70.3,7.1,0,0.14,5.0,3286,21.23,101.37,1.7,12.7,,,9.2,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+165,126,22,132,75,98.0,21.0,37.25,91,0.97,0.92,69.9,7.12,0,0.17,5.2,3303,21.22,101.35,1.5,12.2,,,9.0,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+166,127,24,133,75,98.1,21.4,37.24,91,1.02,0.93,69.6,7.2,0,0.17,2.3,3315,21.23,101.34,1.5,13.1,,,7.7,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+167,127,25,133,76,98.2,21.6,37.23,91,1.02,1.04,68.9,7.18,0,0.2,3.5,3334,21.3,101.36,1.5,13.3,,,8.0,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+168,127,25,132,75,97.9,21.5,37.22,91,0.92,1.05,68.9,7.08,0,0.2,1.8,3328,21.26,101.35,1.5,12.2,,,6.7,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+169,127,25,130,76,97.9,21.8,37.21,91,0.88,0.98,69.1,6.85,0,0.17,3.6,3293,21.26,101.36,1.7,11.0,,,7.7,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+170,126,27,131,76,97.9,22.6,37.23,91,0.91,0.95,69.9,6.92,0,0.16,2.7,3283,21.23,101.35,1.8,9.4,,,7.7,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+171,125,28,132,74,98.3,22.2,37.21,91,0.93,1.08,70.5,6.92,0,0.16,3.2,3262,21.23,101.32,1.7,9.3,,,7.5,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+172,126,27,132,74,98.1,22.2,37.21,91,0.98,1.03,70.1,6.77,0,0.18,2.8,3254,21.27,101.31,1.7,11.4,,,7.7,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+173,127,27,132,73,98.0,22.9,37.2,91,1.03,1.07,69.4,6.81,0,0.13,1.1,3232,21.33,101.33,1.8,11.6,,,7.4,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+174,127,26,132,73,98.0,22.6,37.2,91,0.99,1.11,70.6,6.82,0,0.19,1.9,3243,21.28,101.32,1.7,14.3,,,7.7,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+175,127,26,132,72,97.7,22.4,37.19,91,1.09,1.06,70.5,6.92,0,0.14,2.7,3234,21.25,101.31,1.9,13.9,,,7.6,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+176,129,27,134,73,98.1,22.6,37.19,91,1.06,1.1,70.0,6.87,0,0.13,3.3,3245,21.27,101.34,2.0,15.0,,,6.9,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+177,130,26,134,73,97.9,22.6,37.19,91,0.97,1.05,70.3,6.73,0,0.14,3.0,3249,21.31,101.33,2.2,14.0,,,7.0,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+178,129,26,134,74,98.0,22.8,37.19,92,0.97,1.04,70.5,6.82,0,0.18,2.4,3250,21.31,101.33,2.1,12.7,,,7.1,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+179,129,25,134,74,97.7,22.8,37.19,91,0.97,1.02,71.3,6.81,0,0.17,2.1,3231,21.23,101.33,1.9,12.6,,,6.7,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+180,130,25,134,73,98.1,22.8,37.2,91,1.02,0.93,71.4,6.79,0,0.21,1.3,3225,21.25,101.34,1.8,12.8,,,6.9,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+181,130,25,134,74,98.1,22.5,37.19,91,0.92,0.98,71.1,6.72,0,0.19,1.6,3243,21.25,101.32,1.9,12.4,,,7.5,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+182,130,24,135,74,98.2,22.3,37.2,91,1.07,1.1,70.7,6.84,0,0.15,3.2,3216,21.28,101.29,1.8,12.8,,,7.9,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+183,130,24,133,74,98.1,22.6,37.19,91,0.97,1.04,70.8,6.77,0,0.12,4.4,3236,21.33,101.27,1.7,14.1,,,8.2,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+184,130,25,133,73,98.3,22.0,37.18,91,1.03,1.01,70.6,6.88,0,0.17,4.0,3239,21.39,101.25,1.6,13.9,,,8.2,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+185,129,24,132,74,98.6,21.4,37.18,91,0.99,0.99,70.7,7.01,0,0.14,4.4,3245,21.36,101.25,1.7,13.8,,,6.9,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+186,130,25,132,75,98.1,21.2,37.19,91,1.06,0.98,70.5,7.0,0,0.12,3.5,3228,21.41,101.25,1.7,16.4,,,6.9,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+187,128,24,133,75,98.5,20.8,37.18,91,1.05,1.03,70.3,7.0,0,0.1,2.9,3235,21.38,101.26,1.8,14.3,,,6.7,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+188,127,24,134,75,98.3,20.5,37.18,91,1.13,1.07,69.7,6.91,0,0.12,2.8,3237,21.37,101.23,1.9,15.5,,,6.0,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+189,129,23,134,75,98.2,20.9,37.18,91,1.15,1.1,70.2,6.86,0,0.11,2.5,3225,21.35,101.19,1.9,14.0,,,5.4,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+190,129,24,133,75,98.1,21.9,37.18,91,1.03,1.08,70.5,6.82,0,0.13,1.7,3214,21.37,101.21,2.0,13.6,,,5.1,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+191,130,24,133,75,98.0,21.5,37.19,91,1.05,1.05,70.9,6.95,0,0.13,2.2,3209,21.39,101.21,2.2,13.2,,,6.2,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+192,130,24,134,75,97.7,21.3,37.17,91,1.0,1.06,70.4,7.0,0,0.18,1.1,3220,21.29,101.24,2.2,15.3,,,7.2,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+193,130,24,134,75,97.8,20.7,37.19,91,1.08,1.02,70.7,7.02,0,0.15,2.8,3225,21.28,101.24,2.2,13.9,,,7.1,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+194,130,26,133,76,97.7,21.4,37.18,91,1.08,1.08,69.4,6.99,0,0.19,3.3,3230,21.28,101.22,2.3,15.1,,,7.2,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+195,130,27,133,75,97.9,21.7,37.18,92,1.09,1.14,69.4,6.87,0,0.2,3.4,3232,21.31,101.22,2.2,15.4,,,6.7,22.1,42,55,nominal,regolith shovelling for shielding after a skipped meal
+196,129,28,133,75,97.8,21.6,37.19,92,1.09,1.05,69.5,6.9,0,0.17,4.3,3232,21.3,101.23,2.3,14.4,,,6.6,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+197,128,27,133,74,97.3,21.9,37.19,91,1.07,1.01,69.2,6.87,0,0.18,2.8,3241,21.34,101.25,2.2,14.5,,,7.0,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+198,128,27,132,73,97.8,22.0,37.19,92,1.01,1.12,69.8,6.79,0,0.18,3.1,3243,21.31,101.27,2.2,14.5,,,7.0,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+199,128,27,130,73,98.0,22.1,37.2,92,1.05,1.14,69.4,6.84,0,0.21,4.2,3242,21.3,101.27,2.0,12.5,,,6.6,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+200,128,28,129,73,98.1,22.2,37.2,92,1.01,1.1,70.0,7.0,0,0.18,4.4,3258,21.36,101.28,2.1,13.0,,,7.0,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+201,128,28,129,73,98.5,22.5,37.19,92,0.98,1.1,69.9,6.99,0,0.2,2.2,3262,21.36,101.28,2.0,13.7,,,7.0,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+202,128,26,130,73,97.8,22.5,37.19,92,1.06,1.01,69.4,7.07,0,0.16,2.3,3267,21.32,101.28,1.8,14.3,,,7.1,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+203,130,27,130,74,97.6,23.3,37.18,92,1.02,1.07,70.1,7.05,0,0.17,2.9,3264,21.29,101.3,1.7,14.0,,,6.7,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+204,130,27,131,74,97.9,22.3,37.19,91,0.98,1.06,69.6,7.19,0,0.17,3.9,3286,21.38,101.28,1.5,12.3,,,6.7,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+205,129,25,132,74,97.9,22.9,37.2,91,0.96,1.0,69.8,7.28,0,0.16,6.0,3284,21.34,101.3,1.6,13.3,,,7.4,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+206,131,24,133,74,98.1,23.1,37.18,91,0.97,0.9,70.2,7.16,0,0.19,5.6,3297,21.32,101.31,1.6,13.4,,,7.5,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+207,132,25,132,75,98.1,22.9,37.16,91,0.99,0.89,70.1,7.16,0,0.18,2.8,3291,21.37,101.31,1.8,14.4,,,7.3,22.3,42,55,nominal,regolith shovelling for shielding after a skipped meal
+208,132,25,132,74,98.0,22.9,37.18,91,1.05,0.99,69.3,7.08,0,0.17,3.6,3282,21.37,101.31,1.7,13.5,,,7.4,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+209,131,25,131,74,98.0,22.1,37.18,91,1.08,1.03,69.3,7.05,0,0.2,3.5,3307,21.37,101.29,2.0,15.0,,,7.6,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+210,130,26,131,74,98.0,21.6,37.19,91,1.04,1.0,70.2,7.2,0,0.13,3.1,3315,21.33,101.29,2.0,11.8,,,7.6,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+211,128,26,131,74,97.7,22.0,37.19,91,1.02,1.07,70.7,7.2,0,0.18,3.0,3301,21.32,101.3,2.0,11.5,,,8.1,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+212,129,26,132,75,97.8,21.2,37.2,91,1.03,1.02,70.0,7.26,0,0.19,4.3,3289,21.3,101.3,1.6,12.2,,,7.4,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+213,129,26,132,75,97.7,21.7,37.19,91,0.96,1.0,69.3,7.16,0,0.1,4.9,3300,21.3,101.31,1.7,12.1,,,6.9,22.3,41,54,nominal,regolith shovelling for shielding after a skipped meal
+214,128,26,133,75,97.9,22.0,37.2,91,1.02,0.95,69.5,7.07,0,0.14,3.9,3298,21.32,101.31,1.6,12.5,,,6.6,22.3,40,54,nominal,regolith shovelling for shielding after a skipped meal
+215,127,25,133,75,97.8,22.8,37.21,91,1.03,0.96,69.0,6.92,0,0.2,3.7,3293,21.31,101.31,1.8,11.3,,,6.8,22.3,40,55,nominal,regolith shovelling for shielding after a skipped meal
+216,128,24,134,75,97.7,22.5,37.21,91,0.99,1.01,68.7,6.81,0,0.16,4.2,3304,21.26,101.29,1.8,11.6,,,6.9,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+217,127,22,135,75,97.6,22.4,37.2,90,1.04,1.03,69.3,6.87,0,0.15,2.5,3326,21.23,101.28,1.8,10.7,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+218,126,22,135,75,98.1,22.2,37.2,90,1.04,1.06,70.0,7.07,0,0.14,2.8,3320,21.13,101.3,1.7,10.5,,,8.6,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+219,127,23,134,75,98.4,21.7,37.2,90,1.04,0.92,70.3,7.08,0,0.2,3.2,3317,21.12,101.33,1.4,11.6,,,7.8,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+220,126,24,133,75,98.3,22.1,37.18,90,0.96,0.95,69.9,7.16,0,0.15,3.2,3316,21.13,101.3,1.5,11.9,,,7.2,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+221,127,25,131,75,98.1,21.5,37.18,90,0.97,0.93,69.8,7.23,0,0.14,2.9,3321,21.1,101.27,1.6,13.0,,,6.9,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+222,127,25,131,75,97.5,21.3,37.19,90,1.0,0.93,69.9,7.32,0,0.15,2.2,3291,21.02,101.27,1.6,11.5,,,6.9,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+223,126,26,132,74,97.4,21.4,37.19,90,0.96,1.06,70.1,7.28,0,0.16,2.3,3287,21.04,101.31,1.5,11.5,,,6.7,22.3,42,57,nominal,regolith shovelling for shielding after a skipped meal
+224,125,25,132,74,97.4,21.6,37.19,90,0.91,1.03,70.1,7.26,0,0.13,0.6,3281,21.01,101.31,1.5,13.4,,,6.9,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+225,126,24,131,74,97.4,21.4,37.2,90,0.96,0.98,69.3,7.3,0,0.12,0.9,3291,21.03,101.32,1.2,13.1,,,6.9,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+226,127,24,131,74,97.3,21.2,37.19,90,0.99,0.96,70.4,7.4,0,0.14,2.8,3297,21.05,101.32,1.4,12.0,,,7.1,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+227,128,25,131,74,97.4,21.6,37.19,90,1.04,0.99,70.1,7.36,0,0.15,3.9,3288,21.08,101.32,1.4,12.7,,,7.3,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+228,128,25,132,74,97.8,21.4,37.2,90,1.03,1.06,70.3,7.47,0,0.17,4.8,3281,21.15,101.31,1.3,13.1,,,7.8,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+229,128,25,132,75,97.7,21.2,37.2,90,0.97,1.09,70.5,7.44,0,0.19,3.5,3266,21.21,101.31,1.4,13.1,,,7.4,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+230,127,25,131,75,97.8,21.3,37.2,90,0.96,1.06,70.8,7.53,0,0.16,2.0,3270,21.23,101.32,1.5,12.0,,,7.5,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+231,128,24,131,75,97.8,21.7,37.19,89,1.02,1.06,71.6,7.31,0,0.18,2.2,3251,21.19,101.33,1.5,13.1,,,7.4,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+232,128,24,129,75,98.1,22.3,37.2,89,1.02,1.19,70.7,7.37,0,0.15,2.0,3244,21.23,101.3,1.8,12.0,,,7.0,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+233,128,22,130,76,98.2,22.3,37.2,89,1.03,1.11,70.1,7.18,0,0.18,4.2,3228,21.24,101.29,1.6,10.5,,,7.3,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+234,127,20,131,75,98.5,22.2,37.2,89,1.01,1.07,71.1,7.31,0,0.16,4.0,3225,21.2,101.28,1.8,10.0,,,8.0,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+235,128,20,132,76,98.2,21.8,37.18,89,1.01,0.95,70.8,7.26,0,0.16,2.6,3219,21.22,101.3,1.9,11.4,,,6.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+236,127,20,130,75,98.1,21.9,37.18,89,0.95,0.98,70.8,7.4,0,0.15,3.7,3196,21.2,101.32,1.9,12.0,,,6.5,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+237,128,22,130,76,97.9,22.4,37.18,88,0.92,0.88,70.7,7.32,0,0.16,3.9,3190,21.19,101.31,1.7,12.1,,,6.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+238,129,23,130,76,98.4,22.4,37.18,88,0.94,0.9,71.3,7.31,0,0.16,1.9,3190,21.17,101.33,1.9,11.7,,,7.2,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+239,128,23,132,75,98.5,22.6,37.18,88,0.97,0.94,71.1,7.3,0,0.19,2.8,3160,21.17,101.34,1.8,11.4,,,7.5,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+240,128,23,134,74,98.4,22.7,37.18,89,0.98,0.95,70.9,7.19,0,0.16,3.2,3178,21.2,101.36,1.8,12.8,,,8.0,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+241,128,24,135,73,98.5,22.8,37.19,89,0.96,0.96,70.9,7.31,0,0.15,2.2,3200,21.19,101.35,1.6,12.9,,,7.8,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+242,127,24,134,72,98.4,22.7,37.19,89,1.02,1.09,71.1,7.25,0,0.14,1.5,3205,21.26,101.37,1.5,12.6,,,7.9,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+243,126,24,135,72,98.3,22.7,37.18,89,1.06,1.18,70.6,6.94,0,0.19,3.1,3209,21.21,101.36,1.6,14.6,,,8.2,22.2,40,58,nominal,regolith shovelling for shielding after a skipped meal
+244,126,25,134,73,98.3,22.6,37.18,89,1.04,1.1,70.0,6.97,0,0.16,3.2,3213,21.18,101.35,1.6,15.7,,,7.9,22.2,40,58,nominal,regolith shovelling for shielding after a skipped meal
+245,126,27,134,72,97.3,22.5,37.18,89,1.01,1.15,69.6,7.07,0,0.13,2.8,3202,21.17,101.34,1.9,16.1,,,7.0,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+246,126,28,135,72,97.8,23.7,37.19,89,1.0,1.11,69.1,6.98,0,0.22,2.8,3190,21.25,101.32,2.0,15.3,,,7.3,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+247,127,28,134,74,97.6,23.6,37.21,89,1.07,1.14,68.6,6.8,0,0.17,2.8,3197,21.23,101.31,1.8,14.5,,,7.6,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+248,128,27,134,75,97.7,23.7,37.22,89,1.11,1.07,68.3,6.81,0,0.16,3.9,3204,21.22,101.33,2.0,14.5,,,7.1,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+249,128,28,133,75,97.5,23.2,37.21,88,1.06,1.02,68.3,6.94,0,0.17,2.1,3205,21.24,101.32,1.8,14.7,,,7.4,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+250,127,27,133,75,97.7,23.0,37.21,88,1.05,1.06,67.8,6.87,0,0.11,2.5,3226,21.28,101.3,2.0,14.1,,,7.2,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+251,128,27,131,74,97.5,22.5,37.22,88,1.09,1.0,67.4,6.87,0,0.14,3.7,3210,21.28,101.31,1.9,14.4,,,7.6,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+252,127,26,131,75,97.6,23.1,37.21,88,0.98,1.03,67.9,6.69,0,0.18,3.4,3210,21.27,101.31,2.1,13.3,,,7.5,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+253,125,26,133,75,98.0,22.4,37.2,88,0.9,0.97,67.9,6.63,0,0.18,3.1,3198,21.34,101.31,1.9,13.6,,,7.2,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+254,125,25,132,76,98.1,22.8,37.19,88,0.93,0.93,67.4,6.78,0,0.15,3.8,3194,21.37,101.3,1.9,13.0,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+255,125,24,133,77,98.5,22.4,37.19,88,1.09,0.94,67.5,6.89,0,0.17,3.8,3213,21.38,101.3,2.0,12.0,,,6.9,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+256,126,25,132,77,98.9,22.0,37.18,88,1.04,0.94,68.5,6.87,0,0.16,2.6,3215,21.38,101.28,2.0,11.9,,,7.3,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+257,127,25,132,77,98.9,21.8,37.19,88,1.14,0.88,68.1,6.89,0,0.15,2.1,3225,21.37,101.3,2.2,14.0,,,6.7,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+258,127,24,133,78,98.3,22.0,37.18,89,1.07,0.98,68.3,6.89,0,0.15,3.5,3224,21.37,101.32,2.4,13.4,,,6.8,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+259,127,25,133,77,98.2,22.2,37.19,89,1.04,0.98,69.3,6.86,0,0.15,3.9,3207,21.37,101.31,2.5,13.0,,,7.1,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+260,128,26,133,77,98.1,22.3,37.19,89,0.97,0.99,70.0,6.73,0,0.19,2.6,3242,21.36,101.3,2.4,12.9,,,7.0,22.2,40,54,nominal,regolith shovelling for shielding after a skipped meal
+261,128,27,132,77,98.5,21.7,37.19,89,1.09,0.95,70.4,6.67,0,0.2,1.5,3250,21.38,101.29,2.4,11.4,,,6.8,22.1,41,54,nominal,regolith shovelling for shielding after a skipped meal
+262,128,26,132,77,98.3,21.9,37.21,89,1.0,0.94,70.4,6.7,0,0.23,4.4,3275,21.33,101.26,2.1,14.0,,,7.0,22.1,40,54,nominal,regolith shovelling for shielding after a skipped meal
+263,128,26,132,76,98.1,21.9,37.2,89,0.97,1.08,69.8,6.86,0,0.19,5.9,3291,21.34,101.27,2.2,11.8,,,7.7,22.1,40,54,nominal,regolith shovelling for shielding after a skipped meal
+264,130,26,131,76,98.6,22.0,37.21,88,0.99,0.98,69.7,6.84,0,0.25,4.9,3303,21.31,101.3,2.0,11.4,,,7.2,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+265,130,28,133,76,98.5,21.5,37.21,88,0.96,1.06,70.3,6.88,0,0.26,4.7,3305,21.3,101.31,1.9,12.7,,,8.1,22.1,40,54,nominal,regolith shovelling for shielding after a skipped meal
+266,131,28,133,77,98.1,21.5,37.23,88,1.02,1.04,70.0,6.94,0,0.19,2.5,3309,21.29,101.31,2.0,12.8,,,7.6,22.1,41,54,nominal,regolith shovelling for shielding after a skipped meal
+267,130,28,133,77,98.0,21.8,37.22,88,0.99,1.05,70.2,6.93,0,0.2,3.2,3306,21.33,101.3,2.0,13.6,,,7.3,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+268,128,28,134,78,97.9,21.5,37.19,88,1.03,1.1,69.7,6.82,0,0.17,3.9,3297,21.32,101.28,1.9,12.4,,,7.1,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+269,130,29,136,77,97.9,21.8,37.2,88,1.13,1.11,69.8,6.88,0,0.14,3.2,3300,21.33,101.28,1.9,13.7,,,7.4,22.2,42,55,nominal,regolith shovelling for shielding after a skipped meal
+270,130,27,136,76,98.2,21.7,37.2,88,1.04,1.06,69.9,7.11,0,0.14,2.8,3305,21.25,101.29,2.1,13.4,,,7.4,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+271,129,26,135,76,98.2,21.3,37.2,87,1.12,0.99,69.8,7.03,0,0.16,4.9,3283,21.29,101.3,2.2,11.6,,,7.2,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+272,129,28,134,77,98.3,21.8,37.19,87,1.03,0.98,69.1,7.2,0,0.18,4.2,3288,21.32,101.3,2.2,10.6,,,6.8,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+273,131,27,137,76,98.9,21.3,37.18,87,1.03,0.98,68.7,7.09,0,0.17,2.7,3298,21.27,101.29,2.2,10.9,,,6.9,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+274,130,26,137,76,98.3,20.7,37.18,87,0.98,1.06,68.4,7.15,0,0.17,3.3,3294,21.33,101.29,2.2,11.7,,,7.9,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+275,130,26,137,77,98.0,21.3,37.18,87,0.96,1.05,68.8,7.16,0,0.21,4.8,3281,21.34,101.32,2.1,12.2,,,7.7,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+276,131,25,137,77,98.5,21.6,37.18,87,0.95,1.05,69.1,7.01,0,0.23,3.1,3287,21.29,101.33,2.1,13.9,,,8.2,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+277,130,26,136,77,99.1,22.2,37.18,86,1.01,1.02,69.1,7.01,0,0.17,0.7,3285,21.24,101.35,2.1,11.3,,,8.5,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+278,130,25,136,76,99.2,22.2,37.19,86,0.97,1.06,69.2,7.12,0,0.17,1.9,3291,21.17,101.33,1.9,10.3,,,9.1,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+279,130,25,135,76,98.9,21.8,37.18,86,1.01,1.1,69.6,7.13,0,0.17,1.8,3308,21.18,101.3,1.8,11.2,,,9.1,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+280,130,24,135,76,98.4,21.5,37.19,86,0.98,1.05,69.3,7.09,0,0.17,1.7,3299,21.13,101.3,1.7,9.4,,,9.0,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+281,130,24,135,76,97.9,21.4,37.18,86,0.97,1.05,69.2,7.1,0,0.2,2.5,3286,21.19,101.3,1.8,12.7,,,9.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+282,129,25,136,75,98.2,21.8,37.18,86,1.03,1.0,69.3,7.0,0,0.18,4.3,3287,21.22,101.3,2.0,13.8,,,9.8,22.1,41,57,nominal,regolith shovelling for shielding after a skipped meal
+283,127,26,134,76,98.3,21.8,37.18,86,1.04,0.94,69.9,7.15,0,0.17,3.9,3287,21.21,101.27,2.0,15.1,,,8.9,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+284,128,25,133,75,98.0,21.7,37.17,86,0.96,0.94,70.1,7.15,0,0.13,4.1,3284,21.19,101.28,2.2,15.8,,,8.1,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+285,129,25,133,75,98.1,21.8,37.16,86,0.97,0.92,69.5,7.14,0,0.17,4.2,3296,21.22,101.27,2.0,14.4,,,6.8,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+286,130,24,132,74,98.2,22.0,37.16,86,1.08,0.99,70.3,7.2,0,0.19,2.9,3312,21.2,101.28,2.3,11.7,,,6.8,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+287,130,25,131,75,98.0,21.9,37.15,85,1.03,1.05,70.7,7.14,0,0.17,3.6,3284,21.23,101.29,2.5,11.9,,,7.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+288,129,24,131,74,98.0,22.5,37.16,85,1.05,0.95,71.0,7.29,0,0.2,3.4,3279,21.22,101.3,2.4,13.4,,,6.8,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+289,131,24,131,73,98.0,22.5,37.16,85,1.09,0.93,70.6,7.24,0,0.17,2.7,3276,21.19,101.29,2.3,15.0,,,7.0,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+290,129,25,131,74,97.5,22.5,37.15,84,1.13,1.02,70.4,7.15,0,0.19,2.4,3277,21.22,101.32,2.1,14.7,,,6.9,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+291,129,25,132,74,97.8,22.8,37.18,84,1.08,1.05,69.7,7.1,0,0.19,2.0,3293,21.18,101.32,2.4,12.4,,,7.1,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+292,128,25,131,74,97.2,22.4,37.18,84,1.06,1.07,68.4,7.25,0,0.2,2.1,3298,21.18,101.33,2.3,12.4,,,7.3,22.3,42,57,nominal,regolith shovelling for shielding after a skipped meal
+293,127,24,130,74,97.7,21.9,37.18,84,1.06,1.07,68.1,7.32,0,0.23,3.6,3310,21.17,101.33,2.3,12.4,,,7.3,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+294,126,24,130,73,97.7,22.0,37.17,84,0.95,1.04,68.2,7.44,0,0.2,5.9,3298,21.19,101.34,2.4,13.3,,,7.5,22.3,41,58,nominal,regolith shovelling for shielding after a skipped meal
+295,126,23,132,73,98.0,21.8,37.18,84,1.07,1.13,69.1,7.5,0,0.2,3.8,3284,21.23,101.34,2.3,17.5,,,7.4,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+296,126,24,134,72,97.9,22.8,37.18,84,1.0,1.04,69.3,7.25,0,0.17,2.3,3286,21.22,101.35,2.3,15.6,,,8.0,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+297,126,23,133,73,97.8,23.1,37.17,84,1.03,1.03,69.7,7.06,0,0.17,1.9,3281,21.26,101.33,1.9,14.5,,,7.2,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+298,126,22,132,73,98.3,22.6,37.17,84,1.01,1.01,69.3,7.11,0,0.15,3.1,3281,21.26,101.34,2.3,13.7,,,7.1,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+299,126,22,132,73,98.1,22.5,37.15,84,0.94,0.99,68.9,7.17,0,0.16,2.6,3266,21.21,101.36,2.3,13.3,,,6.9,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+300,126,24,130,73,97.7,21.9,37.15,84,0.96,1.0,68.7,7.13,0,0.13,3.8,3267,21.17,101.39,2.4,13.7,,,8.2,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+301,127,23,131,74,97.9,21.7,37.15,84,0.97,0.96,69.1,7.2,0,0.19,4.1,3263,21.19,101.39,2.3,11.3,,,7.6,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+302,125,24,130,74,98.2,22.3,37.15,84,0.89,0.97,68.8,7.19,0,0.22,4.8,3274,21.2,101.42,2.3,11.9,,,7.0,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+303,126,23,131,74,98.3,23.0,37.14,84,0.89,0.96,68.5,7.35,0,0.24,3.1,3267,21.18,101.44,2.5,12.0,,,7.0,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+304,128,24,131,73,98.2,23.0,37.13,83,0.87,0.99,68.6,7.28,0,0.21,5.3,3276,21.23,101.42,2.4,11.8,,,6.8,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+305,128,24,132,73,98.2,22.7,37.12,83,0.95,0.92,68.6,7.24,0,0.22,2.8,3277,21.25,101.41,2.5,12.7,,,6.7,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+306,127,26,131,74,98.3,22.9,37.13,83,0.95,0.92,68.7,7.36,0,0.25,3.7,3278,21.18,101.4,2.5,14.9,,,7.6,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+307,124,27,131,75,98.0,22.7,37.14,82,1.02,1.01,69.8,7.41,0,0.21,3.7,3291,21.24,101.4,2.4,14.1,,,6.8,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+308,125,27,131,74,98.0,22.0,37.14,82,1.01,0.94,69.6,7.36,0,0.23,3.6,3278,21.28,101.38,2.1,14.4,,,6.3,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+309,127,27,131,76,97.9,22.0,37.13,82,1.02,1.04,68.7,7.29,0,0.23,5.1,3283,21.25,101.37,2.0,12.3,,,6.6,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+310,126,29,130,76,98.2,22.0,37.15,82,0.95,1.12,68.1,7.35,0,0.2,4.5,3281,21.33,101.37,1.8,15.0,,,6.8,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+311,125,29,129,76,98.1,21.9,37.15,82,0.96,1.09,67.0,7.28,0,0.19,4.6,3276,21.32,101.37,1.8,14.1,,,6.7,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+312,125,29,129,77,98.2,22.4,37.16,82,1.05,1.07,66.8,7.16,0,0.17,4.5,3290,21.32,101.34,2.0,14.3,,,7.0,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+313,126,29,129,78,98.5,22.8,37.15,82,1.13,1.0,67.4,7.24,0,0.13,4.4,3286,21.3,101.33,1.8,13.0,,,7.4,22.3,42,56,nominal,regolith shovelling for shielding after a skipped meal
+314,127,30,129,77,98.3,22.0,37.14,82,1.08,0.96,68.0,7.3,0,0.15,5.8,3292,21.31,101.3,1.8,13.0,,,7.8,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+315,127,29,130,77,98.6,22.1,37.16,82,1.13,1.0,69.0,7.11,0,0.17,5.7,3288,21.29,101.31,1.9,12.9,,,8.1,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+316,127,28,131,77,98.3,21.9,37.15,82,1.02,1.0,68.5,7.37,0,0.17,4.2,3285,21.33,101.31,1.9,14.8,,,8.0,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+317,128,29,131,76,98.7,21.9,37.17,82,1.05,0.94,68.7,7.29,0,0.18,1.7,3297,21.28,101.35,1.7,15.2,,,7.5,22.3,40,56,nominal,regolith shovelling for shielding after a skipped meal
+318,127,28,131,75,98.1,22.0,37.17,82,1.01,0.93,69.0,7.36,0,0.18,2.9,3278,21.3,101.37,2.0,14.6,,,8.2,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+319,128,27,131,75,97.4,22.3,37.17,82,0.94,1.0,68.7,7.33,0,0.17,2.2,3297,21.34,101.33,2.0,14.8,,,7.6,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+320,128,27,130,75,97.6,22.0,37.15,82,1.0,1.06,69.4,7.32,0,0.11,2.2,3306,21.34,101.33,1.7,14.0,,,8.5,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+321,127,26,131,75,97.6,22.0,37.16,81,1.01,1.04,69.9,7.36,0,0.14,3.3,3304,21.33,101.32,1.9,14.4,,,8.7,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+322,126,25,130,74,98.0,22.1,37.16,81,1.01,1.03,69.5,7.3,0,0.14,3.5,3307,21.33,101.33,1.9,15.2,,,8.0,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+323,126,26,131,74,97.8,22.4,37.15,81,1.09,1.05,69.6,7.15,0,0.18,5.0,3319,21.33,101.34,1.9,14.6,,,7.7,22.3,40,56,nominal,regolith shovelling for shielding after a skipped meal
+324,126,24,132,74,97.8,22.3,37.15,81,1.02,1.09,69.6,7.18,0,0.16,2.7,3309,21.29,101.32,2.0,14.7,,,7.6,22.3,41,57,nominal,regolith shovelling for shielding after a skipped meal
+325,127,26,133,73,98.0,22.6,37.15,81,1.09,1.03,70.2,7.28,0,0.21,3.5,3304,21.34,101.34,2.0,15.1,,,7.7,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+326,127,26,133,72,97.4,23.3,37.15,81,1.0,1.05,70.9,7.37,0,0.19,1.9,3294,21.38,101.32,2.2,13.0,,,7.2,22.3,41,58,nominal,regolith shovelling for shielding after a skipped meal
+327,127,25,135,73,97.9,23.5,37.15,81,0.92,1.01,71.0,7.31,0,0.21,3.0,3304,21.38,101.31,2.3,11.6,,,6.5,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+328,127,25,134,73,98.2,22.5,37.15,81,0.96,1.04,71.1,7.19,0,0.2,4.2,3293,21.37,101.31,2.3,12.6,,,6.4,22.2,40,57,nominal,regolith shovelling for shielding after a skipped meal
+329,128,25,135,75,98.1,22.6,37.17,80,1.09,1.03,70.4,7.35,0,0.19,3.2,3299,21.41,101.29,2.2,12.3,,,7.5,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+330,128,25,135,75,98.1,22.7,37.16,80,0.94,1.03,69.7,7.29,0,0.15,3.1,3278,21.37,101.29,2.3,12.5,,,7.6,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+331,129,24,134,75,98.3,22.3,37.16,80,0.97,1.05,69.4,7.31,0,0.17,4.3,3301,21.37,101.27,2.5,13.0,,,8.3,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+332,129,25,132,76,98.1,22.8,37.16,80,1.04,0.99,68.9,7.42,0,0.16,2.6,3293,21.35,101.28,2.5,14.2,,,7.5,22.4,40,56,nominal,regolith shovelling for shielding after a skipped meal
+333,128,25,132,75,98.2,22.3,37.17,80,0.99,0.97,69.1,7.38,0,0.17,2.8,3299,21.34,101.28,2.4,13.2,,,7.2,22.3,40,57,nominal,regolith shovelling for shielding after a skipped meal
+334,128,25,132,75,98.5,22.4,37.17,80,0.92,1.04,70.1,7.29,0,0.14,3.2,3308,21.34,101.28,2.4,13.2,,,7.3,22.3,40,56,nominal,regolith shovelling for shielding after a skipped meal
+335,130,26,134,75,98.1,22.3,37.17,79,0.96,0.98,69.8,7.46,0,0.15,2.5,3311,21.35,101.27,2.5,13.5,,,7.2,22.3,40,56,nominal,regolith shovelling for shielding after a skipped meal
+336,129,26,133,75,98.2,22.1,37.17,78,0.93,1.02,69.4,7.43,0,0.17,3.2,3295,21.35,101.29,2.4,13.0,,,7.4,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+337,128,26,134,76,98.3,21.4,37.18,78,0.98,1.1,69.3,7.38,0,0.14,4.0,3282,21.36,101.3,2.4,11.8,,,7.6,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+338,129,26,136,76,97.8,21.8,37.18,78,0.98,1.13,69.7,7.26,0,0.1,4.3,3278,21.35,101.29,2.3,11.7,,,7.2,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+339,128,26,136,76,97.1,22.0,37.19,77,0.99,1.14,69.8,7.27,0,0.08,4.5,3272,21.31,101.28,2.6,12.6,,,7.9,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+340,127,25,135,75,97.9,22.2,37.19,78,0.91,1.09,70.1,7.1,0,0.14,2.7,3262,21.29,101.3,2.8,13.7,,,8.8,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+341,128,25,135,74,97.8,22.3,37.19,78,0.89,1.13,70.9,7.09,0,0.17,1.5,3273,21.28,101.31,2.8,13.3,,,8.2,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+342,129,25,135,75,97.9,22.3,37.19,78,0.9,1.02,71.4,7.1,0,0.2,2.3,3293,21.31,101.3,2.7,12.0,,,8.2,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+343,128,24,136,74,97.6,22.5,37.21,77,0.95,0.99,71.0,7.22,0,0.19,1.9,3303,21.37,101.28,2.6,11.9,,,8.1,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+344,128,24,137,73,97.8,22.6,37.2,77,0.95,0.98,70.1,7.24,0,0.13,2.3,3291,21.35,101.27,2.4,10.7,,,7.8,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+345,128,25,136,72,97.8,23.2,37.2,77,1.01,1.04,70.0,7.16,0,0.17,1.6,3267,21.36,101.28,2.2,12.9,,,7.8,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+346,129,25,135,72,97.6,22.5,37.19,76,0.95,1.01,69.9,7.24,0,0.14,2.9,3256,21.38,101.29,2.1,13.5,,,7.9,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+347,128,25,134,73,97.3,22.4,37.19,77,1.02,1.04,69.7,7.35,0,0.16,3.7,3257,21.36,101.31,2.2,13.0,,,8.7,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+348,127,25,133,72,97.8,22.7,37.2,77,1.0,1.1,69.3,7.62,0,0.17,3.4,3248,21.33,101.32,2.0,13.8,,,8.8,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+349,127,25,133,71,97.5,23.1,37.21,77,0.94,1.09,69.7,7.49,0,0.16,2.9,3251,21.3,101.34,2.0,11.7,,,7.5,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+350,128,24,132,72,98.0,23.3,37.2,77,0.97,1.04,69.1,7.4,0,0.11,4.1,3246,21.3,101.34,2.1,12.1,,,7.2,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+351,127,23,133,73,98.1,23.3,37.2,77,1.02,1.16,68.7,7.51,0,0.13,3.5,3246,21.32,101.32,2.0,13.8,,,7.8,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+352,130,23,132,74,98.0,23.1,37.21,76,1.02,1.13,67.8,7.59,0,0.13,2.5,3252,21.3,101.31,2.0,12.5,,,8.0,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+353,129,22,132,74,98.2,23.0,37.21,76,1.03,0.97,68.1,7.56,0,0.14,3.6,3247,21.25,101.31,2.0,13.6,,,8.6,22.3,41,55,nominal,regolith shovelling for shielding after a skipped meal
+354,127,22,132,74,98.3,22.9,37.22,77,0.98,1.05,68.8,7.71,0,0.15,3.0,3238,21.21,101.32,2.1,12.4,,,8.7,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+355,127,21,131,74,98.3,22.1,37.22,77,0.99,1.07,69.2,7.57,0,0.15,1.5,3256,21.23,101.32,1.8,13.5,,,7.8,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+356,128,23,133,74,97.9,21.8,37.21,76,0.99,0.97,70.0,7.51,0,0.15,2.6,3245,21.24,101.32,1.7,15.0,,,7.5,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+357,128,22,134,73,97.9,21.8,37.21,76,0.99,0.96,70.5,7.56,0,0.16,2.9,3251,21.27,101.35,1.9,14.5,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+358,130,23,133,73,97.9,21.7,37.19,76,0.95,0.98,69.3,7.52,0,0.2,2.4,3219,21.23,101.32,1.9,13.9,,,8.3,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+359,130,23,133,73,97.8,21.7,37.18,76,1.01,0.97,69.3,7.21,0,0.17,1.7,3221,21.23,101.32,2.1,13.2,,,8.8,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+360,129,23,134,73,97.8,22.8,37.18,76,1.01,1.04,68.9,7.2,0,0.18,1.6,3211,21.24,101.31,2.1,13.8,,,7.9,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+361,128,24,132,73,97.7,22.1,37.19,76,0.98,1.13,69.6,7.17,0,0.18,1.6,3204,21.24,101.29,2.0,15.6,,,7.7,22.2,41,58,nominal,regolith shovelling for shielding after a skipped meal
+362,128,25,131,73,97.5,22.1,37.18,76,1.0,1.04,69.2,7.07,0,0.17,0.6,3219,21.24,101.3,1.8,16.5,,,8.3,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+363,127,25,130,72,97.3,21.9,37.18,76,0.97,1.02,69.2,6.91,0,0.12,1.8,3222,21.25,101.29,1.9,14.5,,,8.4,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+364,127,27,130,74,97.6,21.6,37.2,76,1.04,1.02,69.5,6.95,0,0.13,1.7,3248,21.24,101.3,1.9,13.9,,,8.7,22.2,41,57,nominal,regolith shovelling for shielding after a skipped meal
+365,125,26,131,74,97.4,22.3,37.18,76,0.97,1.02,70.0,6.93,0,0.16,1.8,3251,21.23,101.3,1.8,11.8,,,8.9,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+366,125,28,132,74,97.7,21.5,37.16,77,1.01,1.04,70.1,6.95,0,0.16,2.7,3266,21.27,101.28,1.8,11.8,,,8.4,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+367,125,28,132,73,97.3,21.1,37.15,77,0.98,1.05,70.2,6.94,0,0.1,2.3,3250,21.27,101.29,1.7,13.3,,,7.9,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+368,122,28,132,74,97.6,20.7,37.14,77,0.98,1.07,69.7,6.9,0,0.1,3.0,3260,21.27,101.26,1.8,12.9,,,7.9,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+369,121,28,131,74,97.3,20.4,37.14,76,0.95,1.02,69.7,6.77,0,0.1,4.6,3253,21.25,101.26,1.7,13.4,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+370,118,29,132,74,97.7,19.6,37.12,76,0.96,1.09,69.9,6.85,0,0.12,4.0,3259,21.25,101.23,1.5,12.4,,,7.0,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+371,118,30,132,73,97.7,19.9,37.1,76,0.98,1.03,69.6,6.73,0,0.18,2.9,3279,21.23,101.24,1.7,12.6,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+372,116,29,132,73,98.4,19.7,37.08,76,0.89,1.01,69.6,6.78,0,0.21,3.4,3278,21.21,101.25,1.8,13.0,,,8.0,22.2,42,56,nominal,regolith shovelling for shielding after a skipped meal
+373,115,31,131,73,98.7,19.4,37.08,75,0.96,1.02,69.8,6.78,0,0.16,4.0,3271,21.19,101.23,1.8,11.2,,,7.3,22.1,42,57,nominal,regolith shovelling for shielding after a skipped meal
+374,113,33,131,74,98.6,19.3,37.06,75,1.05,1.08,69.8,6.73,0,0.14,3.2,3264,21.21,101.24,1.7,13.1,,,6.7,22.1,42,57,nominal,regolith shovelling for shielding after a skipped meal
+375,110,34,130,74,98.1,19.0,37.05,75,1.06,1.02,69.7,6.59,0,0.17,5.3,3252,21.21,101.26,1.7,13.1,,,6.9,22.1,42,57,nominal,regolith shovelling for shielding after a skipped meal
+376,109,33,129,75,98.1,18.6,37.04,75,1.06,0.98,69.2,6.33,0,0.19,5.5,3263,21.24,101.27,1.8,11.5,,,7.4,22.1,42,56,nominal,regolith shovelling for shielding after a skipped meal
+377,106,34,127,76,98.6,18.3,37.03,75,1.08,1.02,69.0,6.21,0,0.16,4.0,3261,21.26,101.28,1.7,12.1,,,7.5,22.1,42,55,nominal,regolith shovelling for shielding after a skipped meal
+378,104,32,128,76,99.0,17.8,37.01,75,1.09,1.06,69.0,5.91,0,0.14,3.5,3263,21.28,101.29,1.8,12.2,,,7.7,22.1,42,56,nominal,regolith shovelling for shielding after a skipped meal
+379,101,34,126,76,99.0,17.9,37.0,75,0.96,1.06,69.0,5.89,0,0.14,3.9,3261,21.32,101.29,1.7,14.0,,,6.7,22.1,41,56,nominal,regolith shovelling for shielding after a skipped meal
+380,98,35,124,75,98.7,17.6,36.98,75,0.95,1.05,68.9,5.7,0,0.17,4.1,3259,21.38,101.28,2.0,11.8,,,6.8,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+381,96,35,123,74,98.5,16.8,36.97,75,0.99,1.05,69.0,5.75,0,0.15,3.6,3251,21.36,101.3,2.2,14.5,,,7.3,22.2,40,56,nominal,regolith shovelling for shielding after a skipped meal
+382,93,36,124,75,98.4,16.6,36.96,74,1.0,1.01,68.7,5.68,0,0.16,3.2,3233,21.36,101.32,2.1,15.1,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+383,90,37,123,75,98.0,16.5,36.94,74,1.07,0.95,68.8,5.39,0,0.16,4.8,3215,21.37,101.33,1.9,12.5,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+384,90,37,123,75,97.9,16.9,36.9,74,1.08,0.98,69.3,5.18,0,0.19,5.5,3203,21.36,101.33,1.9,13.2,,,7.5,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+385,88,37,122,75,97.3,16.7,36.88,74,1.01,0.98,69.5,5.25,0,0.15,5.7,3219,21.37,101.34,2.0,11.4,,,7.5,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+386,85,36,121,75,97.6,16.6,36.86,74,1.0,1.03,68.4,5.12,0,0.14,4.4,3212,21.35,101.34,2.0,13.2,,,6.9,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+387,82,38,120,74,97.6,16.3,36.82,74,1.01,1.03,69.0,5.21,0,0.15,3.1,3223,21.38,101.32,2.1,13.5,,,7.2,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+388,81,36,120,74,98.0,16.4,36.8,74,0.93,1.06,69.6,5.21,0,0.17,3.5,3246,21.31,101.32,2.3,14.1,,,7.9,22.3,41,56,nominal,regolith shovelling for shielding after a skipped meal
+389,82,37,119,74,97.8,15.3,36.79,74,0.97,0.92,69.8,5.05,0,0.1,3.3,3272,21.33,101.33,2.5,12.4,,,7.7,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+390,80,39,119,72,97.6,14.9,36.8,74,0.97,0.87,69.4,5.06,0,0.12,4.2,3270,21.33,101.3,2.6,11.1,,,7.7,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+391,78,40,119,72,97.7,14.3,36.78,74,0.85,0.89,69.6,4.99,0,0.12,5.5,3277,21.34,101.3,2.5,11.7,,,8.0,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+392,75,41,119,72,97.7,14.6,36.78,73,0.87,0.96,69.1,4.95,0,0.14,4.3,3288,21.41,101.31,2.5,11.9,,,6.9,22.2,40,55,nominal,regolith shovelling for shielding after a skipped meal
+393,75,45,118,72,98.2,14.6,36.78,73,0.99,0.97,69.0,5.0,0,0.12,2.2,3277,21.42,101.33,2.3,12.7,,,7.1,22.2,41,56,nominal,regolith shovelling for shielding after a skipped meal
+394,75,43,119,73,98.3,14.4,36.77,73,1.1,0.98,68.8,4.88,0,0.14,3.3,3272,21.41,101.32,2.2,9.8,,,7.2,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+395,76,46,119,73,97.8,15.2,36.75,73,1.11,0.9,69.2,4.84,0,0.14,3.3,3261,21.4,101.34,2.1,8.8,,,7.2,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+396,75,45,118,74,97.5,14.9,36.75,72,1.08,0.94,69.2,4.81,0,0.15,2.4,3258,21.33,101.35,2.2,7.6,,,7.7,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+397,73,44,119,73,97.5,14.7,36.76,72,1.07,1.03,68.8,4.67,0,0.19,1.9,3263,21.28,101.38,2.2,9.2,,,7.9,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+398,74,46,120,74,97.5,13.9,36.74,72,1.01,1.04,69.5,4.64,0,0.17,3.7,3257,21.27,101.39,2.1,10.6,,,7.4,22.2,41,55,nominal,regolith shovelling for shielding after a skipped meal
+399,74,45,122,74,98.0,14.2,36.73,71,1.06,1.06,69.9,4.55,0,0.15,2.4,3267,21.29,101.38,2.1,11.4,,,6.7,22.1,41,55,nominal,regolith shovelling for shielding after a skipped meal
+400,73,45,122,75,98.1,14.4,36.73,72,0.98,1.03,69.0,4.53,0,0.2,3.8,3246,21.23,101.36,2.0,12.4,,,7.6,22.1,41,55,nominal,post-exercise
+401,73,45,121,74,98.0,14.2,36.72,72,1.06,0.98,69.5,4.49,0,0.19,3.9,3235,21.29,101.33,2.1,14.0,,,7.5,22.1,41,55,nominal,post-exercise
+402,73,45,120,75,98.5,14.3,36.72,71,1.04,0.97,68.9,4.38,0,0.17,5.1,3243,21.26,101.31,2.0,13.9,,,7.4,22.1,41,56,nominal,post-exercise
+403,75,46,119,75,98.5,14.7,36.73,71,1.0,1.06,69.4,4.45,0,0.21,4.4,3234,21.3,101.3,2.2,15.3,,,6.9,22.1,40,56,nominal,post-exercise
+404,76,46,119,75,98.0,13.9,36.72,71,1.04,1.02,69.8,4.2,0,0.21,3.6,3213,21.27,101.32,2.1,15.4,,,6.5,22.1,40,57,nominal,post-exercise
+405,78,45,118,74,97.8,13.1,36.72,71,1.05,0.97,69.0,4.23,0,0.2,3.7,3219,21.28,101.31,2.0,15.8,,,6.2,22.1,41,57,nominal,post-exercise
+406,79,49,119,73,97.9,13.4,36.72,71,1.12,0.98,68.0,4.33,0,0.17,1.5,3227,21.29,101.31,1.7,14.3,,,6.6,22.1,40,57,nominal,post-exercise
+407,79,47,118,73,97.9,13.2,36.71,70,1.05,1.03,67.5,4.1,0,0.18,3.1,3214,21.29,101.33,1.6,14.1,,,7.1,22.1,40,56,nominal,post-exercise
+408,78,47,119,74,98.0,13.7,36.73,70,0.96,1.04,68.2,4.12,0,0.17,3.1,3204,21.27,101.32,1.5,14.5,,,6.8,22.1,41,56,nominal,post-exercise
+409,79,45,119,73,97.4,14.2,36.74,71,0.96,0.99,68.2,4.1,0,0.17,4.9,3203,21.28,101.32,1.4,12.9,,,7.0,22.2,41,55,nominal,post-exercise
+410,79,45,120,73,98.0,14.3,36.74,70,1.0,1.0,69.0,4.01,0,0.16,6.6,3204,21.25,101.34,1.5,12.7,,,7.2,22.1,41,56,nominal,post-exercise
+411,79,45,122,74,97.9,13.9,36.75,71,0.97,0.94,68.0,3.89,0,0.14,3.9,3213,21.22,101.34,1.5,11.7,,,6.8,22.1,41,56,nominal,post-exercise
+412,79,44,123,73,98.3,13.3,36.76,70,1.06,0.93,69.0,3.97,0,0.13,4.8,3213,21.24,101.36,1.8,12.5,,,6.1,22.1,41,56,nominal,post-exercise
+413,79,44,123,73,98.6,13.4,36.76,70,1.1,0.97,68.3,3.94,0,0.16,5.2,3200,21.28,101.34,2.2,11.1,,,7.0,22.2,42,56,nominal,post-exercise
+414,80,45,124,74,97.5,13.5,36.77,70,1.02,0.9,68.7,4.01,0,0.17,2.9,3191,21.23,101.33,2.3,12.3,,,6.8,22.2,42,56,nominal,post-exercise
+415,80,42,124,74,97.9,13.6,36.75,70,0.97,0.96,68.3,3.92,0,0.16,3.5,3208,21.29,101.31,2.1,10.2,,,6.8,22.1,41,57,nominal,post-exercise
+416,80,43,122,74,97.8,13.0,36.77,70,1.0,0.96,69.1,3.83,0,0.17,2.3,3212,21.25,101.3,2.2,10.8,,,7.3,22.1,41,56,nominal,post-exercise
+417,80,44,119,74,97.7,12.9,36.79,69,1.01,0.95,69.8,3.89,0,0.14,1.4,3203,21.26,101.3,2.2,9.7,,,7.2,22.2,41,56,hypoglycaemia_L1,post-exercise
+418,81,42,119,74,98.0,13.0,36.79,69,1.07,0.91,69.5,4.05,0,0.12,3.0,3213,21.26,101.3,2.1,12.1,,,8.3,22.2,42,56,hypoglycaemia_L1,post-exercise
+419,81,42,119,76,98.1,13.9,36.78,70,1.01,1.01,69.4,4.2,0,0.12,3.7,3223,21.23,101.31,2.1,12.9,,,8.8,22.2,41,56,hypoglycaemia_L1,post-exercise
+420,81,44,119,76,98.6,14.1,36.79,69,1.03,1.04,69.4,4.35,0,0.16,4.6,3216,21.22,101.32,2.1,12.6,,,8.6,22.1,41,56,hypoglycaemia_L1,post-exercise
+421,81,46,119,76,98.3,14.2,36.78,69,0.93,1.05,69.3,4.5,0,0.16,3.7,3234,21.19,101.3,2.3,14.1,,,8.8,22.1,41,56,hypoglycaemia_L1,post-exercise
+422,82,47,118,75,98.5,13.7,36.79,69,0.97,1.15,69.6,4.4,0,0.2,2.8,3226,21.23,101.3,2.4,13.1,,,9.5,22.1,41,57,hypoglycaemia_L1,post-exercise
+423,82,48,118,75,98.3,13.5,36.8,69,1.04,1.0,69.4,4.24,0,0.14,1.9,3218,21.2,101.32,2.4,13.4,,,9.5,22.1,41,57,hypoglycaemia_L1,post-exercise
+424,82,48,118,75,98.0,14.0,36.8,69,0.98,1.07,68.5,4.31,0,0.17,2.8,3240,21.22,101.31,2.3,13.6,,,8.6,22.1,41,57,hypoglycaemia_L1,post-exercise
+425,84,47,117,75,98.2,13.8,36.79,69,0.95,1.02,69.1,4.47,0,0.18,2.7,3218,21.24,101.28,2.2,12.8,,,8.4,22.1,41,57,hypoglycaemia_L1,post-exercise
+426,84,45,118,75,97.8,14.0,36.78,69,1.01,1.11,68.5,4.6,0,0.22,0.9,3228,21.27,101.28,2.1,12.8,,,7.9,22.1,41,56,hypoglycaemia_L1,post-exercise
+427,84,46,116,76,97.6,14.4,36.77,68,1.06,1.05,68.9,4.51,0,0.22,1.6,3244,21.22,101.31,2.1,12.0,,,7.4,22.1,41,56,hypoglycaemia_L1,post-exercise
+428,85,45,115,76,97.6,14.2,36.78,68,1.03,1.03,68.3,4.48,0,0.16,2.2,3267,21.21,101.32,1.9,11.2,,,7.1,22.1,41,56,hypoglycaemia_L1,post-exercise
+429,82,42,116,76,97.6,14.3,36.77,68,1.0,1.07,69.2,4.59,0,0.16,3.0,3259,21.27,101.31,1.9,10.6,,,7.6,22.1,41,57,hypoglycaemia_L1,post-exercise
+430,83,45,117,75,97.6,14.6,36.76,68,0.96,0.94,69.6,4.39,0,0.18,3.7,3257,21.29,101.31,1.7,12.1,,,7.7,22.1,41,56,hypoglycaemia_L1,post-exercise
+431,83,44,116,76,97.5,14.6,36.76,68,0.98,1.04,70.0,4.48,0,0.16,5.3,3262,21.32,101.3,2.1,12.5,,,7.4,22.1,42,56,hypoglycaemia_L1,post-exercise
+432,84,45,117,75,97.6,14.1,36.75,67,1.05,0.99,70.2,4.44,0,0.2,4.3,3261,21.3,101.3,2.1,13.2,,,7.0,22.1,42,56,hypoglycaemia_L1,post-exercise
+433,84,43,117,75,97.6,14.0,36.74,68,0.98,0.99,69.7,4.53,0,0.2,4.1,3256,21.31,101.31,1.9,11.8,,,6.3,22.1,42,55,hypoglycaemia_L1,post-exercise
+434,84,43,118,75,97.7,14.2,36.75,67,1.0,0.97,69.6,4.54,0,0.18,3.4,3260,21.28,101.32,1.9,13.5,,,7.0,22.1,42,55,hypoglycaemia_L1,post-exercise
+435,86,43,118,76,97.2,14.1,36.74,67,1.03,0.95,69.6,4.9,0,0.15,3.3,3247,21.2,101.31,1.9,14.1,,,6.9,22.1,42,54,hypoglycaemia_L1,post-exercise
+436,85,42,118,77,97.0,14.2,36.72,67,1.02,0.99,69.8,5.0,0,0.1,2.7,3244,21.21,101.3,1.8,12.5,,,6.9,22.1,42,55,hypoglycaemia_L1,post-exercise
+437,84,42,117,76,97.3,13.6,36.73,67,1.09,1.02,69.8,5.18,0,0.11,1.8,3250,21.22,101.29,1.7,14.8,,,6.2,22.1,41,55,hypoglycaemia_L1,post-exercise
+438,84,43,117,77,97.5,14.1,36.7,67,1.0,0.94,69.8,5.21,0,0.09,3.2,3252,21.25,101.29,1.8,12.7,,,6.2,22.1,42,55,hypoglycaemia_L1,post-exercise
+439,81,44,117,76,97.4,14.4,36.7,67,1.0,0.95,69.6,5.42,0,0.12,2.8,3258,21.29,101.28,1.8,14.2,,,6.6,22.1,42,55,hypoglycaemia_L1,post-exercise
+440,82,42,116,75,97.7,14.4,36.69,67,1.06,1.01,69.2,5.3,0,0.14,3.8,3263,21.29,101.29,1.9,13.6,,,6.9,22.1,42,55,hypoglycaemia_L1,post-exercise
+441,82,43,117,75,98.0,14.1,36.69,67,0.99,1.0,68.8,5.49,0,0.13,2.7,3281,21.33,101.3,1.7,15.2,,,7.4,22.1,42,55,hypoglycaemia_L1,post-exercise
+442,81,47,116,75,98.0,14.7,36.69,67,1.05,1.08,69.1,5.52,0,0.14,2.1,3263,21.39,101.32,1.7,14.6,,,7.5,22.2,42,55,hypoglycaemia_L1,post-exercise
+443,82,45,116,76,98.2,14.6,36.68,67,1.0,1.06,69.2,5.61,0,0.11,2.0,3250,21.45,101.29,1.7,14.5,,,7.4,22.2,43,55,hypoglycaemia_L1,post-exercise
+444,82,43,116,77,98.3,14.6,36.68,67,1.0,1.04,69.7,5.49,0,0.12,2.2,3254,21.38,101.28,1.7,13.5,,,7.8,22.2,43,55,hypoglycaemia_L1,post-exercise
+445,83,44,116,77,98.1,15.0,36.66,67,1.01,1.1,69.6,5.6,0,0.13,0.6,3249,21.37,101.27,1.6,13.9,,,7.4,22.2,42,56,hypoglycaemia_L1,post-exercise
+446,83,43,115,77,97.8,14.8,36.67,66,0.96,1.13,68.5,5.63,0,0.17,1.3,3256,21.36,101.26,1.7,15.2,,,7.6,22.2,42,56,hypoglycaemia_L1,post-exercise
+447,83,43,114,77,98.3,14.4,36.65,67,1.01,1.11,69.3,5.73,0,0.15,2.0,3269,21.37,101.3,1.4,15.3,,,7.1,22.2,42,56,hypoglycaemia_L1,post-exercise
+448,83,44,114,76,98.2,14.2,36.66,67,1.01,1.09,69.7,5.82,0,0.16,2.5,3281,21.29,101.33,1.5,15.9,,,7.1,22.2,42,56,hypoglycaemia_L1,post-exercise
+449,85,44,113,76,98.1,14.1,36.66,66,1.11,1.13,69.4,5.9,0,0.21,3.4,3254,21.32,101.35,1.5,17.2,,,8.1,22.2,42,56,hypoglycaemia_L1,post-exercise
+450,85,44,114,76,98.6,13.4,36.67,66,1.2,1.17,68.8,5.86,0,0.17,2.9,3277,21.34,101.32,1.4,15.3,,,8.2,22.2,41,57,hypoglycaemia_L1,post-exercise
+451,87,43,115,76,98.8,13.3,36.69,66,1.24,1.16,69.0,5.8,0,0.13,1.2,3300,21.3,101.33,1.6,13.6,,,8.9,22.2,41,57,hypoglycaemia_L1,post-exercise
+452,87,44,117,75,98.5,13.5,36.7,66,1.26,1.17,69.0,5.89,0,0.14,3.3,3288,21.31,101.32,1.6,13.0,,,8.4,22.2,41,57,hypoglycaemia_L1,post-exercise
+453,86,45,117,76,97.9,14.1,36.7,66,1.11,1.12,68.8,6.11,0,0.18,3.5,3294,21.31,101.32,1.8,13.1,,,7.6,22.2,42,58,hypoglycaemia_L1,post-exercise
+454,88,46,117,75,97.8,14.3,36.71,66,1.12,1.1,69.5,5.91,0,0.13,3.8,3307,21.32,101.3,1.6,11.8,,,8.0,22.2,42,58,hypoglycaemia_L1,post-exercise
+455,88,47,118,77,97.7,14.9,36.7,66,1.03,1.07,69.7,5.98,0,0.15,2.1,3311,21.33,101.32,1.5,12.7,,,7.3,22.2,42,58,hypoglycaemia_L1,post-exercise
+456,87,46,117,77,97.9,14.7,36.7,66,1.08,1.1,69.3,5.98,0,0.18,1.0,3317,21.33,101.33,1.5,13.3,,,5.9,22.2,42,58,hypoglycaemia_L1,post-exercise
+457,86,46,117,77,97.8,15.2,36.71,66,1.17,1.17,69.1,6.15,0,0.18,0.5,3333,21.35,101.32,1.7,14.5,,,6.2,22.2,42,58,hypoglycaemia_L1,post-exercise
+458,88,44,116,78,97.7,15.1,36.69,66,1.17,1.17,69.2,6.2,0,0.16,2.0,3329,21.34,101.32,1.8,12.6,,,7.1,22.2,41,57,hypoglycaemia_L1,post-exercise
+459,88,43,116,78,97.7,15.0,36.7,66,1.19,1.14,69.5,6.39,0,0.14,1.7,3302,21.37,101.33,1.5,13.7,,,6.7,22.3,41,57,hypoglycaemia_L1,post-exercise
+460,87,45,116,78,97.5,15.1,36.68,66,1.15,1.03,69.2,6.28,0,0.18,1.8,3305,21.38,101.35,1.6,13.0,,,6.8,22.2,41,57,hypoglycaemia_L1,post-exercise
+461,85,44,117,77,97.1,14.7,36.68,66,1.12,1.08,68.9,6.39,0,0.09,4.0,3308,21.35,101.37,1.4,12.7,,,7.9,22.2,41,57,hypoglycaemia_L1,post-exercise
+462,86,45,116,77,97.3,15.7,36.68,65,1.16,1.04,69.3,6.53,0,0.11,5.7,3299,21.33,101.37,1.5,13.1,,,7.8,22.2,41,57,hypoglycaemia_L1,post-exercise
+463,84,41,117,76,97.7,15.8,36.69,65,1.03,1.02,70.0,6.5,0,0.14,4.6,3311,21.32,101.35,1.4,12.8,,,6.9,22.2,41,56,hypoglycaemia_L1,post-exercise
+464,84,44,117,76,97.8,15.6,36.68,65,1.09,1.06,69.9,6.55,0,0.14,4.8,3302,21.28,101.36,1.5,13.3,,,7.5,22.2,41,57,hypoglycaemia_L1,post-exercise
+465,84,45,117,76,98.1,16.0,36.68,65,1.16,1.24,69.8,6.54,0,0.13,4.8,3288,21.33,101.36,1.6,13.1,,,7.7,22.2,41,57,hypoglycaemia_L1,post-exercise
+466,86,46,116,76,98.0,15.9,36.68,65,1.17,1.16,70.8,6.42,0,0.18,4.2,3287,21.36,101.36,1.5,11.9,,,8.0,22.2,41,56,hypoglycaemia_L1,post-exercise
+467,86,49,115,76,97.9,15.9,36.68,65,1.23,1.11,69.6,6.34,0,0.14,3.9,3270,21.39,101.34,1.7,13.2,,,7.6,22.2,41,56,hypoglycaemia_L1,post-exercise
+468,85,49,114,76,98.1,15.5,36.67,65,1.22,1.08,69.7,6.41,0,0.16,2.7,3270,21.41,101.31,1.8,12.7,,,7.2,22.2,41,55,hypoglycaemia_L1,post-exercise
+469,85,47,113,76,98.5,15.5,36.67,64,1.1,1.08,70.2,6.48,0,0.2,4.0,3270,21.39,101.3,1.8,13.5,,,7.5,22.2,41,55,hypoglycaemia_L1,post-exercise
+470,85,46,115,76,98.8,16.0,36.68,65,1.13,1.07,69.9,6.62,0,0.18,2.9,3293,21.44,101.28,1.9,15.1,,,8.5,22.2,41,55,hypoglycaemia_L1,post-exercise
+471,87,46,114,76,98.6,16.3,36.67,64,1.17,1.04,70.5,6.82,0,0.17,3.2,3282,21.47,101.29,1.8,13.9,,,7.9,22.2,41,55,hypoglycaemia_L1,post-exercise
+472,87,47,113,76,98.4,15.7,36.67,64,1.2,1.07,69.7,6.87,0,0.2,3.5,3308,21.48,101.29,1.9,13.5,,,8.1,22.2,41,55,hypoglycaemia_L1,post-exercise
+473,87,46,114,75,98.4,15.7,36.66,64,1.13,1.24,69.9,6.85,0,0.2,4.0,3295,21.46,101.27,2.0,12.5,,,7.9,22.2,41,54,hypoglycaemia_L1,post-exercise
+474,87,45,114,76,98.4,15.3,36.67,64,1.09,1.25,69.7,6.82,0,0.18,4.4,3300,21.47,101.29,1.9,12.0,,,7.7,22.2,42,55,hypoglycaemia_L1,post-exercise
+475,87,42,114,75,98.0,15.1,36.67,64,1.13,1.32,69.4,6.84,0,0.19,4.1,3315,21.46,101.29,2.3,11.8,,,8.3,22.1,41,55,hypoglycaemia_L1,post-exercise
+476,87,40,114,75,97.9,14.5,36.65,64,1.19,1.23,69.2,6.95,0,0.21,3.8,3326,21.41,101.27,2.4,12.8,,,8.3,22.2,41,56,hypoglycaemia_L1,post-exercise
+477,86,41,115,76,98.1,14.4,36.65,64,1.19,1.14,69.5,7.15,0,0.22,4.0,3311,21.38,101.27,2.4,11.3,,,7.3,22.2,41,56,hypoglycaemia_L1,post-exercise
+478,86,39,114,76,98.4,14.7,36.67,63,1.14,1.15,69.7,7.18,0,0.23,4.4,3334,21.38,101.28,2.1,12.6,,,7.3,22.2,41,56,hypoglycaemia_L1,post-exercise
+479,86,42,114,75,98.3,15.5,36.67,63,1.16,1.12,69.4,7.33,0,0.2,5.4,3334,21.39,101.28,2.2,12.6,,,7.2,22.2,41,56,hypoglycaemia_L1,post-exercise
+480,86,43,117,75,98.5,16.1,36.68,63,1.19,1.07,68.6,7.4,0,0.22,5.2,3320,21.37,101.29,2.1,11.8,,,6.8,22.2,41,55,hypoglycaemia_L1,post-exercise
+481,85,44,116,74,98.4,15.2,36.69,63,1.19,1.03,67.8,7.3,0,0.21,2.4,3334,21.35,101.28,2.2,11.5,,,7.5,22.2,41,56,hypoglycaemia_L1,post-exercise
+482,86,43,118,74,98.3,15.3,36.68,63,1.23,1.14,68.9,7.22,0,0.17,2.8,3340,21.36,101.27,2.5,11.7,,,7.4,22.2,41,56,hypoglycaemia_L1,post-exercise
+483,84,41,118,74,98.2,15.1,36.67,63,1.23,1.11,69.0,7.26,0,0.19,2.7,3351,21.32,101.28,2.6,11.3,,,7.2,22.2,41,56,hypoglycaemia_L1,post-exercise
+484,85,41,118,74,97.9,15.9,36.66,63,1.26,1.14,68.3,7.25,0,0.21,3.2,3335,21.33,101.3,2.4,12.2,,,7.3,22.2,41,56,hypoglycaemia_L1,post-exercise
+485,86,40,119,73,97.8,15.7,36.66,63,1.29,1.08,68.3,7.13,0,0.18,3.1,3328,21.33,101.32,2.4,11.9,,,7.6,22.2,41,55,hypoglycaemia_L1,post-exercise
+486,85,39,119,73,98.2,15.6,36.64,63,1.18,1.14,69.2,7.28,0,0.11,2.5,3324,21.29,101.32,2.4,13.4,,,8.3,22.2,41,55,hypoglycaemia_L1,post-exercise
+487,85,40,119,72,98.3,15.2,36.63,62,1.22,1.11,69.3,7.25,0,0.15,2.5,3326,21.3,101.34,2.7,12.6,,,7.1,22.2,41,55,hypoglycaemia_L1,post-exercise
+488,86,40,121,71,98.2,15.6,36.63,62,1.13,1.18,68.9,7.37,0,0.18,1.7,3310,21.3,101.33,2.6,12.0,,,7.0,22.2,41,56,hypoglycaemia_L1,post-exercise
+489,86,38,119,72,98.7,15.1,36.64,62,1.17,1.18,68.9,7.57,0,0.14,2.5,3311,21.28,101.32,2.4,12.5,,,6.4,22.2,41,57,hypoglycaemia_L1,post-exercise
+490,87,39,120,72,98.3,15.3,36.65,62,1.18,1.1,69.5,7.6,0,0.18,1.8,3309,21.31,101.34,2.4,10.8,,,7.2,22.2,41,56,hypoglycaemia_L1,post-exercise
+491,87,38,119,72,98.5,15.5,36.66,62,1.2,1.2,70.1,7.6,0,0.22,1.3,3277,21.28,101.35,2.4,13.2,,,7.0,22.2,41,56,hypoglycaemia_L1,post-exercise
+492,88,38,118,72,98.4,15.6,36.66,62,1.21,1.15,69.2,7.7,0,0.21,2.3,3273,21.27,101.34,2.4,13.6,,,7.8,22.2,41,56,hypoglycaemia_L1,post-exercise
+493,88,38,119,71,98.7,15.8,36.66,62,1.18,1.22,69.1,7.69,0,0.18,2.9,3271,21.3,101.32,2.2,13.3,,,7.2,22.2,42,56,hypoglycaemia_L1,post-exercise
+494,87,39,118,72,98.7,16.0,36.66,62,1.22,1.1,69.8,7.81,0,0.22,2.5,3283,21.31,101.34,2.0,13.9,,,7.2,22.2,41,56,hypoglycaemia_L1,post-exercise
+495,85,38,118,74,98.6,16.2,36.68,62,1.31,1.18,69.5,7.71,0,0.17,2.2,3286,21.31,101.33,1.9,14.3,,,8.2,22.2,41,56,hypoglycaemia_L1,post-exercise
+496,86,40,119,75,98.5,16.1,36.67,61,1.19,1.12,70.2,7.62,0,0.17,4.0,3287,21.29,101.33,1.9,11.9,,,7.7,22.2,41,56,hypoglycaemia_L1,post-exercise
+497,87,41,119,75,97.9,15.9,36.68,61,1.21,1.16,69.9,7.7,0,0.14,5.2,3303,21.24,101.32,1.8,11.8,,,7.8,22.2,41,55,hypoglycaemia_L1,post-exercise
+498,86,41,119,75,97.8,16.4,36.67,61,1.24,1.18,69.1,7.78,0,0.13,3.6,3297,21.3,101.33,2.0,14.0,,,8.3,22.2,41,55,hypoglycaemia_L1,post-exercise
+499,88,40,119,74,97.5,16.5,36.66,61,1.18,1.23,70.5,7.76,0,0.15,3.9,3312,21.3,101.34,2.1,13.8,,,7.3,22.2,42,55,hypoglycaemia_L1,post-exercise
+500,90,40,120,73,97.8,16.4,36.66,61,1.24,1.22,70.2,7.79,0,0.16,3.7,3312,21.31,101.34,2.1,13.1,,,7.3,22.1,41,55,hypoglycaemia_L1,post-exercise
+501,90,39,121,72,97.1,16.8,36.64,61,1.2,1.25,70.6,7.9,0,0.19,3.7,3331,21.37,101.34,2.2,13.4,,,7.6,22.2,41,55,hypoglycaemia_L1,post-exercise
+502,91,41,119,71,97.4,16.7,36.64,61,1.24,1.19,70.5,8.03,0,0.18,3.9,3331,21.38,101.34,2.0,14.5,,,7.5,22.2,41,55,hypoglycaemia_L1,post-exercise
+503,92,40,119,70,97.6,16.4,36.62,61,1.24,1.13,70.2,8.15,0,0.2,6.1,3332,21.36,101.35,2.3,13.1,,,7.9,22.2,41,55,hypoglycaemia_L1,post-exercise
+504,92,43,118,70,97.5,16.5,36.63,61,1.34,1.17,70.5,8.19,0,0.2,5.6,3358,21.4,101.33,2.3,11.8,,,7.6,22.1,41,55,hypoglycaemia_L1,post-exercise
+505,90,41,118,70,97.6,16.4,36.64,61,1.26,1.2,70.6,8.14,0,0.15,5.0,3356,21.4,101.35,2.3,12.6,,,8.0,22.1,41,55,hypoglycaemia_L1,post-exercise
+506,90,40,118,71,98.3,16.5,36.64,61,1.25,1.15,70.9,7.97,0,0.15,3.2,3347,21.4,101.35,2.3,12.4,,,7.1,22.1,40,55,hypoglycaemia_L1,post-exercise
+507,90,39,119,73,97.8,16.9,36.63,61,1.26,1.22,71.2,8.12,0,0.13,3.1,3357,21.32,101.34,2.3,13.0,,,7.9,22.2,41,56,hypoglycaemia_L1,post-exercise
+508,90,42,118,73,98.3,16.7,36.63,61,1.21,1.21,70.8,8.16,0,0.16,1.6,3355,21.29,101.33,2.2,13.1,,,7.9,22.2,41,55,hypoglycaemia_L1,post-exercise
+509,90,41,119,72,97.6,17.2,36.62,60,1.24,1.15,71.1,8.08,0,0.14,2.8,3357,21.28,101.31,2.2,13.3,,,7.8,22.2,41,56,hypoglycaemia_L1,post-exercise
+510,89,44,118,73,97.4,17.0,36.62,60,1.2,1.19,70.1,8.14,0,0.16,2.2,3342,21.31,101.29,1.9,13.0,,,7.6,22.2,41,56,hypoglycaemia_L1,post-exercise
+511,90,39,118,73,97.7,17.1,36.6,60,1.19,1.1,70.0,8.25,0,0.21,5.4,3348,21.28,101.33,2.0,12.6,,,8.0,22.1,41,55,hypoglycaemia_L1,post-exercise
+512,89,40,118,73,97.9,16.8,36.61,60,1.27,1.13,70.2,8.29,0,0.18,2.9,3335,21.24,101.34,1.9,11.4,,,7.2,22.1,40,54,hypoglycaemia_L1,post-exercise
+513,89,40,118,73,98.3,16.6,36.6,60,1.13,1.11,70.8,8.38,0,0.13,2.5,3302,21.27,101.36,2.1,10.7,,,7.0,22.1,40,54,hypoglycaemia_L1,post-exercise
+514,90,39,117,73,98.0,17.0,36.6,60,1.16,1.08,70.5,8.44,0,0.13,3.1,3301,21.19,101.36,2.0,12.2,,,6.8,22.2,41,54,hypoglycaemia_L1,post-exercise
+515,91,37,118,74,97.8,16.4,36.59,60,1.2,1.13,71.1,8.56,0,0.13,2.7,3309,21.21,101.38,2.1,12.8,,,6.6,22.2,41,54,hypoglycaemia_L1,post-exercise
+516,89,39,118,74,98.0,16.3,36.58,60,1.23,1.21,70.6,8.74,0,0.12,2.1,3305,21.25,101.39,2.0,12.0,,,6.5,22.2,40,55,hypoglycaemia_L1,post-exercise
+517,88,38,120,73,98.4,16.5,36.57,60,1.31,1.17,69.9,8.81,0,0.11,3.9,3301,21.22,101.41,2.1,11.4,,,7.6,22.2,41,56,hypoglycaemia_L1,post-exercise
+518,89,38,120,73,98.0,16.5,36.56,59,1.3,1.2,69.1,8.84,0,0.17,1.6,3305,21.19,101.41,2.1,10.0,,,7.2,22.2,41,55,hypoglycaemia_L1,post-exercise
+519,90,38,120,73,98.0,16.2,36.55,60,1.35,1.15,69.1,8.93,0,0.17,2.6,3298,21.22,101.4,2.0,11.0,,,7.2,22.2,41,55,hypoglycaemia_L1,post-exercise
+520,89,38,120,73,98.0,16.1,36.54,60,1.29,1.09,69.5,8.83,0,0.18,3.5,3275,21.23,101.39,2.0,10.7,,,7.2,22.3,41,55,hypoglycaemia_L1,post-exercise
+521,89,39,121,73,98.5,16.3,36.54,59,1.28,1.18,69.2,8.88,0,0.25,4.1,3270,21.22,101.38,2.0,11.1,,,7.8,22.3,40,55,hypoglycaemia_L1,post-exercise
+522,89,36,121,74,98.5,16.8,36.54,60,1.24,1.28,70.4,8.76,0,0.26,5.2,3270,21.23,101.38,2.3,13.1,,,8.0,22.3,41,56,hypoglycaemia_L1,post-exercise
+523,89,38,121,74,98.0,16.9,36.54,60,1.26,1.21,70.0,8.85,0,0.2,3.0,3287,21.23,101.41,2.3,14.2,,,8.1,22.3,40,55,hypoglycaemia_L1,post-exercise
+524,90,39,120,73,97.9,16.6,36.53,59,1.33,1.22,69.4,9.06,0,0.16,4.6,3266,21.26,101.43,2.1,13.1,,,7.2,22.3,40,56,hypoglycaemia_L1,post-exercise
+525,90,38,120,74,98.4,16.7,36.52,59,1.28,1.31,69.9,9.25,0,0.18,4.6,3248,21.29,101.41,2.0,11.2,,,7.8,22.3,40,56,hypoglycaemia_L1,post-exercise
+526,90,39,120,74,98.6,16.7,36.52,59,1.3,1.3,69.8,9.35,0,0.17,3.4,3238,21.3,101.44,1.7,11.0,,,8.0,22.3,40,56,hypoglycaemia_L1,post-exercise
+527,91,38,120,75,98.5,16.2,36.52,59,1.26,1.37,69.9,9.42,0,0.2,4.6,3255,21.31,101.44,1.6,10.1,,,7.6,22.2,40,56,hypoglycaemia_L1,post-exercise
+528,91,37,121,75,98.7,16.3,36.53,59,1.29,1.36,69.7,9.53,0,0.2,4.2,3249,21.27,101.41,1.4,9.6,,,6.8,22.3,40,56,hypoglycaemia_L1,post-exercise
+529,90,37,121,74,99.0,16.2,36.53,59,1.36,1.33,70.4,9.65,0,0.18,4.5,3211,21.29,101.39,1.7,9.6,,,7.0,22.3,41,55,hypoglycaemia_L1,post-exercise
+530,92,36,120,74,98.9,16.4,36.54,59,1.33,1.2,70.9,9.72,0,0.2,2.9,3221,21.29,101.38,1.6,10.2,,,7.3,22.3,41,56,hypoglycaemia_L1,post-exercise
+531,92,35,119,74,98.5,16.7,36.55,59,1.33,1.19,70.0,9.76,0,0.25,3.2,3251,21.28,101.37,1.6,11.4,,,7.6,22.3,41,55,hypoglycaemia_L1,post-exercise
+532,92,34,119,74,98.3,16.6,36.54,59,1.34,1.15,69.7,9.84,0,0.24,1.4,3253,21.28,101.37,1.7,12.1,,,7.9,22.3,41,56,hypoglycaemia_L1,post-exercise
+533,91,36,118,74,98.3,16.2,36.54,59,1.44,1.27,68.9,9.69,0,0.18,2.7,3251,21.27,101.35,1.8,12.4,,,6.7,22.3,41,57,hypoglycaemia_L1,post-exercise
+534,92,37,117,74,98.0,17.0,36.54,59,1.37,1.29,69.2,9.6,0,0.15,3.3,3249,21.29,101.34,1.5,12.4,,,6.2,22.3,41,57,hypoglycaemia_L1,post-exercise
+535,93,37,117,73,97.7,16.6,36.56,59,1.35,1.28,69.7,9.67,0,0.14,2.4,3239,21.3,101.34,1.5,11.6,,,6.4,22.4,41,57,hypoglycaemia_L1,post-exercise
+536,93,35,117,74,97.2,17.1,36.55,59,1.37,1.21,69.5,9.62,0,0.17,2.3,3228,21.33,101.32,1.6,10.7,,,6.9,22.3,41,57,hypoglycaemia_L1,post-exercise
+537,92,32,117,73,97.8,17.0,36.56,59,1.36,1.31,69.4,9.75,0,0.1,2.9,3238,21.31,101.3,1.6,14.0,,,7.0,22.3,41,57,hypoglycaemia_L1,post-exercise
+538,92,34,117,73,97.9,16.7,36.57,59,1.4,1.27,69.6,9.79,0,0.13,1.6,3244,21.38,101.29,1.6,12.6,,,7.1,22.3,41,57,hypoglycaemia_L1,post-exercise
+539,93,34,116,74,98.4,16.1,36.57,58,1.44,1.33,69.1,9.84,0,0.21,3.7,3267,21.4,101.29,1.6,13.2,,,6.5,22.4,40,57,hypoglycaemia_L1,post-exercise
+540,93,36,116,74,98.0,16.6,36.56,59,1.46,1.28,69.6,9.96,0,0.21,3.3,3273,21.36,101.28,1.8,13.3,,,7.0,22.4,40,58,hypoglycaemia_L1,post-exercise
+541,91,36,117,74,98.5,17.1,36.56,59,1.51,1.29,70.2,10.03,0,0.17,3.2,3282,21.36,101.29,1.9,10.9,,,6.8,22.4,41,57,hypoglycaemia_L1,post-exercise
+542,91,34,114,73,98.7,16.9,36.57,58,1.47,1.21,70.0,10.17,0,0.15,2.5,3294,21.43,101.28,1.5,10.4,,,6.4,22.3,41,57,hypoglycaemia_L1,post-exercise
+543,92,35,114,72,98.4,16.9,36.55,58,1.38,1.22,70.6,10.27,0,0.12,3.4,3292,21.42,101.28,1.4,13.0,,,6.9,22.3,41,57,hypoglycaemia_L1,post-exercise
+544,92,33,114,72,98.3,17.0,36.54,58,1.46,1.28,69.5,10.25,0,0.15,3.8,3289,21.44,101.27,1.5,13.0,,,6.7,22.3,41,56,hypoglycaemia_L1,post-exercise
+545,92,36,113,73,97.7,16.8,36.53,58,1.45,1.28,69.7,10.39,0,0.18,4.1,3287,21.44,101.27,1.7,13.8,,,7.9,22.3,40,56,hypoglycaemia_L1,post-exercise
+546,92,37,114,73,97.7,16.7,36.52,58,1.55,1.27,69.6,10.26,0,0.2,4.1,3280,21.44,101.26,1.8,14.0,,,7.0,22.3,41,57,hypoglycaemia_L1,post-exercise
+547,92,38,113,73,97.6,16.5,36.53,58,1.45,1.12,69.4,10.34,0,0.2,3.7,3286,21.42,101.25,1.9,11.8,,,7.4,22.3,41,57,hypoglycaemia_L1,post-exercise
+548,93,38,111,73,97.9,16.4,36.53,57,1.46,1.26,69.8,10.41,0,0.21,2.0,3280,21.42,101.27,1.9,12.8,,,7.5,22.3,41,56,hypoglycaemia_L1,post-exercise
+549,92,38,110,72,97.5,16.5,36.53,57,1.44,1.36,69.5,10.27,0,0.24,2.1,3285,21.37,101.28,1.8,13.5,,,7.7,22.3,41,57,hypoglycaemia_L1,post-exercise
+550,92,37,112,73,98.1,15.8,36.52,57,1.32,1.38,69.3,10.46,0,0.19,2.5,3295,21.43,101.28,2.0,12.6,,,7.6,22.3,41,56,hypoglycaemia_L1,post-exercise
+551,90,39,114,73,98.3,16.4,36.52,57,1.38,1.34,70.6,10.63,0,0.18,2.8,3287,21.38,101.28,2.0,14.2,,,7.2,22.3,41,56,hypoglycaemia_L1,post-exercise
+552,91,39,113,73,98.2,15.9,36.51,57,1.39,1.3,69.8,10.76,0,0.18,4.6,3245,21.3,101.27,1.9,15.8,,,7.5,22.3,41,56,hypoglycaemia_L1,post-exercise
+553,93,39,114,74,97.7,15.9,36.52,57,1.43,1.29,70.3,10.79,0,0.2,3.7,3252,21.32,101.29,1.8,14.4,,,6.9,22.3,40,56,hypoglycaemia_L1,post-exercise
+554,92,38,116,74,97.6,17.0,36.51,57,1.35,1.31,70.3,10.97,0,0.15,2.9,3247,21.29,101.29,1.8,13.5,,,7.1,22.3,41,57,hypoglycaemia_L1,post-exercise
+555,91,36,117,73,97.7,17.3,36.52,56,1.26,1.28,70.1,10.93,0,0.17,3.7,3249,21.27,101.32,1.9,13.3,,,7.9,22.3,40,58,hypoglycaemia_L1,post-exercise
+556,92,37,118,73,97.8,17.3,36.54,56,1.25,1.22,69.8,10.97,0,0.15,2.7,3264,21.28,101.31,1.7,12.0,,,7.3,22.3,40,58,hypoglycaemia_L1,post-exercise
+557,94,38,117,73,97.4,17.3,36.55,56,1.28,1.3,70.6,10.65,0,0.12,3.5,3258,21.28,101.33,1.7,11.7,,,7.7,22.3,40,57,hypoglycaemia_L1,post-exercise
+558,95,38,116,74,97.9,17.2,36.55,56,1.37,1.31,69.2,10.73,0,0.15,5.7,3277,21.31,101.29,1.6,10.2,,,7.6,22.3,40,57,hypoglycaemia_L1,post-exercise
+559,94,37,118,74,97.4,16.8,36.53,56,1.44,1.36,69.5,10.8,0,0.14,4.0,3277,21.34,101.27,1.5,10.5,,,7.7,22.3,40,57,hypoglycaemia_L1,post-exercise
+560,95,37,118,74,97.2,16.9,36.52,56,1.51,1.34,68.7,10.81,0,0.17,5.2,3267,21.32,101.28,1.4,11.3,,,6.5,22.3,40,56,hypoglycaemia_L1,post-exercise
+561,96,35,117,74,97.4,16.5,36.5,56,1.43,1.37,69.2,10.91,0,0.19,4.4,3260,21.29,101.3,1.6,12.8,,,6.9,22.2,40,55,hypoglycaemia_L1,post-exercise
+562,97,36,117,75,97.4,16.7,36.51,56,1.38,1.29,69.1,10.96,0,0.21,4.5,3275,21.27,101.29,1.7,13.0,,,6.9,22.3,40,55,hypoglycaemia_L1,post-exercise
+563,97,36,117,74,96.8,16.4,36.49,56,1.35,1.32,68.8,11.09,0,0.2,2.1,3287,21.3,101.28,1.6,13.7,,,7.2,22.2,40,55,hypoglycaemia_L1,post-exercise
+564,98,36,118,74,97.2,16.5,36.5,56,1.39,1.28,69.0,11.06,0,0.18,2.7,3279,21.34,101.27,1.6,12.2,,,7.1,22.2,40,55,hypoglycaemia_L1,post-exercise
+565,98,35,118,75,97.4,16.9,36.5,56,1.36,1.19,69.1,11.08,0,0.09,1.0,3284,21.34,101.28,1.6,13.2,,,6.7,22.2,40,55,hypoglycaemia_L1,post-exercise
+566,99,34,118,75,97.5,17.2,36.49,56,1.32,1.18,69.5,11.05,0,0.16,2.3,3285,21.34,101.3,1.5,13.3,,,6.8,22.2,41,55,hypoglycaemia_L1,post-exercise
+567,99,36,119,75,97.6,16.9,36.5,56,1.28,1.19,69.6,10.76,0,0.1,4.9,3268,21.35,101.3,1.6,14.1,,,7.7,22.2,41,55,hypoglycaemia_L1,post-exercise
+568,98,34,119,75,98.3,17.6,36.5,56,1.31,1.22,69.7,10.75,0,0.08,3.7,3268,21.31,101.32,1.7,12.7,,,8.1,22.2,41,56,hypoglycaemia_L1,post-exercise
+569,98,37,119,76,98.1,17.4,36.49,56,1.33,1.23,69.4,10.81,0,0.15,5.0,3274,21.33,101.32,1.7,11.7,,,8.2,22.2,42,55,hypoglycaemia_L1,post-exercise
+570,98,37,119,76,98.1,17.7,36.47,56,1.37,1.32,70.1,10.8,0,0.16,4.2,3265,21.34,101.32,1.6,10.9,,,8.3,22.2,41,55,hypoglycaemia_L1,post-exercise
+571,97,36,119,77,97.9,17.4,36.46,56,1.37,1.24,69.6,10.85,0,0.2,2.2,3255,21.35,101.32,1.8,13.4,,,8.4,22.2,41,55,hypoglycaemia_L1,post-exercise
+572,97,37,118,77,97.9,17.0,36.46,56,1.3,1.3,69.4,10.93,0,0.21,4.5,3256,21.36,101.31,1.9,14.5,,,9.2,22.2,41,55,hypoglycaemia_L1,post-exercise
+573,95,35,118,76,98.3,16.7,36.46,57,1.39,1.29,69.3,10.82,0,0.2,3.1,3246,21.35,101.32,2.1,14.7,,,8.2,22.2,41,55,hypoglycaemia_L1,post-exercise
+574,94,36,119,75,97.9,17.3,36.46,57,1.33,1.36,69.5,10.98,0,0.18,4.4,3262,21.39,101.33,2.3,14.5,,,8.3,22.2,42,56,hypoglycaemia_L1,post-exercise
+575,92,35,118,75,97.7,17.3,36.46,56,1.35,1.34,69.8,10.87,0,0.14,3.8,3277,21.39,101.32,2.1,14.5,,,7.7,22.2,41,56,hypoglycaemia_L1,post-exercise
+576,93,36,118,75,97.5,17.4,36.47,56,1.39,1.29,69.2,10.94,0,0.16,3.1,3275,21.39,101.31,2.2,12.4,,,7.8,22.2,41,56,hypoglycaemia_L1,post-exercise
+577,92,37,118,75,97.8,17.3,36.49,56,1.43,1.4,69.9,10.96,0,0.16,2.7,3278,21.41,101.3,2.2,14.9,,,7.9,22.2,41,57,hypoglycaemia_L1,post-exercise
+578,94,38,118,75,98.0,16.5,36.49,56,1.39,1.31,70.3,10.98,0,0.17,2.9,3310,21.39,101.31,2.2,14.9,,,7.7,22.2,41,56,hypoglycaemia_L1,post-exercise
+579,94,39,117,77,98.2,16.7,36.49,56,1.41,1.32,70.5,11.25,0,0.2,2.1,3309,21.4,101.31,1.9,15.2,,,7.8,22.2,41,56,hypoglycaemia_L1,post-exercise
+580,95,40,117,77,97.9,16.9,36.48,56,1.4,1.24,69.8,11.22,0,0.2,2.2,3315,21.35,101.32,1.9,15.7,,,7.9,22.2,41,56,hypoglycaemia_L1,post-exercise
+581,96,38,117,76,98.0,17.4,36.48,55,1.35,1.33,69.7,11.33,0,0.21,2.4,3321,21.33,101.35,1.8,15.8,,,8.3,22.2,41,57,hypoglycaemia_L1,post-exercise
+582,97,38,117,76,97.7,17.2,36.46,55,1.36,1.33,69.9,11.36,0,0.21,2.4,3323,21.35,101.37,1.9,14.0,,,7.7,22.2,41,57,hypoglycaemia_L1,post-exercise
+583,97,37,118,75,97.7,17.5,36.47,55,1.34,1.25,69.1,11.22,0,0.2,2.1,3335,21.34,101.36,1.8,15.8,,,8.4,22.1,40,57,hypoglycaemia_L2,post-exercise
+584,97,36,119,76,98.2,17.2,36.47,55,1.38,1.31,69.2,11.31,0,0.16,4.0,3322,21.35,101.33,1.7,13.8,,,7.0,22.2,40,56,hypoglycaemia_L2,post-exercise
+585,96,34,118,77,97.9,17.1,36.47,55,1.39,1.41,69.2,11.37,0,0.14,2.8,3310,21.33,101.32,1.8,14.7,,,8.4,22.2,40,56,hypoglycaemia_L2,post-exercise
+586,95,36,118,77,98.5,17.6,36.46,55,1.36,1.4,69.3,11.3,0,0.14,3.0,3290,21.34,101.33,2.1,13.3,,,8.7,22.2,41,56,hypoglycaemia_L2,post-exercise
+587,97,35,118,78,98.5,17.6,36.45,55,1.34,1.41,70.0,11.21,0,0.16,4.4,3297,21.43,101.34,2.2,14.8,,,8.5,22.1,41,55,hypoglycaemia_L2,post-exercise
+588,97,37,116,78,98.3,17.2,36.47,55,1.45,1.36,70.1,11.3,0,0.16,3.9,3308,21.37,101.34,2.3,14.7,,,7.6,22.2,41,55,hypoglycaemia_L2,post-exercise
+589,97,36,118,79,98.1,17.8,36.45,55,1.4,1.29,69.6,11.31,0,0.17,4.3,3296,21.36,101.37,2.4,16.3,,,7.5,22.2,41,55,hypoglycaemia_L2,post-exercise
+590,97,35,116,79,97.9,18.1,36.45,55,1.39,1.33,70.2,11.39,0,0.13,3.6,3283,21.39,101.37,2.4,13.6,,,6.9,22.2,41,55,hypoglycaemia_L2,post-exercise
+591,96,37,118,78,98.1,17.7,36.45,55,1.38,1.36,69.2,11.49,0,0.13,2.4,3274,21.38,101.34,2.2,14.3,,,6.4,22.2,41,55,hypoglycaemia_L2,post-exercise
+592,95,36,117,78,97.7,18.1,36.46,55,1.35,1.33,69.2,11.41,0,0.19,2.5,3275,21.38,101.36,2.3,13.5,,,6.6,22.2,41,56,hypoglycaemia_L2,post-exercise
+593,96,37,116,78,97.6,18.1,36.46,55,1.39,1.35,69.1,11.43,0,0.14,2.7,3268,21.35,101.34,2.3,14.0,,,6.6,22.2,40,55,hypoglycaemia_L2,post-exercise
+594,95,38,115,78,98.1,18.9,36.47,55,1.42,1.35,69.4,11.31,0,0.15,4.0,3263,21.34,101.32,2.6,13.4,,,7.7,22.3,40,55,hypoglycaemia_L2,post-exercise
+595,96,39,115,77,97.9,19.5,36.48,55,1.45,1.41,69.6,11.25,0,0.16,4.2,3265,21.29,101.32,2.4,13.5,,,7.5,22.2,40,56,hypoglycaemia_L2,post-exercise
+596,96,40,115,76,97.7,19.3,36.46,55,1.43,1.41,70.0,11.42,0,0.15,4.0,3275,21.29,101.33,2.4,13.1,,,6.9,22.2,40,55,hypoglycaemia_L2,post-exercise
+597,97,41,114,77,96.9,19.1,36.47,55,1.37,1.42,69.9,11.49,0,0.14,3.3,3288,21.26,101.35,2.3,14.5,,,7.2,22.2,41,56,hypoglycaemia_L2,post-exercise
+598,97,40,113,77,96.4,18.9,36.47,55,1.39,1.34,70.1,11.45,0,0.17,3.5,3276,21.31,101.35,2.4,13.5,,,7.0,22.2,40,57,hypoglycaemia_L2,post-exercise
+599,96,40,113,77,96.7,18.6,36.47,54,1.36,1.29,69.6,11.44,0,0.19,4.4,3304,21.26,101.33,2.2,13.3,,,6.8,22.2,40,57,hypoglycaemia_L2,post-exercise
+600,96,39,113,77,97.6,19.0,36.47,54,1.44,1.36,69.1,11.32,0,0.23,2.2,3297,21.25,101.34,2.5,12.4,,,6.5,22.2,40,57,hypoglycaemia_L2,post-exercise
+601,97,38,115,78,97.9,18.1,36.46,54,1.48,1.31,69.1,11.36,0,0.2,2.3,3292,21.22,101.33,2.6,15.2,,,6.8,22.2,40,57,hypoglycaemia_L2,post-exercise
+602,97,37,115,78,98.0,17.4,36.46,54,1.46,1.26,69.6,11.41,0,0.19,4.6,3289,21.19,101.32,2.5,14.6,,,8.0,22.2,40,57,hypoglycaemia_L2,post-exercise
+603,96,36,115,76,98.0,17.2,36.44,53,1.5,1.3,70.4,11.35,0,0.16,3.2,3276,21.18,101.32,2.3,13.9,,,7.3,22.2,40,57,hypoglycaemia_L2,post-exercise
+604,96,35,114,75,97.6,17.1,36.43,54,1.5,1.29,71.2,11.25,0,0.21,4.0,3285,21.2,101.32,2.3,16.9,,,8.0,22.2,40,57,hypoglycaemia_L2,post-exercise
+605,96,37,114,75,97.9,17.0,36.45,54,1.43,1.35,71.3,11.34,0,0.19,4.5,3273,21.2,101.29,2.5,16.1,,,6.6,22.2,40,57,hypoglycaemia_L2,post-exercise
+606,95,36,114,73,98.2,17.0,36.46,53,1.46,1.37,70.0,11.35,0,0.18,2.9,3263,21.2,101.3,2.5,15.5,,,6.0,22.2,40,56,hypoglycaemia_L2,post-exercise
+607,95,37,114,74,98.2,16.7,36.47,53,1.48,1.41,70.2,11.33,0,0.17,3.6,3256,21.2,101.29,2.6,15.7,,,5.7,22.2,40,57,hypoglycaemia_L2,post-exercise
+608,95,35,116,75,97.7,16.6,36.47,53,1.47,1.41,69.9,11.26,0,0.16,4.7,3239,21.24,101.28,2.5,15.6,,,6.4,22.2,41,57,hypoglycaemia_L2,post-exercise
+609,96,34,116,74,98.2,16.6,36.48,53,1.52,1.39,70.3,11.43,0,0.12,1.5,3233,21.25,101.28,2.5,14.5,,,6.3,22.1,41,56,hypoglycaemia_L2,post-exercise
+610,95,34,115,74,98.9,16.7,36.49,53,1.46,1.35,69.8,11.53,0,0.2,2.9,3241,21.23,101.28,2.4,15.2,,,6.7,22.2,41,56,hypoglycaemia_L2,post-exercise
+611,95,34,115,74,98.9,16.6,36.47,53,1.42,1.37,70.6,11.47,0,0.18,2.3,3264,21.21,101.3,2.6,15.4,,,7.3,22.2,41,56,hypoglycaemia_L2,post-exercise
+612,95,34,116,73,98.7,17.3,36.46,53,1.36,1.4,70.7,11.66,0,0.15,3.1,3284,21.24,101.31,2.6,14.8,,,8.6,22.1,41,55,hypoglycaemia_L2,post-exercise
+613,94,34,116,74,98.3,17.4,36.46,53,1.43,1.41,69.6,11.7,0,0.19,4.3,3282,21.22,101.32,2.3,15.6,,,8.5,22.1,42,55,hypoglycaemia_L2,post-exercise
+614,93,35,116,74,97.9,18.1,36.45,52,1.38,1.35,69.6,11.76,0,0.19,4.0,3284,21.25,101.29,2.2,15.3,,,8.1,22.1,41,56,hypoglycaemia_L2,post-exercise
+615,95,36,115,75,97.3,18.0,36.45,53,1.45,1.34,70.0,11.78,0,0.16,5.5,3281,21.29,101.3,2.2,14.5,,,7.7,22.2,41,56,hypoglycaemia_L2,post-exercise
+616,96,37,115,75,98.0,17.2,36.44,52,1.45,1.33,69.8,11.86,0,0.15,4.9,3296,21.33,101.3,2.4,15.1,,,7.8,22.2,40,55,hypoglycaemia_L2,post-exercise
+617,97,37,116,75,98.1,17.8,36.45,53,1.47,1.32,69.9,11.87,0,0.2,4.5,3275,21.31,101.29,2.4,14.6,,,8.7,22.2,40,55,hypoglycaemia_L2,post-exercise
+618,97,37,115,75,98.4,17.7,36.45,53,1.44,1.35,70.5,11.85,0,0.18,3.8,3292,21.32,101.3,2.6,13.2,,,9.4,22.2,40,55,hypoglycaemia_L2,post-exercise
+619,98,37,115,75,97.9,17.8,36.45,53,1.48,1.35,70.2,11.94,0,0.17,2.9,3294,21.32,101.3,2.3,13.7,,,8.1,22.2,41,55,hypoglycaemia_L2,post-exercise
+620,98,35,114,74,97.3,17.5,36.43,52,1.39,1.29,69.4,11.98,0,0.09,2.3,3315,21.31,101.3,2.1,11.3,,,6.9,22.2,40,56,hypoglycaemia_L2,post-exercise
+621,98,33,116,74,97.0,17.0,36.43,52,1.4,1.27,69.2,11.99,0,0.1,2.9,3322,21.28,101.33,2.0,11.7,,,7.9,22.2,40,56,hypoglycaemia_L2,post-exercise
+622,97,35,115,75,97.5,16.8,36.43,52,1.42,1.32,69.4,12.05,0,0.13,4.3,3322,21.29,101.35,1.9,12.3,,,8.2,22.2,40,56,hypoglycaemia_L2,post-exercise
+623,97,31,117,74,98.0,17.7,36.43,52,1.38,1.38,69.1,11.96,0,0.15,5.5,3317,21.31,101.33,2.0,13.3,,,7.0,22.3,40,57,hypoglycaemia_L2,post-exercise
+624,96,31,116,74,98.2,17.5,36.43,52,1.4,1.41,68.9,12.0,0,0.13,3.9,3290,21.3,101.32,2.0,12.8,,,7.4,22.2,41,57,hypoglycaemia_L2,post-exercise
+625,96,31,116,73,98.0,17.6,36.44,51,1.37,1.44,68.7,12.12,0,0.16,3.0,3292,21.35,101.31,1.9,12.3,,,6.6,22.2,40,58,hypoglycaemia_L2,post-exercise
+626,97,32,115,72,98.2,17.4,36.44,51,1.52,1.35,68.6,12.1,0,0.21,3.0,3274,21.32,101.31,1.9,12.4,,,7.1,22.2,40,57,hypoglycaemia_L2,post-exercise
+627,98,33,116,72,98.7,18.2,36.44,51,1.5,1.32,69.2,12.04,0,0.14,2.1,3266,21.34,101.35,1.9,11.7,,,6.8,22.3,40,57,hypoglycaemia_L2,post-exercise
+628,98,32,116,73,98.5,18.9,36.43,51,1.46,1.3,69.0,12.05,0,0.2,2.8,3261,21.42,101.32,1.7,13.4,,,6.6,22.3,40,57,hypoglycaemia_L2,post-exercise
+629,97,33,115,73,97.6,18.8,36.44,51,1.48,1.32,68.5,12.11,0,0.24,2.5,3261,21.38,101.33,1.9,13.3,,,7.0,22.3,40,56,hypoglycaemia_L2,post-exercise
+630,99,34,115,72,97.5,18.3,36.46,51,1.49,1.3,68.8,12.2,0,0.21,2.0,3263,21.4,101.35,1.9,13.4,,,7.2,22.2,40,56,hypoglycaemia_L2,post-exercise
+631,98,35,115,72,98.2,17.6,36.46,51,1.5,1.28,68.9,12.37,0,0.21,3.1,3278,21.41,101.34,2.0,13.3,,,7.0,22.2,40,57,hypoglycaemia_L2,post-exercise
+632,98,33,115,72,97.8,17.8,36.47,51,1.42,1.26,69.0,12.18,0,0.23,4.9,3283,21.33,101.35,2.1,13.3,,,6.5,22.2,40,56,hypoglycaemia_L2,post-exercise
+633,98,32,115,72,97.3,17.9,36.47,51,1.52,1.28,68.9,12.04,0,0.19,3.7,3268,21.32,101.32,2.3,14.2,,,7.0,22.2,41,56,hypoglycaemia_L2,post-exercise
+634,98,31,114,74,97.8,18.6,36.47,51,1.51,1.25,69.5,12.11,0,0.11,3.5,3280,21.35,101.33,2.4,13.2,,,7.0,22.2,41,55,hypoglycaemia_L2,post-exercise
+635,98,33,113,73,97.1,18.4,36.46,51,1.41,1.37,69.8,12.03,0,0.19,2.3,3265,21.33,101.33,2.3,13.0,,,6.6,22.2,41,56,hypoglycaemia_L2,post-exercise
+636,99,34,115,73,97.4,18.7,36.44,51,1.47,1.38,69.1,11.91,0,0.21,1.9,3261,21.37,101.33,2.2,13.5,,,6.6,22.1,41,56,hypoglycaemia_L2,post-exercise
+637,100,36,115,73,97.6,18.2,36.45,51,1.43,1.36,69.3,11.74,0,0.16,2.2,3252,21.38,101.31,2.2,12.2,,,8.0,22.2,41,56,hypoglycaemia_L2,post-exercise
+638,100,36,116,72,97.5,17.8,36.45,51,1.41,1.44,69.1,11.85,0,0.17,1.7,3252,21.41,101.32,2.0,13.0,,,7.5,22.1,41,56,hypoglycaemia_L2,post-exercise
+639,99,35,115,74,97.3,17.6,36.45,52,1.42,1.5,70.1,12.02,0,0.19,3.5,3257,21.39,101.32,2.3,11.3,,,7.4,22.2,41,56,hypoglycaemia_L2,post-exercise
+640,100,35,115,74,97.5,18.2,36.45,51,1.4,1.46,70.0,12.14,0,0.2,4.7,3280,21.38,101.33,2.3,11.8,,,7.6,22.2,41,56,hypoglycaemia_L2,post-exercise
+641,101,33,115,75,98.1,18.0,36.45,51,1.46,1.4,70.5,12.26,0,0.17,4.4,3294,21.37,101.36,2.4,13.9,,,7.3,22.2,41,56,hypoglycaemia_L2,post-exercise
+642,100,33,116,75,98.2,18.7,36.45,51,1.48,1.4,70.1,12.46,0,0.16,3.5,3302,21.35,101.36,2.5,12.9,,,7.7,22.2,41,56,hypoglycaemia_L2,post-exercise
+643,99,34,115,73,98.2,18.6,36.44,51,1.39,1.44,69.1,12.26,0,0.18,3.3,3302,21.35,101.36,2.4,13.1,,,7.8,22.2,41,56,hypoglycaemia_L2,post-exercise
+644,98,35,115,74,98.3,18.5,36.44,52,1.33,1.41,68.5,12.18,0,0.2,2.0,3318,21.34,101.39,2.6,13.9,,,8.0,22.2,41,56,hypoglycaemia_L2,post-exercise
+645,98,36,116,73,98.0,17.8,36.42,52,1.39,1.43,69.1,12.02,0,0.17,2.6,3311,21.35,101.37,2.7,13.1,,,7.7,22.2,42,56,hypoglycaemia_L2,post-exercise
+646,96,37,117,72,98.4,17.8,36.42,53,1.48,1.4,69.4,12.13,0,0.17,3.0,3312,21.29,101.38,2.5,12.9,,,7.1,22.2,42,56,hypoglycaemia_L2,post-exercise
+647,98,37,118,73,98.3,17.5,36.41,53,1.42,1.47,68.8,12.23,0,0.15,1.9,3288,21.25,101.37,2.4,13.6,,,7.5,22.2,42,56,hypoglycaemia_L2,post-exercise
+648,97,37,117,73,98.3,17.4,36.41,52,1.48,1.49,69.2,12.15,0,0.22,2.9,3296,21.26,101.36,2.2,14.7,,,7.1,22.2,41,57,hypoglycaemia_L2,post-exercise
+649,97,35,117,74,98.4,17.7,36.41,53,1.48,1.41,69.7,12.27,0,0.19,2.1,3301,21.28,101.33,2.0,14.6,,,6.6,22.2,41,56,hypoglycaemia_L2,post-exercise
+650,96,33,119,74,98.3,17.3,36.42,52,1.55,1.45,69.4,12.24,0,0.22,2.3,3299,21.28,101.32,2.2,14.9,,,6.7,22.2,41,57,hypoglycaemia_L2,post-exercise
+651,96,35,119,74,98.4,17.8,36.42,52,1.48,1.42,69.1,12.37,0,0.23,2.7,3273,21.32,101.29,2.1,14.6,,,7.6,22.2,41,56,hypoglycaemia_L2,post-exercise
+652,97,36,120,74,98.3,18.2,36.41,52,1.48,1.43,69.3,12.26,0,0.24,3.0,3285,21.25,101.29,2.1,15.9,,,7.3,22.2,41,56,hypoglycaemia_L2,post-exercise
+653,98,37,121,76,97.6,17.9,36.42,52,1.4,1.41,69.7,12.34,0,0.17,3.2,3281,21.29,101.3,2.1,14.4,,,6.5,22.3,41,57,hypoglycaemia_L2,post-exercise
+654,97,39,119,75,97.8,17.3,36.43,52,1.37,1.35,70.0,12.33,0,0.17,2.6,3287,21.28,101.3,1.8,14.2,,,7.8,22.3,41,57,hypoglycaemia_L2,post-exercise
+655,98,40,119,76,97.7,17.5,36.45,52,1.37,1.35,70.0,12.27,0,0.15,2.4,3287,21.29,101.27,1.7,14.6,,,6.9,22.3,41,57,hypoglycaemia_L2,post-exercise
+656,100,39,117,75,97.9,17.4,36.45,52,1.37,1.41,71.0,12.28,0,0.21,2.3,3294,21.24,101.26,1.9,14.7,,,7.2,22.3,42,57,hypoglycaemia_L2,post-exercise
+657,100,39,117,76,98.2,16.8,36.45,52,1.49,1.43,70.7,12.42,0,0.19,2.2,3320,21.24,101.26,1.9,13.3,,,7.4,22.3,41,56,hypoglycaemia_L2,post-exercise
+658,101,39,117,76,97.6,17.1,36.44,52,1.48,1.37,71.0,12.61,0,0.17,4.2,3324,21.26,101.27,1.7,12.7,,,7.8,22.3,42,56,hypoglycaemia_L2,post-exercise
+659,100,38,117,75,97.3,17.6,36.44,52,1.48,1.43,70.0,12.71,0,0.17,3.6,3313,21.25,101.27,1.9,11.9,,,7.9,22.3,41,56,hypoglycaemia_L2,post-exercise
+660,99,37,116,75,97.3,17.2,36.45,52,1.43,1.44,69.2,12.48,0,0.17,5.3,3316,21.3,101.26,2.0,12.4,,,8.3,22.3,41,56,hypoglycaemia_L2,post-exercise
+661,100,36,115,74,97.8,17.3,36.46,52,1.39,1.43,70.2,12.48,0,0.11,4.2,3308,21.32,101.28,2.3,13.8,,,8.5,22.3,41,56,hypoglycaemia_L2,post-exercise
+662,101,37,115,75,97.1,18.3,36.47,53,1.42,1.52,70.7,12.38,0,0.13,4.1,3295,21.29,101.28,2.2,15.4,,,8.7,22.3,41,56,hypoglycaemia_L2,post-exercise
+663,100,38,115,74,97.3,18.3,36.48,52,1.5,1.49,69.8,12.42,0,0.1,4.7,3295,21.27,101.29,2.2,14.8,,,7.9,22.3,41,55,hypoglycaemia_L2,post-exercise
+664,98,38,115,75,97.3,18.1,36.48,52,1.48,1.45,69.4,12.53,0,0.12,3.0,3295,21.21,101.27,2.2,14.4,,,7.9,22.3,41,56,hypoglycaemia_L2,post-exercise
+665,98,39,117,75,97.2,18.4,36.46,52,1.43,1.45,69.9,12.61,0,0.15,2.6,3321,21.2,101.29,2.0,11.0,,,7.1,22.3,41,56,hypoglycaemia_L2,post-exercise
+666,97,39,115,76,97.5,17.8,36.46,52,1.49,1.42,70.3,12.57,0,0.19,3.2,3300,21.22,101.3,1.8,11.8,,,7.5,22.3,40,56,hypoglycaemia_L2,post-exercise
+667,96,40,116,76,98.0,16.9,36.46,53,1.42,1.44,70.0,12.56,0,0.25,3.8,3294,21.23,101.29,1.6,12.3,,,8.2,22.3,40,55,hypoglycaemia_L2,post-exercise
+668,96,38,117,75,97.8,15.9,36.46,52,1.48,1.33,70.0,12.42,0,0.24,3.7,3280,21.25,101.27,1.9,11.9,,,8.0,22.3,40,55,hypoglycaemia_L2,post-exercise
+669,97,36,117,76,98.0,16.0,36.46,53,1.48,1.32,70.9,12.31,0,0.13,3.3,3286,21.27,101.28,1.9,12.4,,,7.8,22.3,40,55,hypoglycaemia_L2,post-exercise
+670,97,31,117,75,97.3,16.2,36.47,53,1.45,1.29,71.0,12.35,0,0.13,1.8,3278,21.26,101.29,1.9,13.4,,,8.1,22.3,40,54,hypoglycaemia_L2,post-exercise
+671,98,31,115,75,97.6,16.9,36.46,53,1.51,1.39,71.2,12.46,0,0.17,2.7,3266,21.22,101.28,2.1,13.1,,,7.5,22.3,40,54,hypoglycaemia_L2,post-exercise
+672,97,32,115,74,98.0,17.6,36.46,53,1.56,1.46,71.4,12.55,0,0.18,2.7,3261,21.29,101.3,1.8,12.3,,,7.7,22.3,40,54,hypoglycaemia_L2,post-exercise
+673,97,32,116,75,97.7,17.7,36.47,53,1.49,1.4,70.5,12.64,0,0.18,2.8,3251,21.29,101.31,1.9,13.4,,,7.9,22.3,41,54,hypoglycaemia_L2,post-exercise
+674,97,33,116,73,97.9,17.7,36.46,53,1.57,1.22,70.5,12.59,0,0.19,2.6,3251,21.31,101.29,1.7,11.6,,,7.7,22.4,40,55,hypoglycaemia_L2,post-exercise
+675,97,33,117,73,98.0,17.8,36.45,54,1.47,1.27,70.3,12.51,0,0.18,3.6,3231,21.41,101.29,1.8,10.0,,,7.4,22.3,40,55,hypoglycaemia_L2,post-exercise
+676,98,33,118,72,97.8,18.5,36.45,54,1.5,1.27,70.5,12.32,0,0.16,4.6,3219,21.45,101.29,1.9,9.3,,,8.3,22.3,41,55,hypoglycaemia_L2,post-exercise
+677,98,33,118,72,97.4,18.1,36.44,54,1.44,1.36,71.0,12.31,0,0.16,4.3,3233,21.44,101.28,2.1,11.4,,,7.9,22.3,41,55,hypoglycaemia_L2,post-exercise
+678,98,36,118,73,97.2,18.8,36.44,53,1.42,1.44,70.0,12.21,0,0.18,0.8,3195,21.43,101.26,2.2,15.3,,,7.5,22.3,41,55,hypoglycaemia_L2,post-exercise
+679,98,33,119,73,97.7,18.8,36.47,53,1.38,1.37,70.0,12.17,0,0.16,3.2,3196,21.41,101.26,2.2,15.2,,,7.8,22.3,41,55,hypoglycaemia_L2,post-exercise
+680,99,35,119,73,97.5,18.2,36.45,53,1.41,1.3,70.5,12.17,0,0.16,3.6,3193,21.39,101.28,2.0,15.0,,,7.5,22.3,41,56,hypoglycaemia_L2,post-exercise
+681,99,34,119,73,97.8,18.2,36.43,54,1.44,1.32,70.8,11.99,0,0.18,4.0,3203,21.46,101.31,1.9,15.0,,,7.8,22.3,41,55,hypoglycaemia_L2,post-exercise
+682,98,32,121,74,97.9,17.1,36.44,54,1.43,1.29,70.2,11.83,0,0.13,4.8,3232,21.36,101.32,2.0,14.0,,,7.8,22.3,41,55,hypoglycaemia_L2,post-exercise
+683,97,30,119,75,97.9,17.6,36.46,54,1.41,1.32,70.4,11.97,0,0.16,3.0,3242,21.4,101.32,1.9,13.6,,,7.9,22.3,42,55,hypoglycaemia_L2,post-exercise
+684,97,30,121,76,98.5,17.4,36.46,54,1.5,1.36,70.1,11.99,0,0.19,2.3,3234,21.34,101.32,2.1,13.3,,,8.3,22.3,42,55,hypoglycaemia_L2,post-exercise
+685,97,31,120,76,98.7,17.8,36.46,53,1.46,1.35,70.2,12.08,0,0.2,3.1,3247,21.31,101.32,2.1,13.2,,,8.9,22.3,42,56,hypoglycaemia_L2,post-exercise
+686,98,32,121,76,98.3,17.7,36.45,53,1.49,1.34,70.2,12.07,0,0.18,4.4,3244,21.39,101.33,2.2,13.4,,,7.6,22.3,42,56,hypoglycaemia_L2,post-exercise
+687,98,32,119,75,97.8,17.6,36.46,54,1.4,1.39,69.9,11.98,0,0.17,2.5,3226,21.36,101.29,2.3,12.4,,,7.7,22.3,42,56,hypoglycaemia_L2,post-exercise
+688,99,33,119,75,97.2,17.3,36.45,53,1.43,1.35,70.1,11.85,0,0.18,3.0,3226,21.35,101.28,2.2,12.4,,,8.1,22.3,41,57,hypoglycaemia_L2,post-exercise
+689,100,35,117,75,97.9,17.8,36.44,53,1.41,1.35,70.7,11.82,0,0.17,2.5,3233,21.33,101.27,1.9,11.0,,,7.3,22.3,41,57,hypoglycaemia_L2,post-exercise
+690,101,35,117,75,98.3,17.4,36.44,54,1.42,1.35,70.1,11.93,0,0.15,2.4,3235,21.33,101.28,2.1,9.6,,,8.0,22.3,41,56,hypoglycaemia_L2,post-exercise
+691,101,36,118,75,97.8,17.6,36.44,54,1.44,1.42,69.2,11.89,0,0.14,3.2,3222,21.33,101.27,2.2,10.3,,,8.1,22.2,41,56,hypoglycaemia_L2,post-exercise
+692,100,36,118,75,97.5,17.6,36.45,54,1.51,1.38,68.1,11.86,0,0.13,3.5,3215,21.29,101.27,2.0,9.4,,,7.2,22.3,41,56,hypoglycaemia_L2,post-exercise
+693,101,33,119,76,97.9,17.6,36.47,54,1.47,1.4,66.9,11.95,0,0.15,4.4,3224,21.21,101.26,2.1,11.6,,,6.7,22.3,41,56,hypoglycaemia_L2,post-exercise
+694,99,35,119,75,98.1,17.7,36.47,53,1.48,1.39,67.7,12.11,0,0.16,4.9,3204,21.3,101.26,2.1,13.8,,,7.1,22.3,41,56,hypoglycaemia_L2,post-exercise
+695,97,35,119,75,98.3,17.2,36.47,54,1.49,1.4,68.6,12.46,0,0.2,5.2,3207,21.34,101.25,2.4,11.9,,,6.6,22.3,41,55,hypoglycaemia_L2,post-exercise
+696,98,36,119,75,98.0,17.1,36.45,54,1.41,1.36,68.4,12.41,0,0.19,4.2,3198,21.32,101.23,2.4,13.3,,,7.3,22.2,41,55,hypoglycaemia_L2,post-exercise
+697,98,35,119,74,98.3,17.0,36.43,54,1.35,1.34,67.9,12.43,0,0.2,2.7,3216,21.31,101.24,2.2,12.0,,,7.7,22.3,41,55,hypoglycaemia_L2,post-exercise
+698,98,34,118,73,97.7,17.0,36.44,54,1.42,1.29,68.6,12.46,0,0.14,2.8,3223,21.25,101.24,2.1,13.1,,,9.0,22.2,41,55,hypoglycaemia_L2,post-exercise
+699,99,34,118,73,97.4,16.5,36.43,53,1.49,1.35,68.8,12.63,0,0.11,3.5,3228,21.28,101.22,2.0,13.1,,,8.4,22.2,41,55,hypoglycaemia_L2,post-exercise
+700,100,33,118,73,97.4,16.7,36.44,53,1.53,1.42,68.3,12.49,0,0.17,2.1,3253,21.27,101.2,2.1,12.5,,,7.7,22.2,40,56,hypoglycaemia_L2,15 g fast carbs taken
+701,99,32,118,73,97.4,16.3,36.45,53,1.5,1.34,69.0,12.38,0,0.18,3.5,3262,21.25,101.23,1.7,14.1,,,8.5,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+702,99,35,117,72,97.7,16.6,36.46,53,1.54,1.34,69.9,12.39,0,0.13,2.8,3263,21.26,101.22,1.8,11.9,,,8.1,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+703,98,35,115,72,97.8,17.2,36.46,53,1.47,1.36,70.7,12.42,0,0.14,2.9,3263,21.26,101.22,1.8,12.2,,,8.4,22.2,41,56,hypoglycaemia_L2,15 g fast carbs taken
+704,98,35,115,73,97.9,16.9,36.47,53,1.45,1.35,70.2,12.42,0,0.13,4.7,3275,21.18,101.24,2.2,12.5,,,8.1,22.2,41,56,hypoglycaemia_L2,15 g fast carbs taken
+705,96,33,115,73,98.2,17.0,36.47,53,1.42,1.34,70.5,12.43,0,0.17,3.3,3282,21.18,101.25,2.2,14.3,,,7.9,22.2,41,56,hypoglycaemia_L2,15 g fast carbs taken
+706,96,32,115,72,98.5,17.9,36.46,53,1.48,1.32,69.5,12.25,0,0.17,2.1,3295,21.22,101.23,2.3,15.3,,,7.7,22.2,41,56,hypoglycaemia_L2,15 g fast carbs taken
+707,95,32,115,73,98.2,18.4,36.48,53,1.49,1.31,69.8,12.23,0,0.15,3.0,3307,21.2,101.22,2.0,16.5,,,7.7,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+708,94,32,115,73,97.9,18.0,36.48,53,1.48,1.28,69.4,12.08,0,0.18,4.6,3313,21.21,101.22,1.9,15.3,,,7.5,22.2,41,56,hypoglycaemia_L2,15 g fast carbs taken
+709,94,33,115,74,97.8,18.2,36.47,53,1.47,1.32,68.6,12.02,0,0.18,4.5,3318,21.17,101.22,1.9,16.9,,,7.3,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+710,95,34,114,74,97.4,17.5,36.47,53,1.47,1.32,68.8,12.01,0,0.14,3.5,3332,21.17,101.21,1.9,15.1,,,7.2,22.2,41,56,hypoglycaemia_L2,15 g fast carbs taken
+711,97,34,115,73,97.9,17.0,36.47,53,1.43,1.28,69.8,12.04,0,0.17,3.5,3334,21.19,101.21,2.0,13.5,,,7.0,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+712,96,34,116,73,97.4,16.8,36.47,53,1.5,1.33,69.4,12.17,0,0.16,2.7,3329,21.24,101.22,2.1,13.9,,,6.1,22.2,42,55,hypoglycaemia_L2,15 g fast carbs taken
+713,96,34,117,73,97.7,17.2,36.47,54,1.5,1.42,68.9,12.29,0,0.13,1.9,3328,21.19,101.18,2.0,13.4,,,5.7,22.2,42,55,hypoglycaemia_L2,15 g fast carbs taken
+714,96,35,118,74,97.2,17.9,36.48,54,1.53,1.42,68.8,12.05,0,0.16,1.4,3312,21.21,101.16,2.0,11.8,,,6.2,22.2,42,56,hypoglycaemia_L2,15 g fast carbs taken
+715,97,36,119,74,97.3,16.9,36.48,54,1.49,1.37,69.3,12.06,0,0.15,3.4,3310,21.24,101.17,1.8,12.7,,,5.9,22.3,42,56,hypoglycaemia_L2,15 g fast carbs taken
+716,97,36,120,75,97.2,16.7,36.47,54,1.43,1.32,69.4,11.99,0,0.16,3.2,3329,21.23,101.16,1.8,11.4,,,7.1,22.2,42,56,hypoglycaemia_L2,15 g fast carbs taken
+717,96,35,121,75,97.7,17.2,36.47,54,1.45,1.4,69.2,11.9,0,0.14,2.7,3328,21.2,101.15,2.1,11.9,,,7.5,22.2,42,56,hypoglycaemia_L2,15 g fast carbs taken
+718,96,35,120,75,98.1,17.9,36.47,54,1.42,1.37,70.3,11.86,0,0.14,0.8,3314,21.16,101.15,1.9,11.9,,,7.3,22.2,42,57,hypoglycaemia_L2,15 g fast carbs taken
+719,96,35,119,74,97.6,17.6,36.47,54,1.4,1.4,69.6,11.9,0,0.14,2.3,3314,21.15,101.16,2.0,10.8,,,6.9,22.2,42,56,hypoglycaemia_L2,15 g fast carbs taken
+720,96,34,117,74,98.1,17.9,36.48,54,1.46,1.34,69.7,11.88,0,0.15,1.7,3328,21.16,101.17,1.9,10.0,,,6.8,22.2,42,56,hypoglycaemia_L2,15 g fast carbs taken
+721,97,37,118,75,98.2,17.7,36.48,54,1.42,1.29,69.6,11.65,0,0.17,3.6,3307,21.17,101.2,1.8,12.5,,,7.2,22.2,42,55,hypoglycaemia_L2,15 g fast carbs taken
+722,97,38,118,74,98.5,17.0,36.47,54,1.46,1.23,69.4,11.55,0,0.23,3.4,3325,21.17,101.22,1.9,12.6,,,7.0,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+723,96,38,117,74,98.5,17.1,36.48,54,1.45,1.29,69.4,11.37,0,0.22,3.3,3321,21.16,101.24,1.8,12.1,,,7.0,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+724,97,37,117,74,98.5,17.6,36.48,54,1.49,1.38,69.6,11.4,0,0.2,5.0,3326,21.2,101.25,1.9,11.4,,,6.9,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+725,97,38,118,73,98.5,18.1,36.49,54,1.46,1.38,68.7,11.4,0,0.2,3.5,3314,21.17,101.22,1.9,13.2,,,7.8,22.2,41,55,hypoglycaemia_L2,15 g fast carbs taken
+726,97,37,117,74,98.5,17.7,36.47,55,1.5,1.38,68.5,11.32,0,0.19,1.3,3273,21.09,101.22,2.3,14.5,,,7.2,22.2,41,54,hypoglycaemia_L2,15 g fast carbs taken
+727,98,36,115,74,98.2,18.2,36.48,55,1.49,1.3,68.6,11.07,0,0.18,0.0,3274,21.1,101.23,2.1,14.5,,,7.2,22.2,40,55,hypoglycaemia_L1,15 g fast carbs taken
+728,97,36,116,73,98.2,18.7,36.47,55,1.54,1.34,69.1,10.95,0,0.18,1.2,3280,21.14,101.23,2.1,12.7,,,6.8,22.2,40,55,hypoglycaemia_L1,15 g fast carbs taken
+729,96,38,118,73,98.2,19.1,36.47,55,1.47,1.38,69.3,10.9,0,0.17,1.7,3289,21.15,101.24,1.9,13.4,,,6.1,22.2,40,55,hypoglycaemia_L1,15 g fast carbs taken
+730,96,39,117,73,98.3,19.0,36.45,56,1.39,1.36,69.9,10.74,0,0.15,1.9,3293,21.19,101.27,1.8,13.4,,,6.7,22.2,41,55,hypoglycaemia_L1,15 g fast carbs taken
+731,96,36,117,73,98.1,18.4,36.45,55,1.38,1.39,70.0,10.72,0,0.11,1.6,3292,21.15,101.27,1.9,14.3,,,6.7,22.2,41,55,hypoglycaemia_L1,15 g fast carbs taken
+732,95,39,118,73,98.3,18.6,36.46,55,1.38,1.36,69.9,10.7,0,0.19,2.6,3291,21.15,101.29,1.6,13.4,,,7.1,22.2,41,55,hypoglycaemia_L1,15 g fast carbs taken
+733,95,38,118,74,98.5,17.8,36.47,55,1.39,1.32,70.3,10.67,0,0.11,1.8,3281,21.13,101.29,1.8,12.9,,,7.4,22.2,41,55,hypoglycaemia_L1,15 g fast carbs taken
+734,94,41,117,74,98.3,17.5,36.47,55,1.31,1.28,70.5,10.53,0,0.11,1.0,3301,21.15,101.29,1.9,12.7,,,7.5,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+735,94,41,117,74,98.2,16.8,36.47,56,1.23,1.24,70.3,10.7,0,0.16,0.9,3293,21.16,101.29,1.7,13.7,,,7.1,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+736,94,39,117,74,98.2,17.1,36.5,55,1.26,1.23,69.5,10.72,0,0.16,2.1,3309,21.1,101.29,1.9,11.2,,,7.9,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+737,92,38,119,73,98.2,17.4,36.5,55,1.23,1.26,69.6,10.59,0,0.2,2.0,3311,21.09,101.29,1.9,10.1,,,7.9,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+738,92,40,118,74,97.6,17.7,36.5,56,1.37,1.31,68.7,10.44,0,0.16,1.7,3317,21.14,101.29,1.9,11.5,,,8.5,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+739,92,38,118,74,97.8,18.1,36.51,56,1.33,1.31,68.3,10.37,0,0.18,2.5,3302,21.11,101.29,1.9,13.0,,,7.6,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+740,92,39,118,75,97.4,18.0,36.52,57,1.36,1.21,68.8,10.46,0,0.13,1.4,3293,21.13,101.29,2.0,12.8,,,7.8,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+741,92,38,119,76,97.8,17.6,36.53,56,1.33,1.16,68.6,10.42,0,0.13,0.8,3284,21.1,101.3,1.8,11.1,,,6.7,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+742,92,40,118,76,97.5,17.4,36.54,57,1.24,1.2,69.5,10.53,0,0.16,1.0,3269,21.1,101.29,1.9,10.7,,,7.7,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+743,92,39,119,75,97.9,17.2,36.55,56,1.33,1.2,69.3,10.42,0,0.16,2.5,3266,21.13,101.25,1.9,11.0,,,8.2,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+744,91,42,117,75,98.0,17.0,36.57,57,1.37,1.31,70.1,10.26,0,0.19,1.5,3279,21.11,101.27,1.7,11.4,,,7.1,22.2,42,55,hypoglycaemia_L1,15 g fast carbs taken
+745,92,43,118,75,97.7,16.7,36.56,57,1.25,1.31,70.9,10.19,0,0.19,2.6,3261,21.16,101.28,1.9,11.8,,,7.3,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+746,90,42,117,73,97.9,16.2,36.54,57,1.32,1.31,70.5,9.99,0,0.16,3.3,3235,21.18,101.31,2.1,11.8,,,7.3,22.2,41,55,hypoglycaemia_L1,15 g fast carbs taken
+747,90,42,117,72,97.9,16.3,36.55,57,1.3,1.3,70.3,9.83,0,0.14,2.3,3220,21.16,101.32,2.2,14.7,,,7.9,22.2,41,55,hypoglycaemia_L1,15 g fast carbs taken
+748,91,40,117,73,98.4,16.2,36.56,58,1.3,1.23,70.3,9.87,0,0.18,2.3,3226,21.13,101.32,2.3,13.0,,,7.0,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+749,91,39,118,74,98.6,16.1,36.58,58,1.33,1.19,70.2,9.79,0,0.19,2.4,3228,21.12,101.29,2.2,13.0,,,6.6,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+750,91,38,118,74,98.7,16.6,36.58,58,1.39,1.19,69.6,9.65,0,0.21,3.0,3233,21.19,101.32,2.5,13.8,,,6.7,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+751,91,39,119,75,98.4,16.5,36.59,58,1.39,1.09,68.9,9.7,0,0.19,3.6,3223,21.24,101.32,2.3,13.3,,,7.2,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+752,91,38,119,74,98.3,16.7,36.6,58,1.34,1.14,68.6,9.56,0,0.2,3.1,3225,21.21,101.32,2.4,13.0,,,7.4,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+753,91,37,117,74,97.9,16.4,36.6,59,1.29,1.21,68.6,9.55,0,0.17,4.9,3234,21.22,101.31,2.5,11.6,,,7.9,22.1,41,56,hypoglycaemia_L1,15 g fast carbs taken
+754,90,38,116,75,98.1,16.3,36.59,59,1.29,1.2,69.2,9.49,0,0.17,4.6,3242,21.25,101.3,2.3,12.5,,,7.3,22.1,41,56,hypoglycaemia_L1,15 g fast carbs taken
+755,88,36,117,74,98.3,16.1,36.59,59,1.2,1.22,69.0,9.34,0,0.11,4.3,3240,21.21,101.3,2.5,13.3,,,7.8,22.1,41,56,hypoglycaemia_L1,15 g fast carbs taken
+756,87,36,117,74,98.1,15.6,36.59,60,1.15,1.2,69.2,9.2,0,0.13,3.8,3231,21.24,101.28,2.5,13.1,,,7.8,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+757,86,36,116,74,98.7,15.6,36.6,60,1.17,1.14,69.6,9.05,0,0.16,4.6,3223,21.23,101.27,2.3,13.0,,,8.8,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+758,87,38,115,74,99.0,15.7,36.62,60,1.25,1.16,70.3,8.97,0,0.18,4.3,3243,21.2,101.28,2.1,13.1,,,8.7,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+759,88,37,117,74,98.5,16.0,36.62,60,1.27,1.08,70.5,8.99,0,0.15,3.8,3245,21.18,101.28,2.1,13.2,,,8.3,22.2,41,55,hypoglycaemia_L1,15 g fast carbs taken
+760,87,38,117,75,98.2,16.5,36.64,61,1.18,1.18,71.0,9.0,0,0.16,2.5,3253,21.12,101.28,1.9,10.9,,,7.8,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+761,85,38,117,75,98.1,16.5,36.65,61,1.23,1.21,70.2,8.75,0,0.22,3.9,3249,21.11,101.27,1.9,11.0,,,6.9,22.1,42,55,hypoglycaemia_L1,15 g fast carbs taken
+762,85,39,117,76,98.5,16.4,36.65,61,1.17,1.26,70.3,8.34,0,0.22,4.1,3259,21.14,101.27,1.9,10.5,,,7.7,22.1,42,55,hypoglycaemia_L1,15 g fast carbs taken
+763,84,41,118,75,98.9,15.9,36.66,61,1.27,1.22,70.8,8.21,0,0.24,4.1,3272,21.24,101.29,2.1,10.9,,,8.3,22.2,42,55,hypoglycaemia_L1,15 g fast carbs taken
+764,84,42,117,77,98.6,14.8,36.66,61,1.22,1.19,70.4,8.02,0,0.2,5.2,3273,21.24,101.32,2.1,12.7,,,8.8,22.1,42,55,hypoglycaemia_L1,15 g fast carbs taken
+765,85,46,118,77,99.0,14.9,36.67,62,1.23,1.17,70.5,7.85,0,0.17,4.0,3276,21.28,101.33,2.1,13.2,,,8.6,22.1,42,55,hypoglycaemia_L1,15 g fast carbs taken
+766,86,46,117,76,98.2,14.8,36.67,62,1.24,1.16,70.0,7.96,0,0.18,4.2,3280,21.34,101.33,2.1,11.0,,,8.7,22.1,42,55,hypoglycaemia_L1,15 g fast carbs taken
+767,85,47,117,75,97.6,14.0,36.66,62,1.15,1.12,70.3,7.69,0,0.14,2.9,3270,21.36,101.34,2.1,12.8,,,9.1,22.1,42,55,hypoglycaemia_L1,15 g fast carbs taken
+768,85,45,119,75,97.6,13.7,36.68,63,1.13,1.19,68.8,7.44,0,0.19,3.8,3250,21.32,101.3,2.0,13.6,,,9.0,22.2,41,57,hypoglycaemia_L1,15 g fast carbs taken
+769,84,44,118,74,97.5,14.3,36.69,63,1.1,1.11,69.1,7.19,0,0.16,3.1,3246,21.35,101.3,2.2,13.1,,,8.3,22.1,42,57,hypoglycaemia_L1,15 g fast carbs taken
+770,83,42,116,74,97.6,14.4,36.71,63,1.17,1.12,69.2,7.14,0,0.16,1.2,3239,21.35,101.3,2.2,12.3,,,8.1,22.1,42,57,hypoglycaemia_L1,15 g fast carbs taken
+771,82,45,115,72,97.7,15.1,36.7,63,1.22,1.05,68.7,6.88,0,0.17,1.5,3247,21.26,101.3,2.2,12.3,,,8.5,22.1,42,57,hypoglycaemia_L1,15 g fast carbs taken
+772,83,44,115,72,97.8,15.4,36.7,64,1.15,1.0,69.4,6.8,0,0.11,2.2,3236,21.26,101.29,2.1,13.6,,,7.6,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+773,83,48,115,72,97.6,15.0,36.7,64,1.23,1.06,69.7,6.43,0,0.16,1.1,3227,21.28,101.3,2.0,11.5,,,7.0,22.1,41,57,hypoglycaemia_L1,15 g fast carbs taken
+774,82,48,114,72,97.5,15.5,36.7,65,1.13,1.1,69.8,6.14,0,0.23,0.0,3221,21.29,101.31,2.2,12.0,,,6.6,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+775,83,46,115,71,97.3,15.4,36.71,65,1.13,1.09,69.4,5.97,0,0.2,0.9,3233,21.29,101.32,2.0,12.0,,,6.6,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+776,80,46,116,71,97.6,15.5,36.72,65,1.1,1.15,68.7,5.85,0,0.24,2.0,3230,21.29,101.36,1.9,12.2,,,7.2,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+777,78,45,116,72,97.8,15.4,36.72,65,1.07,1.17,68.9,5.9,0,0.21,4.6,3221,21.27,101.37,2.0,13.0,,,7.1,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+778,77,44,115,72,98.3,15.2,36.72,65,1.17,1.13,68.3,5.81,0,0.19,3.7,3212,21.34,101.38,2.2,13.4,,,6.9,22.2,42,55,hypoglycaemia_L1,15 g fast carbs taken
+779,78,44,116,71,98.1,14.7,36.71,66,1.14,1.08,68.1,5.68,0,0.23,4.1,3225,21.35,101.37,2.1,14.0,,,7.7,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+780,79,44,118,71,97.7,14.9,36.72,66,1.13,1.07,68.6,5.42,0,0.21,5.6,3230,21.35,101.41,2.1,11.7,,,8.0,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+781,79,41,118,72,98.4,14.7,36.74,66,1.15,1.1,68.3,5.31,0,0.19,3.3,3230,21.33,101.41,2.0,12.8,,,7.6,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+782,80,43,119,73,98.7,14.7,36.74,66,1.17,1.1,68.1,5.18,0,0.16,1.3,3220,21.32,101.44,2.0,11.3,,,7.3,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+783,79,44,119,74,98.8,15.2,36.74,67,1.1,1.08,68.9,5.1,0,0.15,3.3,3194,21.35,101.42,1.9,11.7,,,7.5,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+784,80,43,119,74,98.5,14.7,36.74,67,1.06,1.05,69.1,4.86,0,0.17,3.1,3202,21.33,101.45,1.9,11.1,,,7.5,22.2,42,55,hypoglycaemia_L1,15 g fast carbs taken
+785,79,44,117,74,98.5,15.2,36.73,68,1.13,1.11,69.0,4.78,0,0.18,2.2,3202,21.31,101.45,2.0,13.6,,,7.1,22.2,41,56,hypoglycaemia_L1,15 g fast carbs taken
+786,79,44,116,74,98.7,15.0,36.74,68,1.16,1.11,69.1,4.62,0,0.15,2.7,3208,21.28,101.45,2.1,13.4,,,8.0,22.2,42,56,hypoglycaemia_L1,15 g fast carbs taken
+787,78,42,117,74,97.8,14.8,36.75,68,1.12,1.09,69.1,4.47,0,0.11,0.8,3213,21.26,101.47,2.0,13.4,,,8.8,22.2,43,57,hypoglycaemia_L1,15 g fast carbs taken
+788,78,41,116,74,98.3,14.4,36.76,69,1.06,1.11,68.6,4.49,0,0.11,0.7,3232,21.23,101.45,2.1,11.0,,,8.1,22.2,43,58,hypoglycaemia_L1,15 g fast carbs taken
+789,78,42,115,74,97.9,14.2,36.78,69,1.05,1.11,69.0,4.38,0,0.09,0.8,3241,21.33,101.43,1.9,12.0,,,8.2,22.2,43,58,hypoglycaemia_L1,15 g fast carbs taken
+790,76,43,115,75,98.0,13.9,36.78,70,1.03,1.06,70.0,4.28,0,0.13,3.3,3244,21.3,101.38,1.9,12.3,,,7.6,22.2,42,58,hypoglycaemia_L1,15 g fast carbs taken
+791,76,45,116,76,97.9,13.8,36.78,70,1.01,0.98,70.4,4.18,0,0.18,4.0,3245,21.29,101.38,1.8,11.9,,,8.6,22.2,42,57,hypoglycaemia_L1,15 g fast carbs taken
+792,76,45,116,76,98.0,13.8,36.76,70,0.98,1.04,70.5,3.78,0,0.16,2.7,3261,21.3,101.37,1.9,13.0,,,7.6,22.2,41,57,hypoglycaemia_L1,15 g fast carbs taken
+793,76,44,117,77,98.1,14.2,36.76,70,0.92,0.95,70.2,3.82,0,0.19,1.2,3258,21.27,101.37,2.0,13.3,,,8.1,22.2,41,57,hypoglycaemia_L1,15 g fast carbs taken
+794,75,47,116,76,98.2,13.8,36.79,70,0.89,0.87,70.1,3.71,0,0.16,3.1,3260,21.23,101.36,1.9,14.4,,,8.3,22.2,41,57,hypoglycaemia_L1,15 g fast carbs taken
+795,74,47,115,76,98.1,14.0,36.81,70,0.94,0.96,69.7,3.71,0,0.16,2.0,3258,21.26,101.37,1.9,13.4,,,8.1,22.1,41,56,hypoglycaemia_L1,15 g fast carbs taken
+796,73,47,116,77,98.1,14.5,36.8,71,0.94,0.93,69.8,3.5,0,0.19,2.2,3275,21.3,101.39,1.7,13.4,,,7.9,22.2,41,56,nominal,15 g fast carbs taken
+797,74,43,117,77,97.5,14.1,36.79,71,0.99,0.99,70.0,3.45,0,0.17,1.9,3295,21.3,101.39,1.7,14.0,,,8.2,22.2,41,56,nominal,15 g fast carbs taken
+798,73,43,116,75,97.8,14.6,36.79,71,0.96,1.07,69.3,3.57,0,0.15,2.5,3304,21.32,101.38,1.6,12.8,,,8.7,22.2,41,56,nominal,15 g fast carbs taken
+799,74,44,115,76,97.8,14.2,36.78,72,0.93,1.07,68.6,3.56,0,0.17,3.2,3305,21.32,101.37,1.8,13.0,,,8.1,22.1,42,56,nominal,15 g fast carbs taken
+800,74,45,116,76,97.9,14.9,36.77,72,0.91,1.05,69.0,3.49,0,0.19,2.1,3287,21.31,101.33,1.9,12.3,,,7.0,22.2,42,56,nominal,15 g fast carbs taken
+801,74,43,116,76,98.0,14.7,36.78,72,1.0,1.05,70.1,3.79,0,0.22,2.9,3278,21.31,101.32,2.2,12.4,,,6.9,22.2,42,56,nominal,15 g fast carbs taken
+802,73,45,117,76,98.0,14.3,36.78,72,1.02,1.13,69.9,3.9,0,0.2,1.3,3269,21.31,101.31,2.3,12.3,,,7.1,22.1,42,56,nominal,15 g fast carbs taken
+803,72,41,115,76,97.9,13.8,36.79,73,1.04,1.09,69.9,3.95,0,0.2,2.6,3265,21.29,101.32,2.3,10.6,,,7.8,22.1,42,57,nominal,15 g fast carbs taken
+804,73,41,116,75,98.1,14.1,36.81,73,1.09,1.09,69.8,3.9,0,0.2,1.9,3285,21.24,101.3,2.3,9.5,,,7.5,22.1,42,57,nominal,15 g fast carbs taken
+805,74,41,115,75,97.9,14.3,36.8,74,1.08,1.03,68.2,3.94,0,0.21,1.8,3282,21.2,101.32,2.3,9.7,,,7.2,22.1,42,57,nominal,15 g fast carbs taken
+806,72,40,115,75,97.8,13.9,36.81,74,1.02,1.08,68.7,3.74,0,0.14,1.9,3273,21.18,101.3,2.1,10.9,,,7.9,22.1,42,57,nominal,15 g fast carbs taken
+807,73,41,114,77,97.9,14.1,36.82,74,1.1,1.03,68.0,3.78,0,0.14,2.6,3267,21.22,101.31,2.2,12.7,,,7.2,22.1,42,56,nominal,15 g fast carbs taken
+808,73,40,113,76,98.5,14.2,36.82,74,1.04,1.05,68.2,3.97,0,0.18,2.8,3273,21.22,101.33,2.1,12.7,,,6.7,22.1,42,56,nominal,15 g fast carbs taken
+809,75,42,113,76,98.0,13.4,36.81,75,1.05,1.05,68.0,3.87,0,0.18,2.7,3264,21.21,101.31,2.1,13.4,,,7.3,22.1,42,56,nominal,15 g fast carbs taken
+810,74,42,115,74,98.1,13.3,36.81,75,1.02,1.01,68.0,4.0,0,0.19,3.0,3276,21.21,101.3,2.0,12.1,,,7.3,22.1,42,56,nominal,15 g fast carbs taken
+811,72,43,116,74,98.3,13.2,36.81,76,1.06,1.03,67.8,3.99,0,0.17,2.5,3285,21.18,101.3,2.3,12.5,,,7.4,22.1,42,56,nominal,15 g fast carbs taken
+812,72,44,115,73,98.5,12.9,36.82,76,0.98,1.02,67.9,3.76,0,0.19,2.5,3285,21.2,101.29,2.2,12.9,,,7.1,22.1,42,56,nominal,15 g fast carbs taken
+813,72,43,116,74,98.3,13.2,36.83,76,1.04,1.0,68.4,3.85,0,0.16,1.7,3306,21.2,101.27,2.3,13.0,,,6.4,22.1,42,56,nominal,15 g fast carbs taken
+814,72,44,116,73,97.7,13.3,36.81,76,0.99,0.98,69.1,3.81,0,0.18,2.5,3308,21.24,101.28,2.4,13.5,,,6.6,22.1,42,56,nominal,15 g fast carbs taken
+815,73,46,116,74,98.2,13.2,36.8,77,0.99,1.02,68.5,3.88,0,0.15,3.0,3311,21.22,101.3,2.2,12.6,,,7.2,22.2,43,55,nominal,15 g fast carbs taken
+816,71,46,116,73,98.4,13.8,36.81,77,0.95,0.99,69.2,3.85,0,0.19,1.9,3306,21.19,101.32,2.2,13.2,,,7.5,22.2,42,56,nominal,15 g fast carbs taken
+817,72,44,115,73,97.6,14.0,36.8,77,1.01,1.06,68.8,3.63,0,0.16,4.7,3290,21.12,101.33,2.2,13.4,,,8.3,22.2,42,56,nominal,15 g fast carbs taken
+818,71,46,115,74,97.6,13.6,36.81,77,1.02,1.04,68.7,3.84,0,0.17,2.3,3292,21.23,101.32,2.2,12.8,,,8.4,22.2,42,55,nominal,15 g fast carbs taken
+819,72,44,116,74,97.6,13.5,36.82,77,0.93,0.98,68.8,3.84,0,0.16,1.7,3293,21.18,101.33,2.1,13.3,,,8.9,22.2,42,56,nominal,15 g fast carbs taken
+820,73,46,118,74,98.4,14.2,36.82,77,0.88,0.98,69.3,3.86,0,0.16,0.7,3288,21.2,101.36,2.1,14.1,,,8.7,22.2,42,56,nominal,15 g fast carbs taken
+821,73,48,117,74,97.5,14.3,36.82,78,0.9,0.96,69.6,3.86,0,0.17,0.8,3301,21.16,101.34,2.2,13.9,,,9.3,22.2,42,56,nominal,15 g fast carbs taken
+822,72,48,118,74,97.9,15.2,36.82,78,1.04,0.92,70.1,3.83,0,0.23,2.7,3311,21.26,101.37,2.2,12.3,,,9.0,22.3,41,56,nominal,15 g fast carbs taken
+823,72,50,117,74,97.8,14.5,36.82,78,0.98,0.92,69.6,4.03,0,0.18,1.8,3296,21.33,101.37,2.2,11.5,,,9.8,22.3,41,56,nominal,15 g fast carbs taken
+824,72,51,119,74,98.4,14.3,36.82,78,0.94,1.0,69.2,3.82,0,0.19,3.2,3279,21.34,101.37,2.2,11.1,,,10.0,22.3,41,56,nominal,15 g fast carbs taken
+825,71,51,117,74,98.3,14.5,36.81,78,0.97,1.0,68.9,3.93,0,0.17,0.5,3270,21.31,101.36,2.0,11.6,,,9.7,22.3,42,56,nominal,15 g fast carbs taken
+826,71,49,118,75,98.2,14.9,36.79,78,1.02,1.04,69.1,3.98,0,0.15,1.7,3282,21.31,101.4,2.1,14.0,,,9.4,22.3,41,57,nominal,15 g fast carbs taken
+827,71,50,118,76,98.3,14.6,36.79,78,0.93,1.04,68.4,3.94,0,0.15,2.8,3286,21.34,101.41,2.1,11.8,,,9.0,22.3,42,57,nominal,15 g fast carbs taken
+828,71,48,119,76,98.3,15.0,36.77,78,0.94,1.05,68.5,4.14,0,0.14,2.0,3283,21.33,101.38,2.2,13.3,,,7.9,22.3,41,56,nominal,15 g fast carbs taken
+829,72,48,118,76,98.2,14.7,36.78,78,0.95,1.06,68.7,4.11,0,0.19,2.3,3281,21.4,101.39,2.3,13.4,,,8.5,22.3,41,56,nominal,15 g fast carbs taken
+830,71,48,118,75,98.0,14.6,36.78,78,1.04,1.09,69.4,4.08,0,0.18,2.1,3274,21.33,101.4,2.5,12.3,,,8.1,22.3,41,56,nominal,15 g fast carbs taken
+831,72,49,120,75,98.3,14.9,36.78,79,1.03,1.12,69.1,4.12,0,0.19,3.0,3248,21.36,101.4,2.4,12.4,,,8.5,22.3,41,57,nominal,15 g fast carbs taken
+832,72,49,119,75,98.3,15.0,36.78,79,1.1,1.08,69.6,4.12,0,0.16,3.5,3253,21.36,101.41,2.2,11.5,,,8.8,22.3,41,57,nominal,15 g fast carbs taken
+833,73,50,117,75,98.5,15.1,36.77,79,0.97,1.03,70.1,4.26,0,0.13,3.9,3236,21.37,101.38,2.0,10.6,,,9.1,22.3,41,57,nominal,15 g fast carbs taken
+834,73,48,118,74,98.7,15.2,36.78,80,0.91,1.03,69.6,4.46,0,0.16,4.1,3242,21.36,101.39,1.8,10.6,,,8.2,22.3,42,57,nominal,15 g fast carbs taken
+835,71,49,117,74,98.2,14.3,36.78,80,0.92,0.98,69.7,4.41,0,0.15,2.7,3274,21.34,101.39,1.9,11.5,,,6.7,22.3,41,57,nominal,15 g fast carbs taken
+836,72,48,118,74,98.3,13.6,36.78,81,0.99,1.06,68.7,4.39,0,0.17,2.7,3278,21.29,101.37,1.9,12.3,,,6.8,22.3,41,56,nominal,15 g fast carbs taken
+837,72,47,118,73,98.8,13.1,36.8,81,1.06,0.99,68.9,4.55,0,0.2,1.6,3272,21.37,101.38,1.9,11.9,,,6.5,22.4,41,56,nominal,15 g fast carbs taken
+838,70,45,118,73,98.6,13.0,36.79,81,1.0,1.0,68.5,4.52,0,0.21,1.9,3270,21.35,101.35,2.0,12.4,,,7.4,22.3,41,56,nominal,15 g fast carbs taken
+839,71,43,118,72,98.1,13.4,36.78,82,1.0,1.03,69.4,4.39,0,0.22,1.0,3269,21.35,101.34,2.0,12.9,,,6.9,22.3,42,56,nominal,15 g fast carbs taken
+840,68,42,118,73,98.8,13.3,36.76,82,1.01,1.0,70.4,4.23,0,0.2,2.5,3253,21.38,101.37,2.1,11.8,,,6.7,22.3,41,56,nominal,15 g fast carbs taken
+841,68,43,117,74,98.4,13.9,36.75,82,1.07,1.03,70.2,4.4,0,0.18,3.0,3248,21.41,101.36,2.0,11.3,,,8.0,22.3,41,56,nominal,15 g fast carbs taken
+842,68,42,117,74,98.5,14.3,36.76,82,1.02,0.99,70.0,4.45,0,0.1,2.3,3239,21.4,101.33,2.2,12.3,,,7.7,22.3,41,56,nominal,15 g fast carbs taken
+843,67,41,117,73,98.3,13.5,36.77,82,1.07,1.03,69.8,4.45,0,0.14,3.1,3246,21.42,101.33,2.1,12.1,,,8.1,22.3,42,57,nominal,15 g fast carbs taken
+844,68,41,117,73,98.2,13.7,36.78,82,1.07,1.05,69.3,4.33,0,0.16,2.5,3268,21.42,101.32,2.1,11.3,,,7.4,22.3,42,56,nominal,15 g fast carbs taken
+845,68,42,118,73,97.8,13.9,36.77,82,1.0,1.09,69.4,4.18,0,0.17,3.4,3236,21.47,101.3,2.0,11.3,,,8.6,22.3,42,56,nominal,15 g fast carbs taken
+846,69,45,119,74,98.1,14.0,36.76,82,0.94,1.08,68.7,4.13,0,0.18,2.6,3218,21.45,101.29,1.7,11.8,,,8.3,22.2,42,56,nominal,15 g fast carbs taken
+847,68,45,119,74,97.9,14.3,36.77,83,0.97,1.09,69.0,4.13,0,0.19,4.5,3226,21.39,101.28,1.8,12.9,,,8.2,22.3,42,56,nominal,15 g fast carbs taken
+848,69,45,119,75,98.3,14.5,36.75,82,0.95,1.05,69.1,4.04,0,0.18,2.5,3260,21.43,101.26,1.9,15.3,,,7.9,22.3,41,56,nominal,15 g fast carbs taken
+849,69,48,119,76,98.1,14.3,36.74,82,0.95,1.01,69.7,4.05,0,0.22,3.0,3255,21.44,101.26,2.0,13.8,,,8.1,22.3,42,56,nominal,15 g fast carbs taken
+850,70,49,119,76,97.9,14.9,36.75,82,0.98,0.98,70.2,3.85,0,0.22,2.8,3259,21.38,101.27,1.8,14.3,,,7.5,22.3,42,56,nominal,15 g fast carbs taken
+851,70,52,119,76,97.9,15.2,36.76,83,1.02,0.98,70.3,4.05,0,0.18,3.1,3240,21.39,101.28,1.9,15.7,,,7.7,22.2,42,55,nominal,15 g fast carbs taken
+852,70,50,120,75,98.0,14.5,36.77,83,0.9,0.97,70.9,4.16,0,0.2,1.5,3243,21.39,101.27,1.9,15.2,,,7.2,22.3,42,55,nominal,15 g fast carbs taken
+853,69,49,120,75,98.0,14.2,36.79,83,0.92,1.02,70.4,4.14,0,0.2,2.9,3235,21.38,101.27,1.6,15.4,,,7.7,22.2,42,55,nominal,15 g fast carbs taken
+854,70,48,120,75,98.8,14.4,36.79,83,0.96,1.0,70.4,4.0,0,0.18,4.3,3240,21.36,101.28,1.6,13.6,,,7.6,22.2,42,55,nominal,15 g fast carbs taken
+855,70,47,120,75,98.2,14.6,36.8,84,0.95,0.99,70.2,3.94,0,0.16,2.3,3236,21.35,101.26,1.9,12.7,,,7.5,22.2,42,54,nominal,15 g fast carbs taken
+856,69,47,119,74,98.0,14.9,36.8,84,0.99,0.98,70.0,4.06,0,0.19,2.0,3234,21.32,101.26,1.8,14.6,,,7.8,22.2,42,55,nominal,15 g fast carbs taken
+857,69,46,121,74,97.9,14.8,36.82,84,1.0,1.0,70.7,4.01,0,0.21,4.9,3241,21.28,101.26,1.8,12.4,,,7.4,22.2,42,55,nominal,15 g fast carbs taken
+858,70,47,122,72,97.6,14.5,36.79,83,0.97,1.0,69.6,4.14,0,0.21,5.5,3227,21.24,101.26,1.7,13.6,,,7.4,22.2,42,56,nominal,15 g fast carbs taken
+859,71,45,121,72,97.9,14.4,36.78,84,0.97,0.94,68.5,4.16,0,0.22,3.4,3223,21.27,101.26,1.7,11.4,,,7.8,22.2,42,57,nominal,15 g fast carbs taken
+860,71,45,121,71,98.2,14.2,36.78,84,0.89,0.95,68.7,4.1,0,0.18,1.5,3197,21.33,101.27,1.7,10.7,,,7.3,22.2,42,58,nominal,15 g fast carbs taken
+861,70,44,121,72,98.2,14.5,36.79,84,0.97,0.95,68.4,4.23,0,0.16,1.9,3187,21.36,101.26,1.7,11.3,,,7.2,22.2,42,57,nominal,15 g fast carbs taken
+862,68,42,120,73,98.1,14.3,36.8,84,0.97,0.97,68.5,4.03,0,0.21,1.4,3221,21.3,101.25,1.9,11.4,,,7.0,22.2,42,56,nominal,15 g fast carbs taken
+863,67,44,121,73,97.9,13.9,36.8,84,0.94,0.96,68.6,4.09,0,0.19,1.6,3213,21.3,101.26,1.9,12.9,,,6.5,22.2,42,57,nominal,15 g fast carbs taken
+864,70,44,120,75,97.9,13.5,36.8,85,0.99,0.94,68.9,4.21,0,0.16,1.8,3214,21.36,101.25,2.1,12.2,,,6.9,22.2,42,57,nominal,15 g fast carbs taken
+865,69,45,118,74,97.5,13.4,36.81,85,1.07,0.95,69.5,4.07,0,0.17,2.7,3196,21.35,101.25,1.8,12.2,,,7.9,22.2,42,56,nominal,15 g fast carbs taken
+866,69,45,118,74,97.6,13.1,36.8,85,1.03,1.02,69.3,4.3,0,0.19,1.9,3198,21.33,101.25,1.8,11.2,,,7.1,22.3,41,56,nominal,15 g fast carbs taken
+867,69,46,119,74,97.6,13.3,36.82,84,1.07,1.04,69.1,4.04,0,0.14,2.3,3197,21.3,101.27,1.9,10.8,,,6.5,22.3,42,57,nominal,15 g fast carbs taken
+868,69,48,118,74,97.8,13.9,36.83,84,1.06,1.07,69.2,3.91,0,0.16,2.9,3221,21.32,101.29,1.7,11.7,,,7.6,22.3,42,57,nominal,15 g fast carbs taken
+869,70,49,118,75,97.5,13.9,36.84,85,1.0,1.06,69.4,4.0,0,0.17,1.9,3221,21.24,101.3,2.1,11.9,,,6.9,22.3,42,57,nominal,15 g fast carbs taken
+870,68,48,118,75,97.6,13.6,36.84,85,0.94,0.97,68.5,3.99,0,0.16,3.1,3211,21.24,101.29,2.3,11.4,,,6.2,22.3,42,57,nominal,15 g fast carbs taken
+871,70,47,118,75,96.9,14.0,36.84,85,0.97,1.0,69.3,4.0,0,0.17,4.2,3218,21.31,101.28,2.3,11.1,,,7.1,22.3,42,57,nominal,15 g fast carbs taken
+872,68,45,118,75,97.4,13.9,36.83,85,1.08,0.99,69.0,3.94,0,0.16,1.5,3236,21.37,101.25,2.3,11.6,,,6.9,22.3,42,56,nominal,15 g fast carbs taken
+873,68,46,119,74,97.2,13.8,36.83,85,1.11,1.0,69.0,3.74,0,0.12,1.5,3229,21.26,101.28,2.1,10.8,,,6.7,22.3,42,57,nominal,15 g fast carbs taken
+874,68,47,118,75,97.5,14.0,36.83,85,1.03,1.03,69.6,3.72,0,0.1,1.1,3266,21.31,101.3,2.0,10.7,,,6.9,22.3,42,56,nominal,15 g fast carbs taken
+875,68,45,117,75,97.0,14.2,36.82,85,0.94,1.04,69.2,3.76,0,0.15,0.9,3269,21.3,101.3,1.8,11.1,,,7.9,22.3,42,56,nominal,15 g fast carbs taken
+876,68,43,117,76,97.1,14.3,36.82,85,0.94,1.03,68.1,3.92,0,0.17,2.7,3278,21.25,101.31,1.8,10.9,,,7.6,22.3,42,56,nominal,15 g fast carbs taken
+877,67,44,116,75,97.5,13.8,36.83,86,0.98,0.98,69.3,3.92,0,0.19,2.9,3285,21.24,101.29,1.7,10.9,,,7.2,22.4,42,55,nominal,15 g fast carbs taken
+878,67,45,116,74,97.6,14.0,36.83,85,0.93,1.06,69.7,3.96,0,0.13,3.5,3322,21.26,101.26,1.9,11.1,,,7.3,22.4,42,55,nominal,15 g fast carbs taken
+879,68,44,117,76,97.5,14.4,36.84,85,0.95,0.95,69.4,3.87,0,0.12,3.5,3327,21.22,101.27,1.8,10.3,,,7.3,22.3,42,55,nominal,15 g fast carbs taken
+880,69,44,117,76,97.8,14.5,36.83,85,0.98,0.95,69.4,3.93,0,0.16,3.4,3346,21.21,101.25,1.7,11.5,,,7.3,22.3,42,55,nominal,15 g fast carbs taken
+881,68,46,117,77,97.6,14.4,36.82,85,1.02,1.02,69.0,3.85,0,0.18,3.4,3333,21.25,101.25,1.7,11.5,,,7.6,22.3,41,54,nominal,15 g fast carbs taken
+882,66,46,116,76,97.3,14.1,36.82,85,0.93,1.07,68.7,3.79,0,0.18,1.9,3333,21.22,101.27,1.8,12.0,,,7.7,22.3,41,55,nominal,15 g fast carbs taken
+883,67,48,117,75,97.5,13.9,36.82,85,0.97,0.97,69.1,3.98,0,0.15,2.8,3347,21.19,101.26,1.6,13.3,,,8.0,22.3,41,54,nominal,15 g fast carbs taken
+884,67,46,118,75,97.3,13.7,36.81,85,0.96,1.02,69.2,3.87,0,0.13,4.2,3334,21.24,101.25,1.6,14.9,,,8.1,22.3,41,55,nominal,15 g fast carbs taken
+885,68,47,120,76,97.9,13.4,36.81,85,1.03,0.87,68.7,3.71,0,0.13,4.7,3313,21.22,101.26,1.5,13.6,,,8.2,22.3,40,55,nominal,15 g fast carbs taken
+886,68,44,120,76,98.1,13.6,36.82,85,1.04,0.91,69.2,3.87,0,0.1,3.7,3312,21.24,101.24,1.4,12.2,,,7.9,22.3,41,55,nominal,15 g fast carbs taken
+887,68,45,121,77,98.1,14.0,36.8,85,1.11,0.9,69.0,3.96,0,0.14,4.9,3313,21.27,101.21,1.5,13.7,,,8.8,22.3,41,55,nominal,15 g fast carbs taken
+888,67,44,121,78,98.2,14.0,36.81,85,0.99,0.9,69.3,4.0,0,0.17,3.2,3336,21.23,101.24,1.6,12.7,,,8.3,22.3,41,55,nominal,15 g fast carbs taken
+889,69,47,121,78,97.9,14.1,36.82,85,1.01,0.88,69.3,4.0,0,0.17,4.4,3342,21.27,101.23,1.8,13.3,,,8.1,22.3,41,55,nominal,15 g fast carbs taken
+890,70,50,122,79,97.9,14.4,36.82,86,0.94,0.93,68.8,4.04,0,0.17,4.7,3338,21.27,101.25,1.8,12.9,,,7.5,22.3,41,55,nominal,15 g fast carbs taken
+891,70,50,121,79,97.9,14.5,36.83,85,0.98,0.92,68.9,4.0,0,0.18,3.7,3354,21.24,101.24,1.7,12.8,,,7.7,22.3,41,55,nominal,15 g fast carbs taken
+892,68,49,122,78,98.0,14.4,36.84,85,1.06,1.01,69.5,3.92,0,0.17,1.7,3362,21.26,101.26,1.7,12.3,,,7.7,22.3,41,56,nominal,15 g fast carbs taken
+893,69,50,122,77,98.0,14.7,36.83,85,1.0,0.98,70.3,3.94,0,0.13,2.1,3364,21.27,101.25,1.8,13.5,,,7.0,22.3,41,56,nominal,15 g fast carbs taken
+894,69,49,120,77,98.2,14.4,36.81,85,1.04,0.94,70.6,4.07,0,0.09,1.7,3362,21.25,101.28,1.7,13.7,,,7.1,22.3,41,56,nominal,15 g fast carbs taken
+895,70,48,120,76,98.4,15.1,36.81,85,1.04,0.97,69.9,4.16,0,0.12,3.3,3363,21.3,101.29,1.7,13.1,,,6.4,22.3,41,56,nominal,15 g fast carbs taken
+896,70,49,121,77,98.3,14.9,36.82,85,1.05,0.96,69.9,4.12,0,0.12,3.9,3336,21.31,101.31,1.8,13.1,,,7.3,22.3,41,55,nominal,15 g fast carbs taken
+897,70,47,120,78,98.3,14.3,36.83,85,0.98,0.96,69.7,4.11,0,0.12,3.0,3352,21.36,101.32,1.9,12.0,,,6.9,22.3,41,56,nominal,15 g fast carbs taken
+898,68,46,120,77,98.1,14.0,36.83,85,1.02,1.04,69.3,4.08,0,0.18,4.6,3370,21.34,101.31,1.9,13.4,,,7.3,22.3,42,56,nominal,15 g fast carbs taken
+899,68,47,121,76,97.8,13.8,36.82,85,1.05,1.11,69.0,4.18,0,0.2,3.7,3358,21.38,101.31,1.9,14.0,,,6.7,22.3,41,56,nominal,15 g fast carbs taken

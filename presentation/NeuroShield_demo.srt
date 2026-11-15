@@ -1,0 +1,423 @@
+1
+00:00:00,450 --> 00:00:02,218
+NeuroShield, by Team Paragon:
+
+2
+00:00:02,218 --> 00:00:05,755
+a camera-free health monitor for astronauts, built for the
+
+3
+00:00:05,755 --> 00:00:07,341
+NASA Space Apps Challenge.
+
+4
+00:00:07,891 --> 00:00:11,415
+On the way to Mars, a message to Earth can take 22 minutes.
+
+5
+00:00:11,415 --> 00:00:14,700
+When an astronaut’s health starts to slip, the crew has
+
+6
+00:00:14,700 --> 00:00:16,851
+to notice first, and act on its own.
+
+7
+00:00:17,401 --> 00:00:19,254
+Today’s monitors fall short.
+
+8
+00:00:19,254 --> 00:00:23,423
+Cabin cameras can’t see behind helmets and masks, single-sensor
+
+9
+00:00:23,423 --> 00:00:27,327
+headbands only detect fatigue, and periodic exams miss fast
+
+10
+00:00:27,327 --> 00:00:27,790
+events.
+
+11
+00:00:28,340 --> 00:00:31,048
+NeuroShield fuses four kinds of input:
+
+12
+00:00:31,048 --> 00:00:35,181
+a wearable with EEG, brain-oxygen, pulse and skin sensors;
+
+13
+00:00:35,181 --> 00:00:37,176
+standard vital-sign devices;
+
+14
+00:00:37,176 --> 00:00:39,884
+cabin sensors; and short self-reports.
+
+15
+00:00:39,884 --> 00:00:42,164
+It runs offline, in any browser.
+
+16
+00:00:42,714 --> 00:00:46,505
+Together they give 20 live indicators across six body systems,
+
+17
+00:00:46,505 --> 00:00:49,562
+including every vital sign the challenge asks for.
+
+18
+00:00:50,112 --> 00:00:51,761
+Here is the live monitor.
+
+19
+00:00:51,761 --> 00:00:55,126
+Each card is one signal, streaming once per second.
+
+20
+00:00:55,126 --> 00:00:58,820
+The menu replays ten recorded mission scenarios at up to
+
+21
+00:00:58,820 --> 00:01:01,591
+60× real speed, or connects a real device.
+
+22
+00:01:01,591 --> 00:01:05,418
+The coloured strip above the timeline marks where problems
+
+23
+00:01:05,418 --> 00:01:05,813
+occur.
+
+24
+00:01:06,363 --> 00:01:09,838
+Let’s read one card. The large number is the current value,
+
+25
+00:01:09,838 --> 00:01:12,429
+and the badge says normal, caution or alert.
+
+26
+00:01:12,429 --> 00:01:15,962
+The green band and green dashed lines show the normal range;
+
+27
+00:01:15,962 --> 00:01:18,554
+the red dotted lines are the caution limits.
+
+28
+00:01:18,554 --> 00:01:21,910
+The faint dotted line is the session average, and the row
+
+29
+00:01:21,910 --> 00:01:25,267
+below lists the average, minimum and maximum, next to the
+
+30
+00:01:25,267 --> 00:01:26,033
+normal range.
+
+31
+00:01:26,583 --> 00:01:30,280
+The fatigue scenario is a night shift at the robotic arm.
+
+32
+00:01:30,280 --> 00:01:34,041
+The EEG drowsiness index rises long before the head starts
+
+33
+00:01:34,041 --> 00:01:37,998
+to nod. NeuroShield raises a caution after about six minutes,
+
+34
+00:01:37,998 --> 00:01:41,111
+almost five minutes before the first microsleep.
+
+35
+00:01:41,661 --> 00:01:45,340
+In the cabin-leak scenario on Orion, pressure falls first,
+
+36
+00:01:45,340 --> 00:01:48,385
+and NeuroShield warns before blood oxygen drops.
+
+37
+00:01:48,385 --> 00:01:52,001
+When oxygen saturation falls below 90%, the hypoxia alert
+
+38
+00:01:52,001 --> 00:01:55,743
+turns critical. Every alert shows the values that triggered
+
+39
+00:01:55,743 --> 00:01:59,296
+it, numbered actions, its scientific source, and when to
+
+40
+00:01:59,296 --> 00:02:00,818
+call the flight surgeon.
+
+41
+00:02:01,368 --> 00:02:05,188
+Other scenarios cover a high-G entry, where brain oxygen
+
+42
+00:02:05,188 --> 00:02:08,598
+falls with G-load; disorientation on a Mars rover;
+
+43
+00:02:08,598 --> 00:02:10,576
+CO₂ build-up on a lunar base;
+
+44
+00:02:10,576 --> 00:02:12,691
+low blood sugar after exercise;
+
+45
+00:02:12,691 --> 00:02:16,920
+a fever; and a solar storm that sends the crew to the shelter.
+
+46
+00:02:17,470 --> 00:02:20,411
+The health score summarises all 20 signals.
+
+47
+00:02:20,411 --> 00:02:24,242
+Each body system blends its average and its worst value,
+
+48
+00:02:24,242 --> 00:02:27,525
+so one dangerous reading is never averaged away.
+
+49
+00:02:27,525 --> 00:02:29,441
+Active alerts cap the score:
+
+50
+00:02:29,441 --> 00:02:32,382
+here, hypoxia pulls it down to 45, act now.
+
+51
+00:02:32,932 --> 00:02:36,357
+Click any part of the body figure to see what it measures.
+
+52
+00:02:36,357 --> 00:02:38,069
+The head shows brain signals;
+
+53
+00:02:38,069 --> 00:02:40,194
+the heart, pulse and blood pressure;
+
+54
+00:02:40,194 --> 00:02:42,084
+the lungs, oxygen and breathing;
+
+55
+00:02:42,084 --> 00:02:43,914
+the arms and legs, temperature;
+
+56
+00:02:43,914 --> 00:02:46,571
+and the habitat tag, cabin air and radiation.
+
+57
+00:02:46,571 --> 00:02:50,173
+Each view lists live values and the spaceflight hazard behind
+
+58
+00:02:50,173 --> 00:02:50,468
+them.
+
+59
+00:02:51,018 --> 00:02:54,755
+Every morning, the daily check-in asks for vitals, glucose,
+
+60
+00:02:54,755 --> 00:02:56,782
+mood, sleep, exercise and water.
+
+61
+00:02:56,782 --> 00:03:00,709
+Tasks earn points, streaks and badges, and a 10-trial reaction
+
+62
+00:03:00,709 --> 00:03:04,257
+test measures alertness, like the test astronauts use on
+
+63
+00:03:04,257 --> 00:03:05,397
+the space station.
+
+64
+00:03:05,947 --> 00:03:08,590
+Each entry goes into a personal logbook.
+
+65
+00:03:08,590 --> 00:03:12,424
+NeuroShield compares every value with that astronaut’s own
+
+66
+00:03:12,424 --> 00:03:14,605
+baseline, using a robust z-score.
+
+67
+00:03:14,605 --> 00:03:18,438
+Crew D’s body mass slowly drifts down, and from day 34 the
+
+68
+00:03:18,438 --> 00:03:20,091
+detector flags it in red.
+
+69
+00:03:20,641 --> 00:03:24,328
+The anomaly map shows 17 indicators over 60 days:
+
+70
+00:03:24,328 --> 00:03:27,564
+red means above baseline, blue means below.
+
+71
+00:03:27,564 --> 00:03:31,853
+You can spot the CO₂ event on days 30–33, the solar storm
+
+72
+00:03:31,853 --> 00:03:35,766
+on day 47, and crew D’s late fall in sleep and mood.
+
+73
+00:03:36,316 --> 00:03:40,038
+Flagged days become episodes, with a likely cause and advice.
+
+74
+00:03:40,038 --> 00:03:43,638
+For crew C, raised temperature and heart rate, with falling
+
+75
+00:03:43,638 --> 00:03:46,445
+heart-rate variability, point to an infection.
+
+76
+00:03:46,445 --> 00:03:49,923
+A detector check compares every result with the dataset’s
+
+77
+00:03:49,923 --> 00:03:50,716
+ground truth.
+
+78
+00:03:51,266 --> 00:03:53,835
+Finally, the guide explains every indicator:
+
+79
+00:03:53,835 --> 00:03:57,162
+how it is measured, its normal and caution limits, why it
+
+80
+00:03:57,162 --> 00:03:59,906
+matters in space, and the literature behind it.
+
+81
+00:04:00,456 --> 00:04:04,431
+All of this runs on an open, labelled dataset we created:
+
+82
+00:04:04,431 --> 00:04:08,337
+ten 15-minute scenarios at 1 Hz, and 60 days of logs for
+
+83
+00:04:08,337 --> 00:04:11,336
+four crew members, with 13 injected events.
+
+84
+00:04:11,886 --> 00:04:16,266
+On this synthetic data, the alerts reach 92% sensitivity
+
+85
+00:04:16,266 --> 00:04:20,803
+and 89% specificity, with no false alarms on a normal day.
+
+86
+00:04:21,353 --> 00:04:25,738
+We documented the work in a 7-page, IEEE-style paper with
+
+87
+00:04:25,738 --> 00:04:26,815
+44 references.
+
+88
+00:04:27,365 --> 00:04:29,483
+It first reviews the literature:
+
+89
+00:04:29,483 --> 00:04:33,058
+how spaceflight changes the heart, immunity and sleep;
+
+90
+00:04:33,058 --> 00:04:35,705
+why CO₂ causes headaches on the station;
+
+91
+00:04:35,705 --> 00:04:39,346
+and how EEG and near-infrared sensors track fatigue and
+
+92
+00:04:39,346 --> 00:04:40,869
+brain oxygen in pilots.
+
+93
+00:04:41,419 --> 00:04:44,676
+It then defines the health score, the fourteen rules with
+
+94
+00:04:44,676 --> 00:04:47,819
+persistence, hysteresis and root-cause suppression, and
+
+95
+00:04:47,819 --> 00:04:49,419
+the robust anomaly detector.
+
+96
+00:04:49,969 --> 00:04:54,023
+The results show drowsiness flagged 4.5 minutes before the
+
+97
+00:04:54,023 --> 00:04:58,148
+first microsleep, and cabin-pressure loss 96 seconds before
+
+98
+00:04:58,148 --> 00:05:02,482
+blood oxygen falls. The health score averages 96 when nominal,
+
+99
+00:05:02,482 --> 00:05:03,601
+and 58 when not.
+
+100
+00:05:04,151 --> 00:05:07,407
+The logbook detector finds all 13 injected events.
+
+101
+00:05:07,407 --> 00:05:10,077
+The paper is also clear about its limits:
+
+102
+00:05:10,077 --> 00:05:14,049
+the data are synthetic, thresholds need personal calibration,
+
+103
+00:05:14,049 --> 00:05:16,524
+and activity context is still missing.
+
+104
+00:05:17,074 --> 00:05:20,687
+Next, we connect the real NeuroShield wearable, and validate
+
+105
+00:05:20,687 --> 00:05:22,192
+it on a motion simulator.
+
+106
+00:05:22,192 --> 00:05:24,541
+NeuroShield: see it before you feel it.

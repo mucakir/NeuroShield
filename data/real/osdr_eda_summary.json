@@ -1,0 +1,88 @@
+{
+ "RR-1": {
+  "days": 39,
+  "from": "2014-09-21",
+  "to": "2014-10-29",
+  "co2_ppm": 3292,
+  "temp_c": 22.58,
+  "rh_pct": 44.2,
+  "gcr_mGy": 0.13155,
+  "saa_mGy": 0.07222,
+  "total_mGy": 0.20327
+ },
+ "RR-3": {
+  "days": 41,
+  "from": "2016-04-08",
+  "to": "2016-05-20",
+  "co2_ppm": 3695,
+  "temp_c": 21.6,
+  "rh_pct": 40.0,
+  "gcr_mGy": 0.14231,
+  "saa_mGy": 0.08458,
+  "total_mGy": 0.22653
+ },
+ "RR-6": {
+  "days": 49,
+  "from": "2017-12-15",
+  "to": "2018-02-01",
+  "co2_ppm": 3266,
+  "temp_c": 22.69,
+  "rh_pct": 41.5,
+  "gcr_mGy": 0.16603,
+  "saa_mGy": 0.11571,
+  "total_mGy": 0.2828
+ },
+ "RR-7": {
+  "days": 67,
+  "from": "2018-07-06",
+  "to": "2018-09-13",
+  "co2_ppm": 3372,
+  "temp_c": 22.69,
+  "rh_pct": 42.3,
+  "gcr_mGy": 0.17505,
+  "saa_mGy": 0.10327,
+  "total_mGy": 0.27818
+ },
+ "RR-12": {
+  "days": 37,
+  "from": "2019-04-17",
+  "to": "2019-05-23",
+  "co2_ppm": 2743,
+  "temp_c": 22.18,
+  "rh_pct": 41.1,
+  "gcr_mGy": 0.14719,
+  "saa_mGy": 0.21017,
+  "total_mGy": 0.35829
+ },
+ "RR-19": {
+  "days": 34,
+  "from": "2019-12-05",
+  "to": "2020-01-07",
+  "co2_ppm": 2535.5,
+  "temp_c": 21.66,
+  "rh_pct": 41.35,
+  "gcr_mGy": 0.14764,
+  "saa_mGy": 0.213335,
+  "total_mGy": 0.362955
+ },
+ "RR-23": {
+  "days": 33,
+  "from": "2020-12-12",
+  "to": "2021-01-13",
+  "co2_ppm": 2151,
+  "temp_c": 21.96,
+  "rh_pct": 37.6,
+  "gcr_mGy": 0.15502,
+  "saa_mGy": 0.19383,
+  "total_mGy": 0.3513
+ },
+ "_all": {
+  "co2_ppm": 3266,
+  "temp_c": 22.18,
+  "rh_pct": 41.35,
+  "gcr_mGy": 0.148,
+  "saa_mGy": 0.116,
+  "total_mGy": 0.283
+ },
+ "_source": "https://visualization.osdr.nasa.gov/eda/api/missions"
+}

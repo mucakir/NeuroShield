@@ -1,0 +1,1249 @@
+{
+  "generated": "2026-11-14T19:38:25.362Z",
+  "live": [
+    {
+      "id": "nominal",
+      "title": "Nominal day on station",
+      "environment": "ISS",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 97.94698062630626,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "moon_nominal",
+      "title": "Nominal day at the lunar base",
+      "environment": "Lunar base",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 97.35409169590218,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "mars_nominal",
+      "title": "Nominal sol at the Mars base",
+      "environment": "Mars base",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 96.54754082659436,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "fatigue_microsleep",
+      "title": "Fatigue → microsleep",
+      "environment": "ISS",
+      "firstAbnormal": 307,
+      "firstCritLabel": 615,
+      "firstAlert": {
+        "t": 318,
+        "rule": "Drowsiness / microsleep risk",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 418,
+        "rule": "Drowsiness / microsleep risk"
+      },
+      "rules": [
+        "Drowsiness / microsleep risk"
+      ],
+      "sensitivity": 0.9814502529510961,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 582,
+      "fp": 0,
+      "fn": 11,
+      "tn": 307
+    },
+    {
+      "id": "moon_fatigue_microsleep",
+      "title": "Fatigue → microsleep",
+      "environment": "Lunar base",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 97.48605693710988,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "mars_fatigue_microsleep",
+      "title": "Fatigue → microsleep (sol shift)",
+      "environment": "Mars base",
+      "firstAbnormal": 223,
+      "firstCritLabel": 555,
+      "firstAlert": {
+        "t": 242,
+        "rule": "Drowsiness / microsleep risk",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 395,
+        "rule": "Drowsiness / microsleep risk"
+      },
+      "rules": [
+        "Drowsiness / microsleep risk"
+      ],
+      "sensitivity": 0.9719350073855244,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 658,
+      "fp": 0,
+      "fn": 19,
+      "tn": 223
+    },
+    {
+      "id": "cognitive_overload",
+      "title": "Cognitive overload",
+      "environment": "ISS",
+      "firstAbnormal": 289,
+      "firstCritLabel": 289,
+      "firstAlert": {
+        "t": 288,
+        "rule": "Acute stress response",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 717,
+        "rule": "Cognitive overload"
+      },
+      "rules": [
+        "Acute stress response",
+        "Cognitive overload",
+        "High blood pressure"
+      ],
+      "sensitivity": 1,
+      "specificity": 0.9745547073791349,
+      "minScore": 45.00000000236833,
+      "tp": 507,
+      "fp": 10,
+      "fn": 0,
+      "tn": 383
+    },
+    {
+      "id": "moon_cognitive_overload",
+      "title": "Cognitive overload (manual landing)",
+      "environment": "Lunar lander",
+      "firstAbnormal": 232,
+      "firstCritLabel": 232,
+      "firstAlert": {
+        "t": 238,
+        "rule": "Acute stress response",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 348,
+        "rule": "Cognitive overload"
+      },
+      "rules": [
+        "Acute stress response",
+        "Cognitive overload",
+        "High blood pressure"
+      ],
+      "sensitivity": 0.9887429643527205,
+      "specificity": 0.9673024523160763,
+      "minScore": 45.00000000000001,
+      "tp": 527,
+      "fp": 12,
+      "fn": 6,
+      "tn": 355
+    },
+    {
+      "id": "mars_cognitive_overload",
+      "title": "Cognitive overload (medical emergency, no ground help)",
+      "environment": "Mars base",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 95.52913986231434,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "hypoxia_leak",
+      "title": "Hypoxia (slow cabin leak)",
+      "environment": "ISS",
+      "firstAbnormal": 324,
+      "firstCritLabel": 398,
+      "firstAlert": {
+        "t": 232,
+        "rule": "Cabin pressure dropping",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 396,
+        "rule": "Hypoxia"
+      },
+      "rules": [
+        "Cabin pressure dropping",
+        "Hypoxia"
+      ],
+      "sensitivity": 1,
+      "specificity": 0.45759368836291914,
+      "minScore": 45.00000000000001,
+      "tp": 393,
+      "fp": 275,
+      "fn": 0,
+      "tn": 232
+    },
+    {
+      "id": "moon_hypoxia_leak",
+      "title": "Hypoxia (slow habitat leak)",
+      "environment": "Lunar base",
+      "firstAbnormal": 324,
+      "firstCritLabel": 398,
+      "firstAlert": {
+        "t": 233,
+        "rule": "Cabin pressure dropping",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 401,
+        "rule": "Hypoxia"
+      },
+      "rules": [
+        "Cabin pressure dropping",
+        "Hypoxia"
+      ],
+      "sensitivity": 1,
+      "specificity": 0.4338919925512104,
+      "minScore": 45.00000000000001,
+      "tp": 363,
+      "fp": 304,
+      "fn": 0,
+      "tn": 233
+    },
+    {
+      "id": "mars_hypoxia_leak",
+      "title": "Hypoxia (slow habitat leak)",
+      "environment": "Mars base",
+      "firstAbnormal": 324,
+      "firstCritLabel": 398,
+      "firstAlert": {
+        "t": 233,
+        "rule": "Cabin pressure dropping",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 400,
+        "rule": "Hypoxia"
+      },
+      "rules": [
+        "Cabin pressure dropping",
+        "Hypoxia"
+      ],
+      "sensitivity": 1,
+      "specificity": 0.4989293361884368,
+      "minScore": 45.00000000000001,
+      "tp": 433,
+      "fp": 234,
+      "fn": 0,
+      "tn": 233
+    },
+    {
+      "id": "gloc_high_g",
+      "title": "High-G / G-LOC precursor",
+      "environment": "Earth entry",
+      "firstAbnormal": 395,
+      "firstCritLabel": null,
+      "firstAlert": {
+        "t": 395,
+        "rule": "G-LOC precursor (brain O2 falling under G)",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 413,
+        "rule": "G-LOC precursor (brain O2 falling under G)"
+      },
+      "rules": [
+        "G-LOC precursor (brain O2 falling under G)"
+      ],
+      "sensitivity": 1,
+      "specificity": 0.969059405940594,
+      "minScore": 45.000000013668995,
+      "tp": 92,
+      "fp": 25,
+      "fn": 0,
+      "tn": 783
+    },
+    {
+      "id": "moon_gloc_high_g",
+      "title": "High-G / G-LOC precursor",
+      "environment": "Lunar return",
+      "firstAbnormal": 394,
+      "firstCritLabel": null,
+      "firstAlert": {
+        "t": 396,
+        "rule": "G-LOC precursor (brain O2 falling under G)",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 404,
+        "rule": "G-LOC precursor (brain O2 falling under G)"
+      },
+      "rules": [
+        "G-LOC precursor (brain O2 falling under G)"
+      ],
+      "sensitivity": 0.9789473684210527,
+      "specificity": 0.9701863354037267,
+      "minScore": 45.00000000000001,
+      "tp": 93,
+      "fp": 24,
+      "fn": 2,
+      "tn": 781
+    },
+    {
+      "id": "mars_gloc_high_g",
+      "title": "High-G / G-LOC precursor (deconditioned crew)",
+      "environment": "Mars EDL",
+      "firstAbnormal": 436,
+      "firstCritLabel": null,
+      "firstAlert": {
+        "t": 401,
+        "rule": "G-LOC precursor (brain O2 falling under G)",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 405,
+        "rule": "G-LOC precursor (brain O2 falling under G)"
+      },
+      "rules": [
+        "G-LOC precursor (brain O2 falling under G)"
+      ],
+      "sensitivity": 1,
+      "specificity": 0.922543352601156,
+      "minScore": 45.00000007372042,
+      "tp": 35,
+      "fp": 67,
+      "fn": 0,
+      "tn": 798
+    },
+    {
+      "id": "spatial_disorientation",
+      "title": "Spatial disorientation",
+      "environment": "ISS",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 98.45889106960055,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "moon_spatial_disorientation",
+      "title": "Spatial disorientation",
+      "environment": "Lunar rover",
+      "firstAbnormal": 286,
+      "firstCritLabel": 291,
+      "firstAlert": {
+        "t": 293,
+        "rule": "Spatial disorientation",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 294,
+        "rule": "Spatial disorientation"
+      },
+      "rules": [
+        "Spatial disorientation",
+        "Acute stress response"
+      ],
+      "sensitivity": 0.9806094182825484,
+      "specificity": 0.9628942486085343,
+      "minScore": 45.00000000000001,
+      "tp": 354,
+      "fp": 20,
+      "fn": 7,
+      "tn": 519
+    },
+    {
+      "id": "mars_spatial_disorientation",
+      "title": "Spatial disorientation",
+      "environment": "Mars rover",
+      "firstAbnormal": 233,
+      "firstCritLabel": 240,
+      "firstAlert": {
+        "t": 242,
+        "rule": "Spatial disorientation",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 243,
+        "rule": "Spatial disorientation"
+      },
+      "rules": [
+        "Spatial disorientation",
+        "Acute stress response"
+      ],
+      "sensitivity": 0.9754098360655737,
+      "specificity": 0.9625468164794008,
+      "minScore": 45.00000000000001,
+      "tp": 357,
+      "fp": 20,
+      "fn": 9,
+      "tn": 514
+    },
+    {
+      "id": "hypercapnia_scrubber",
+      "title": "CO2 build-up (scrubber failure)",
+      "environment": "ISS",
+      "firstAbnormal": 288,
+      "firstCritLabel": 406,
+      "firstAlert": {
+        "t": 313,
+        "rule": "High cabin CO2",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 414,
+        "rule": "High cabin CO2"
+      },
+      "rules": [
+        "High cabin CO2"
+      ],
+      "sensitivity": 0.9591503267973857,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 587,
+      "fp": 0,
+      "fn": 25,
+      "tn": 288
+    },
+    {
+      "id": "moon_hypercapnia_scrubber",
+      "title": "CO2 build-up (scrubber failure)",
+      "environment": "Lunar base",
+      "firstAbnormal": 288,
+      "firstCritLabel": 406,
+      "firstAlert": {
+        "t": 318,
+        "rule": "High cabin CO2",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 408,
+        "rule": "High cabin CO2"
+      },
+      "rules": [
+        "High cabin CO2"
+      ],
+      "sensitivity": 0.9509803921568627,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 582,
+      "fp": 0,
+      "fn": 30,
+      "tn": 288
+    },
+    {
+      "id": "mars_hypercapnia_scrubber",
+      "title": "CO2 build-up (scrubber failure)",
+      "environment": "Mars base",
+      "firstAbnormal": 288,
+      "firstCritLabel": 406,
+      "firstAlert": {
+        "t": 318,
+        "rule": "High cabin CO2",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 415,
+        "rule": "High cabin CO2"
+      },
+      "rules": [
+        "High cabin CO2"
+      ],
+      "sensitivity": 0.9509803921568627,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 582,
+      "fp": 0,
+      "fn": 30,
+      "tn": 288
+    },
+    {
+      "id": "hypoglycaemia",
+      "title": "Hypoglycaemia after exercise",
+      "environment": "ISS",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 98.2608023949365,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "moon_hypoglycaemia",
+      "title": "Hypoglycaemia after exercise",
+      "environment": "Lunar base",
+      "firstAbnormal": 366,
+      "firstCritLabel": null,
+      "firstAlert": {
+        "t": 112,
+        "rule": "Rapid heart rate",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 181,
+        "rule": "Rapid heart rate"
+      },
+      "rules": [
+        "Rapid heart rate",
+        "High blood pressure",
+        "Low blood glucose"
+      ],
+      "sensitivity": 0.9341317365269461,
+      "specificity": 0.598939929328622,
+      "minScore": 45.00000000000001,
+      "tp": 312,
+      "fp": 227,
+      "fn": 22,
+      "tn": 339
+    },
+    {
+      "id": "mars_hypoglycaemia",
+      "title": "Hypoglycaemia after exercise",
+      "environment": "Mars base",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 97.0223857017598,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "fever_infection",
+      "title": "Fever / immune response",
+      "environment": "ISS",
+      "firstAbnormal": 779,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": 0,
+      "specificity": 1,
+      "minScore": 98.1824359436638,
+      "tp": 0,
+      "fp": 0,
+      "fn": 121,
+      "tn": 779
+    },
+    {
+      "id": "moon_fever_infection",
+      "title": "Fever / immune response",
+      "environment": "Lunar base",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 97.57371767627762,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "mars_fever_infection",
+      "title": "Fever / immune response",
+      "environment": "Mars base",
+      "firstAbnormal": 318,
+      "firstCritLabel": 457,
+      "firstAlert": {
+        "t": 498,
+        "rule": "Fever",
+        "level": "warn"
+      },
+      "firstCrit": null,
+      "rules": [
+        "Fever"
+      ],
+      "sensitivity": 0.6907216494845361,
+      "specificity": 1,
+      "minScore": 75.00000000000001,
+      "tp": 402,
+      "fp": 0,
+      "fn": 180,
+      "tn": 318
+    },
+    {
+      "id": "solar_particle_event",
+      "title": "Solar particle event (magnetosphere shields)",
+      "environment": "ISS",
+      "firstAbnormal": 237,
+      "firstCritLabel": null,
+      "firstAlert": {
+        "t": 251,
+        "rule": "Radiation: solar particle event",
+        "level": "warn"
+      },
+      "firstCrit": null,
+      "rules": [
+        "Radiation: solar particle event"
+      ],
+      "sensitivity": 0.9767054908485857,
+      "specificity": 0.8996655518394648,
+      "minScore": 75.00000000000001,
+      "tp": 587,
+      "fp": 30,
+      "fn": 14,
+      "tn": 269
+    },
+    {
+      "id": "moon_solar_particle_event",
+      "title": "Solar particle event",
+      "environment": "Lunar base",
+      "firstAbnormal": 215,
+      "firstCritLabel": 244,
+      "firstAlert": {
+        "t": 227,
+        "rule": "Radiation: solar particle event",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 248,
+        "rule": "Radiation: solar particle event"
+      },
+      "rules": [
+        "Radiation: solar particle event"
+      ],
+      "sensitivity": 0.9824817518248176,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 673,
+      "fp": 0,
+      "fn": 12,
+      "tn": 215
+    },
+    {
+      "id": "mars_solar_particle_event",
+      "title": "Solar particle event (thin atmosphere)",
+      "environment": "Mars base",
+      "firstAbnormal": 230,
+      "firstCritLabel": 290,
+      "firstAlert": {
+        "t": 244,
+        "rule": "Radiation: solar particle event",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 294,
+        "rule": "Radiation: solar particle event"
+      },
+      "rules": [
+        "Radiation: solar particle event"
+      ],
+      "sensitivity": 0.9791044776119403,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 656,
+      "fp": 0,
+      "fn": 14,
+      "tn": 230
+    },
+    {
+      "id": "eva_dcs",
+      "title": "EVA: decompression sickness risk",
+      "environment": "ISS EVA",
+      "firstAbnormal": 140,
+      "firstCritLabel": 148,
+      "firstAlert": {
+        "t": 148,
+        "rule": "Decompression sickness risk (EVA)",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 153,
+        "rule": "Decompression sickness risk (EVA)"
+      },
+      "rules": [
+        "Decompression sickness risk (EVA)"
+      ],
+      "sensitivity": 0.9746478873239437,
+      "specificity": 1,
+      "minScore": 45.00000000000001,
+      "tp": 346,
+      "fp": 0,
+      "fn": 9,
+      "tn": 545
+    },
+    {
+      "id": "moon_eva_dcs",
+      "title": "Moonwalk: decompression sickness risk",
+      "environment": "Lunar EVA",
+      "firstAbnormal": null,
+      "firstCritLabel": null,
+      "firstAlert": null,
+      "firstCrit": null,
+      "rules": [],
+      "sensitivity": null,
+      "specificity": 1,
+      "minScore": 97.93946113278498,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 900
+    },
+    {
+      "id": "mars_eva_dcs",
+      "title": "Mars EVA: decompression sickness risk",
+      "environment": "Mars EVA",
+      "firstAbnormal": 138,
+      "firstCritLabel": null,
+      "firstAlert": {
+        "t": 147,
+        "rule": "Decompression sickness risk (EVA)",
+        "level": "warn"
+      },
+      "firstCrit": null,
+      "rules": [
+        "Decompression sickness risk (EVA)",
+        "High blood pressure"
+      ],
+      "sensitivity": 0.9735294117647059,
+      "specificity": 0.6821428571428572,
+      "minScore": 75.00000000000001,
+      "tp": 331,
+      "fp": 178,
+      "fn": 9,
+      "tn": 382
+    },
+    {
+      "id": "thermal_failure",
+      "title": "Cabin heat & humidity (thermal-control failure)",
+      "environment": "ISS",
+      "firstAbnormal": 157,
+      "firstCritLabel": 506,
+      "firstAlert": {
+        "t": 225,
+        "rule": "High cabin noise",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 519,
+        "rule": "Cabin heat / humidity out of limits"
+      },
+      "rules": [
+        "High cabin noise",
+        "Cabin heat / humidity out of limits"
+      ],
+      "sensitivity": 0.8925750394944708,
+      "specificity": 0.9063670411985019,
+      "minScore": 45.00000000000001,
+      "tp": 565,
+      "fp": 25,
+      "fn": 68,
+      "tn": 242
+    },
+    {
+      "id": "moon_thermal_failure",
+      "title": "Cabin heat (lunar day, radiator failure)",
+      "environment": "Lunar base",
+      "firstAbnormal": 157,
+      "firstCritLabel": 450,
+      "firstAlert": {
+        "t": 224,
+        "rule": "High cabin noise",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 463,
+        "rule": "Cabin heat / humidity out of limits"
+      },
+      "rules": [
+        "High cabin noise",
+        "Acute stress response",
+        "Cabin heat / humidity out of limits",
+        "Fever"
+      ],
+      "sensitivity": 0.8959627329192547,
+      "specificity": 0.9140625,
+      "minScore": 45.00000000000001,
+      "tp": 577,
+      "fp": 22,
+      "fn": 67,
+      "tn": 234
+    },
+    {
+      "id": "mars_thermal_failure",
+      "title": "Cold cabin (heater failure at night)",
+      "environment": "Mars base",
+      "firstAbnormal": 371,
+      "firstCritLabel": 487,
+      "firstAlert": {
+        "t": 397,
+        "rule": "Cold cabin",
+        "level": "warn"
+      },
+      "firstCrit": {
+        "t": 501,
+        "rule": "Cold cabin"
+      },
+      "rules": [
+        "Cold cabin"
+      ],
+      "sensitivity": 0.9385342789598109,
+      "specificity": 0.949685534591195,
+      "minScore": 45.00000000000001,
+      "tp": 397,
+      "fp": 24,
+      "fn": 26,
+      "tn": 453
+    }
+  ],
+  "liveTotals": {
+    "tp": 10991,
+    "fp": 1497,
+    "fn": 681,
+    "tn": 19231,
+    "sensitivity": 0.9416552433173406,
+    "specificity": 0.927778849864917
+  },
+  "score": {
+    "nominalMean": 96.47738684415629,
+    "nominalSd": 10.425698058937952,
+    "abnormalMean": 59.42093853832484,
+    "abnormalSd": 17.205390432745112
+  },
+  "logbook": [
+    {
+      "crew": "A",
+      "name": "Crew A (Commander)",
+      "detected": 4,
+      "total": 4,
+      "falsePos": 0,
+      "episodes": [
+        {
+          "start": 18,
+          "end": 21,
+          "title": "Sleep loss / work overload + Low mood / high stress",
+          "metrics": [
+            "sleep_h",
+            "sleep_eff",
+            "work_h",
+            "pvt_rt",
+            "pvt_lapses",
+            "stress",
+            "cortisol",
+            "rmssd"
+          ],
+          "env": false
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "title": "Radiation dose spike",
+          "metrics": [
+            "dose_mGy"
+          ],
+          "env": true
+        },
+        {
+          "start": 37,
+          "end": 44,
+          "title": "Elevated cabin CO2",
+          "metrics": [
+            "co2_avg"
+          ],
+          "env": true
+        },
+        {
+          "start": 50,
+          "end": 56,
+          "title": "Microbial growth in cabin air",
+          "metrics": [
+            "microbe_cfu"
+          ],
+          "env": true
+        }
+      ],
+      "truth": [
+        {
+          "type": "Sleep deprivation (docking ops shift)",
+          "days": [
+            18,
+            21
+          ],
+          "hit": true
+        },
+        {
+          "type": "Real ISS CO2 excursion (OSDR EDA RR-7, 20-27 Aug 2018)",
+          "days": [
+            37,
+            44
+          ],
+          "hit": true
+        },
+        {
+          "type": "Solar particle event (synthetic, added to the real ISS dose)",
+          "days": [
+            20,
+            20
+          ],
+          "hit": true
+        },
+        {
+          "type": "Microbial growth in cabin air (condensate leak)",
+          "days": [
+            50,
+            56
+          ],
+          "hit": true
+        }
+      ]
+    },
+    {
+      "crew": "B",
+      "name": "Crew B (Pilot)",
+      "detected": 5,
+      "total": 5,
+      "falsePos": 0,
+      "episodes": [
+        {
+          "start": 20,
+          "end": 20,
+          "title": "Radiation dose spike",
+          "metrics": [
+            "dose_mGy"
+          ],
+          "env": true
+        },
+        {
+          "start": 37,
+          "end": 58,
+          "title": "Sleep loss / fatigue + Blood pressure rise + Optic-disc swelling (SANS sign)",
+          "metrics": [
+            "sbp",
+            "dbp",
+            "pvt_rt",
+            "sans_grade"
+          ],
+          "env": false
+        },
+        {
+          "start": 37,
+          "end": 44,
+          "title": "Elevated cabin CO2",
+          "metrics": [
+            "co2_avg"
+          ],
+          "env": true
+        },
+        {
+          "start": 50,
+          "end": 56,
+          "title": "Microbial growth in cabin air",
+          "metrics": [
+            "microbe_cfu"
+          ],
+          "env": true
+        }
+      ],
+      "truth": [
+        {
+          "type": "Real ISS CO2 excursion (OSDR EDA RR-7, 20-27 Aug 2018)",
+          "days": [
+            37,
+            44
+          ],
+          "hit": true
+        },
+        {
+          "type": "CO2-related headache and BP rise",
+          "days": [
+            37,
+            41
+          ],
+          "hit": true
+        },
+        {
+          "type": "Early SANS sign (optic-disc swelling, Frisén grade 1)",
+          "days": [
+            42,
+            60
+          ],
+          "hit": true
+        },
+        {
+          "type": "Solar particle event (synthetic, added to the real ISS dose)",
+          "days": [
+            20,
+            20
+          ],
+          "hit": true
+        },
+        {
+          "type": "Microbial growth in cabin air (condensate leak)",
+          "days": [
+            50,
+            56
+          ],
+          "hit": true
+        }
+      ]
+    },
+    {
+      "crew": "C",
+      "name": "Crew C (Flight Engineer)",
+      "detected": 4,
+      "total": 4,
+      "falsePos": 1,
+      "episodes": [
+        {
+          "start": 7,
+          "end": 7,
+          "title": "Unusual values",
+          "metrics": [
+            "spo2"
+          ],
+          "env": false
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "title": "Radiation dose spike",
+          "metrics": [
+            "dose_mGy"
+          ],
+          "env": true
+        },
+        {
+          "start": 37,
+          "end": 44,
+          "title": "Elevated cabin CO2",
+          "metrics": [
+            "co2_avg"
+          ],
+          "env": true
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "title": "Possible infection / fever + Low energy intake",
+          "metrics": [
+            "rhr",
+            "temp",
+            "exercise_min",
+            "rmssd",
+            "kcal_pct",
+            "cortisol"
+          ],
+          "env": false
+        },
+        {
+          "start": 50,
+          "end": 56,
+          "title": "Microbial growth in cabin air",
+          "metrics": [
+            "microbe_cfu"
+          ],
+          "env": true
+        }
+      ],
+      "truth": [
+        {
+          "type": "Real ISS CO2 excursion (OSDR EDA RR-7, 20-27 Aug 2018)",
+          "days": [
+            37,
+            44
+          ],
+          "hit": true
+        },
+        {
+          "type": "Fever / viral reactivation",
+          "days": [
+            40,
+            44
+          ],
+          "hit": true
+        },
+        {
+          "type": "Solar particle event (synthetic, added to the real ISS dose)",
+          "days": [
+            20,
+            20
+          ],
+          "hit": true
+        },
+        {
+          "type": "Microbial growth in cabin air (condensate leak)",
+          "days": [
+            50,
+            56
+          ],
+          "hit": true
+        }
+      ]
+    },
+    {
+      "crew": "D",
+      "name": "Crew D (Mission Specialist)",
+      "detected": 5,
+      "total": 5,
+      "falsePos": 1,
+      "episodes": [
+        {
+          "start": 9,
+          "end": 9,
+          "title": "Raised body temperature",
+          "metrics": [
+            "temp"
+          ],
+          "env": false
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "title": "Radiation dose spike",
+          "metrics": [
+            "dose_mGy"
+          ],
+          "env": true
+        },
+        {
+          "start": 31,
+          "end": 31,
+          "title": "Body-mass loss",
+          "metrics": [
+            "mass_change"
+          ],
+          "env": false
+        },
+        {
+          "start": 34,
+          "end": 60,
+          "title": "Body-mass loss + Muscle strength loss + Low mood / high stress + Team cohesion drop",
+          "metrics": [
+            "mass_change",
+            "strength_pct",
+            "cortisol",
+            "mood",
+            "team"
+          ],
+          "env": false
+        },
+        {
+          "start": 37,
+          "end": 44,
+          "title": "Elevated cabin CO2",
+          "metrics": [
+            "co2_avg"
+          ],
+          "env": true
+        },
+        {
+          "start": 50,
+          "end": 56,
+          "title": "Microbial growth in cabin air",
+          "metrics": [
+            "microbe_cfu"
+          ],
+          "env": true
+        }
+      ],
+      "truth": [
+        {
+          "type": "Real ISS CO2 excursion (OSDR EDA RR-7, 20-27 Aug 2018)",
+          "days": [
+            37,
+            44
+          ],
+          "hit": true
+        },
+        {
+          "type": "Progressive body-mass loss (low intake)",
+          "days": [
+            25,
+            60
+          ],
+          "hit": true
+        },
+        {
+          "type": "Low mood / isolation",
+          "days": [
+            45,
+            60
+          ],
+          "hit": true
+        },
+        {
+          "type": "Solar particle event (synthetic, added to the real ISS dose)",
+          "days": [
+            20,
+            20
+          ],
+          "hit": true
+        },
+        {
+          "type": "Microbial growth in cabin air (condensate leak)",
+          "days": [
+            50,
+            56
+          ],
+          "hit": true
+        }
+      ]
+    }
+  ],
+  "logbookTotals": {
+    "detected": 18,
+    "total": 18,
+    "falsePos": 2,
+    "crewDays": 240
+  }
+}

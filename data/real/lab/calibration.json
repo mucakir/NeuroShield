@@ -1,0 +1,684 @@
+{
+ "hrv_nsr": {
+  "source": "PhysioNet Normal Sinus Rhythm RR Interval Database v1.0.0",
+  "url": "https://physionet.org/content/nsr2db/1.0.0/",
+  "subjects": 54,
+  "windows_5min": 15234,
+  "rmssd_ms": {
+   "p5": 11.9,
+   "p10": 13.3,
+   "median": 21.0,
+   "p90": 41.0
+  },
+  "share_below_20": 0.458,
+  "share_below_12": 0.054,
+  "median_rmssd_under50": 26.6,
+  "per_subject": [
+   {
+    "id": "nsr001",
+    "age": 64,
+    "median_rmssd": 20.8,
+    "p10": 14.2,
+    "windows": 270
+   },
+   {
+    "id": "nsr002",
+    "age": 67,
+    "median_rmssd": 15.6,
+    "p10": 12.2,
+    "windows": 281
+   },
+   {
+    "id": "nsr003",
+    "age": 67,
+    "median_rmssd": 27.8,
+    "p10": 19.5,
+    "windows": 283
+   },
+   {
+    "id": "nsr004",
+    "age": 62,
+    "median_rmssd": 28.4,
+    "p10": 16.5,
+    "windows": 277
+   },
+   {
+    "id": "nsr005",
+    "age": 62,
+    "median_rmssd": 22.0,
+    "p10": 16.2,
+    "windows": 287
+   },
+   {
+    "id": "nsr006",
+    "age": 64,
+    "median_rmssd": 18.7,
+    "p10": 13.8,
+    "windows": 278
+   },
+   {
+    "id": "nsr007",
+    "age": 76,
+    "median_rmssd": 17.4,
+    "p10": 15.5,
+    "windows": 284
+   },
+   {
+    "id": "nsr008",
+    "age": 64,
+    "median_rmssd": 22.3,
+    "p10": 12.9,
+    "windows": 287
+   },
+   {
+    "id": "nsr009",
+    "age": 66,
+    "median_rmssd": 28.2,
+    "p10": 15.4,
+    "windows": 287
+   },
+   {
+    "id": "nsr010",
+    "age": 61,
+    "median_rmssd": 27.4,
+    "p10": 19.8,
+    "windows": 275
+   },
+   {
+    "id": "nsr011",
+    "age": 65,
+    "median_rmssd": 21.3,
+    "p10": 18.0,
+    "windows": 287
+   },
+   {
+    "id": "nsr012",
+    "age": 66,
+    "median_rmssd": 15.8,
+    "p10": 12.5,
+    "windows": 287
+   },
+   {
+    "id": "nsr013",
+    "age": 63,
+    "median_rmssd": 17.7,
+    "p10": 13.4,
+    "windows": 282
+   },
+   {
+    "id": "nsr014",
+    "age": 65,
+    "median_rmssd": 51.8,
+    "p10": 20.4,
+    "windows": 287
+   },
+   {
+    "id": "nsr015",
+    "age": 74,
+    "median_rmssd": 15.7,
+    "p10": 13.1,
+    "windows": 284
+   },
+   {
+    "id": "nsr016",
+    "age": 73,
+    "median_rmssd": 16.9,
+    "p10": 12.8,
+    "windows": 280
+   },
+   {
+    "id": "nsr017",
+    "age": 71,
+    "median_rmssd": 42.7,
+    "p10": 26.4,
+    "windows": 287
+   },
+   {
+    "id": "nsr018",
+    "age": 68,
+    "median_rmssd": 20.8,
+    "p10": 16.7,
+    "windows": 284
+   },
+   {
+    "id": "nsr019",
+    "age": 65,
+    "median_rmssd": 13.2,
+    "p10": 10.1,
+    "windows": 287
+   },
+   {
+    "id": "nsr020",
+    "age": 58,
+    "median_rmssd": 17.7,
+    "p10": 13.9,
+    "windows": 280
+   },
+   {
+    "id": "nsr021",
+    "age": 59,
+    "median_rmssd": 26.6,
+    "p10": 20.2,
+    "windows": 287
+   },
+   {
+    "id": "nsr022",
+    "age": 68,
+    "median_rmssd": 36.3,
+    "p10": 26.1,
+    "windows": 284
+   },
+   {
+    "id": "nsr023",
+    "age": 66,
+    "median_rmssd": 18.2,
+    "p10": 12.2,
+    "windows": 287
+   },
+   {
+    "id": "nsr024",
+    "age": 63,
+    "median_rmssd": 42.6,
+    "p10": 19.8,
+    "windows": 247
+   },
+   {
+    "id": "nsr025",
+    "age": 75,
+    "median_rmssd": 22.6,
+    "p10": 15.0,
+    "windows": 287
+   },
+   {
+    "id": "nsr026",
+    "age": 72,
+    "median_rmssd": 13.4,
+    "p10": 11.3,
+    "windows": 287
+   },
+   {
+    "id": "nsr027",
+    "age": 64,
+    "median_rmssd": 16.0,
+    "p10": 8.7,
+    "windows": 284
+   },
+   {
+    "id": "nsr028",
+    "age": 65,
+    "median_rmssd": 20.0,
+    "p10": 13.2,
+    "windows": 286
+   },
+   {
+    "id": "nsr029",
+    "age": 63,
+    "median_rmssd": 17.3,
+    "p10": 11.8,
+    "windows": 284
+   },
+   {
+    "id": "nsr030",
+    "age": 70,
+    "median_rmssd": 17.1,
+    "p10": 14.1,
+    "windows": 287
+   },
+   {
+    "id": "nsr031",
+    "age": 67,
+    "median_rmssd": 18.1,
+    "p10": 11.9,
+    "windows": 288
+   },
+   {
+    "id": "nsr032",
+    "age": 68,
+    "median_rmssd": 14.6,
+    "p10": 9.5,
+    "windows": 286
+   },
+   {
+    "id": "nsr033",
+    "age": 65,
+    "median_rmssd": 25.6,
+    "p10": 19.0,
+    "windows": 273
+   },
+   {
+    "id": "nsr034",
+    "age": 67,
+    "median_rmssd": 17.3,
+    "p10": 12.0,
+    "windows": 283
+   },
+   {
+    "id": "nsr035",
+    "age": 66,
+    "median_rmssd": 16.0,
+    "p10": 10.9,
+    "windows": 287
+   },
+   {
+    "id": "nsr036",
+    "age": 60,
+    "median_rmssd": 24.3,
+    "p10": 15.8,
+    "windows": 282
+   },
+   {
+    "id": "nsr037",
+    "age": 63,
+    "median_rmssd": 17.5,
+    "p10": 14.9,
+    "windows": 275
+   },
+   {
+    "id": "nsr038",
+    "age": 62,
+    "median_rmssd": 20.2,
+    "p10": 12.9,
+    "windows": 256
+   },
+   {
+    "id": "nsr039",
+    "age": 70,
+    "median_rmssd": 15.7,
+    "p10": 13.2,
+    "windows": 287
+   },
+   {
+    "id": "nsr040",
+    "age": 63,
+    "median_rmssd": 27.0,
+    "p10": 9.9,
+    "windows": 283
+   },
+   {
+    "id": "nsr041",
+    "age": 64,
+    "median_rmssd": 20.5,
+    "p10": 14.5,
+    "windows": 279
+   },
+   {
+    "id": "nsr042",
+    "age": 68,
+    "median_rmssd": 23.3,
+    "p10": 15.0,
+    "windows": 287
+   },
+   {
+    "id": "nsr043",
+    "age": 66,
+    "median_rmssd": 16.1,
+    "p10": 13.5,
+    "windows": 282
+   },
+   {
+    "id": "nsr044",
+    "age": 65,
+    "median_rmssd": 19.2,
+    "p10": 14.1,
+    "windows": 284
+   },
+   {
+    "id": "nsr045",
+    "age": 67,
+    "median_rmssd": 29.9,
+    "p10": 22.0,
+    "windows": 282
+   },
+   {
+    "id": "nsr046",
+    "age": 63,
+    "median_rmssd": 24.6,
+    "p10": 14.5,
+    "windows": 275
+   },
+   {
+    "id": "nsr047",
+    "age": 28,
+    "median_rmssd": 26.6,
+    "p10": 19.7,
+    "windows": 289
+   },
+   {
+    "id": "nsr048",
+    "age": 38,
+    "median_rmssd": 24.3,
+    "p10": 19.9,
+    "windows": 290
+   },
+   {
+    "id": "nsr049",
+    "age": 39,
+    "median_rmssd": 28.3,
+    "p10": 20.3,
+    "windows": 288
+   },
+   {
+    "id": "nsr050",
+    "age": 29,
+    "median_rmssd": 18.1,
+    "p10": 13.4,
+    "windows": 288
+   },
+   {
+    "id": "nsr051",
+    "age": 40,
+    "median_rmssd": 40.2,
+    "p10": 23.3,
+    "windows": 287
+   },
+   {
+    "id": "nsr052",
+    "age": 39,
+    "median_rmssd": 17.2,
+    "p10": 11.3,
+    "windows": 279
+   },
+   {
+    "id": "nsr053",
+    "age": 35,
+    "median_rmssd": 31.8,
+    "p10": 23.0,
+    "windows": 271
+   },
+   {
+    "id": "nsr054",
+    "age": 35,
+    "median_rmssd": 26.6,
+    "p10": 18.4,
+    "windows": 279
+   }
+  ]
+ },
+ "eeg_drowsiness": {
+  "source": "EEG driver drowsiness dataset (Cui et al., figshare 10.6084/m9.figshare.14273687), from Cao et al. 2019",
+  "url": "https://figshare.com/articles/dataset/EEG_driver_drowsiness_dataset/14273687",
+  "samples": 2022,
+  "subjects": 11,
+  "index": "(\u03b8 4-8 Hz + \u03b1 8-13 Hz) / \u03b2 13-30 Hz power, mean of 30 channels, 3-s epochs, \u00d7each person's alert median",
+  "alert_median": 1.0,
+  "drowsy_median": 1.61,
+  "drowsy_above_1_3": 0.601,
+  "alert_above_1_3": 0.292,
+  "drowsy_above_1_6": 0.5,
+  "alert_above_1_6": 0.185,
+  "auc_pooled": 0.697,
+  "per_subject": [
+   {
+    "subject": 1,
+    "n_alert": 94,
+    "n_drowsy": 94,
+    "median_drowsy_x_baseline": 1.55,
+    "auc": 0.719
+   },
+   {
+    "subject": 2,
+    "n_alert": 66,
+    "n_drowsy": 66,
+    "median_drowsy_x_baseline": 0.52,
+    "auc": 0.262
+   },
+   {
+    "subject": 3,
+    "n_alert": 75,
+    "n_drowsy": 75,
+    "median_drowsy_x_baseline": 1.45,
+    "auc": 0.653
+   },
+   {
+    "subject": 4,
+    "n_alert": 74,
+    "n_drowsy": 74,
+    "median_drowsy_x_baseline": 1.22,
+    "auc": 0.572
+   },
+   {
+    "subject": 5,
+    "n_alert": 112,
+    "n_drowsy": 112,
+    "median_drowsy_x_baseline": 1.24,
+    "auc": 0.619
+   },
+   {
+    "subject": 6,
+    "n_alert": 83,
+    "n_drowsy": 83,
+    "median_drowsy_x_baseline": 1.81,
+    "auc": 0.786
+   },
+   {
+    "subject": 7,
+    "n_alert": 51,
+    "n_drowsy": 51,
+    "median_drowsy_x_baseline": 1.66,
+    "auc": 0.677
+   },
+   {
+    "subject": 8,
+    "n_alert": 132,
+    "n_drowsy": 132,
+    "median_drowsy_x_baseline": 2.81,
+    "auc": 0.899
+   },
+   {
+    "subject": 9,
+    "n_alert": 157,
+    "n_drowsy": 157,
+    "median_drowsy_x_baseline": 2.08,
+    "auc": 0.819
+   },
+   {
+    "subject": 10,
+    "n_alert": 54,
+    "n_drowsy": 54,
+    "median_drowsy_x_baseline": 1.6,
+    "auc": 0.698
+   },
+   {
+    "subject": 11,
+    "n_alert": 113,
+    "n_drowsy": 113,
+    "median_drowsy_x_baseline": 1.42,
+    "auc": 0.669
+   }
+  ]
+ },
+ "sleep_edf": {
+  "source": "PhysioNet Sleep-EDF Database Expanded v1.0.0, sleep-cassette study (Kemp et al. 2000), hypnograms only",
+  "url": "https://physionet.org/content/sleep-edfx/1.0.0/",
+  "nights": 153,
+  "efficiency_def": "total sleep time \u00f7 time from lights-off to the final awakening",
+  "tst_h": {
+   "p10": 5.64,
+   "median": 7.13,
+   "p90": 8.14
+  },
+  "efficiency_pct": {
+   "p10": 50.92,
+   "median": 81.8,
+   "p90": 95.28
+  },
+  "under50": {
+   "nights": 39,
+   "tst_median": 7.28,
+   "eff_median": 92.3,
+   "eff_p10": 73.16
+  },
+  "share_eff_below_85": 0.575
+ },
+ "fnirs_workload": {
+  "source": "Tufts fNIRS2MW (Huang et al., NeurIPS 2021 Datasets track), CC BY 4.0",
+  "url": "https://tufts-hci-lab.github.io/code_and_datasets/fNIRS2MW.html",
+  "subjects": 1,
+  "of_subjects": 68,
+  "rate_hz": 5.2,
+  "features_note": "AB / CD = two forehead optode pairs; I = intensity, PHI = phase; O = oxy-, DO = deoxy-haemoglobin; values normalised per person (no rSO2 %).",
+  "best_feature": "CD_I_O",
+  "best_mean_spearman": 0.728,
+  "per_subject": [
+   {
+    "subject": "sub_1",
+    "blocks": 16,
+    "block_s": 81.9,
+    "features": {
+     "AB_I_O": {
+      "spearman": -0.073,
+      "auc_high_vs_low": 0.5,
+      "level_mean": [
+       0.083,
+       -0.168,
+       0.013,
+       0.017
+      ]
+     },
+     "AB_PHI_O": {
+      "spearman": 0.388,
+      "auc_high_vs_low": 0.797,
+      "level_mean": [
+       -0.285,
+       0.053,
+       0.63,
+       -0.036
+      ]
+     },
+     "AB_I_DO": {
+      "spearman": 0.497,
+      "auc_high_vs_low": 0.891,
+      "level_mean": [
+       -0.173,
+       -0.31,
+       0.217,
+       0.002
+      ]
+     },
+     "AB_PHI_DO": {
+      "spearman": -0.376,
+      "auc_high_vs_low": 0.203,
+      "level_mean": [
+       0.033,
+       0.043,
+       -0.086,
+       -0.031
+      ]
+     },
+     "CD_I_O": {
+      "spearman": 0.728,
+      "auc_high_vs_low": 0.969,
+      "level_mean": [
+       -0.815,
+       -0.254,
+       1.154,
+       0.535
+      ]
+     },
+     "CD_PHI_O": {
+      "spearman": 0.17,
+      "auc_high_vs_low": 0.609,
+      "level_mean": [
+       -0.081,
+       0.034,
+       0.351,
+       0.109
+      ]
+     },
+     "CD_I_DO": {
+      "spearman": 0.279,
+      "auc_high_vs_low": 0.656,
+      "level_mean": [
+       -0.091,
+       -0.323,
+       -0.136,
+       0.028
+      ]
+     },
+     "CD_PHI_DO": {
+      "spearman": -0.473,
+      "auc_high_vs_low": 0.203,
+      "level_mean": [
+       0.114,
+       0.123,
+       -0.147,
+       -0.042
+      ]
+     }
+    }
+   }
+  ]
+ },
+ "cybersickness": {
+  "source": "Wang, Li, Chardonnet & Hui 2023, Dataset for predicting cybersickness from a virtual navigation task (arXiv:2303.13527)",
+  "url": "https://github.com/coreturn/Cybersickness_Dataset",
+  "sessions": 159,
+  "people": 54,
+  "session_s": 240,
+  "ssq_quartiles": [
+   7.5,
+   22.4,
+   37.4
+  ],
+  "share_ssq_ge20": 0.547,
+  "share_ssq_ge40": 0.208,
+  "by_condition": {
+   "giftGroup": {
+    "n": 11,
+    "ssq_median": 26.2,
+    "scene_rot_median": 5.08
+   },
+   "group1.5": {
+    "n": 50,
+    "ssq_median": 20.5,
+    "scene_rot_median": 3.66
+   },
+   "group3": {
+    "n": 52,
+    "ssq_median": 29.9,
+    "scene_rot_median": 5.92
+   },
+   "groupfuzzy": {
+    "n": 46,
+    "ssq_median": 15.0,
+    "scene_rot_median": 3.07
+   }
+  },
+  "scene_rotation": {
+   "rho_ssq": [
+    0.185,
+    0.02
+   ],
+   "rho_within_person": [
+    0.505,
+    0.0
+   ],
+   "auc_sick": 0.632,
+   "session_mean_median": 4.16
+  },
+  "eda_rise": {
+   "rho_ssq": [
+    0.383,
+    0.0
+   ],
+   "rho_nausea": [
+    0.512,
+    0.0
+   ],
+   "rho_within_person": [
+    0.108,
+    0.18
+   ],
+   "auc_sick": 0.775,
+   "median_uS": 1.13
+  },
+  "hr_change": {
+   "rho_ssq": [
+    0.003,
+    0.967
+   ],
+   "auc_sick": 0.495
+  },
+  "features_note": "scene rotation = mean |virtual rotation rate| per session (as logged by SteamVR, taken as \u00b0/s); EDA rise = last 60 s minus first 30 s; HR change = last minus first 10 HR samples; AUC = SSQ \u2265 40 vs SSQ < 20 sessions"
+ }
+}

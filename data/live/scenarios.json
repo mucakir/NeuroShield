@@ -1,0 +1,790 @@
+[
+  {
+    "id": "nominal",
+    "base": "nominal",
+    "missionId": "ISS",
+    "title": "Nominal day on station",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Routine operations with a short payload task. Use it to learn the normal ranges.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "nominal"
+    ],
+    "file": "data/live/nominal.csv"
+  },
+  {
+    "id": "moon_nominal",
+    "base": "nominal",
+    "missionId": "Moon",
+    "title": "Nominal day at the lunar base",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Routine work in 0.17 g. Heart rate and blood pressure sit a little higher than on the ISS because gravity pulls blood towards the legs again; background radiation is higher without a magnetosphere.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "nominal"
+    ],
+    "file": "data/live/moon_nominal.csv"
+  },
+  {
+    "id": "mars_nominal",
+    "base": "nominal",
+    "missionId": "Mars",
+    "title": "Nominal sol at the Mars base",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "Routine work in 0.38 g. The cardiovascular system carries more load than in orbit; ground support is 12 minutes away.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "nominal"
+    ],
+    "file": "data/live/mars_nominal.csv"
+  },
+  {
+    "id": "fatigue_microsleep",
+    "base": "fatigue_microsleep",
+    "missionId": "ISS",
+    "title": "Fatigue → microsleep",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Night-shift robotic-arm monitoring. EEG slowing rises minutes before head nods and microsleeps.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "drowsy",
+      "microsleep",
+      "nominal"
+    ],
+    "file": "data/live/fatigue_microsleep.csv"
+  },
+  {
+    "id": "moon_fatigue_microsleep",
+    "base": "fatigue_microsleep",
+    "missionId": "Moon",
+    "title": "Fatigue → microsleep",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Lunar night: 14 days of darkness blur the sleep–wake rhythm. EEG slowing rises minutes before head nods and microsleeps.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "drowsy",
+      "microsleep",
+      "nominal"
+    ],
+    "file": "data/live/moon_fatigue_microsleep.csv"
+  },
+  {
+    "id": "mars_fatigue_microsleep",
+    "base": "fatigue_microsleep",
+    "missionId": "Mars",
+    "title": "Fatigue → microsleep (sol shift)",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "The 24 h 39 min Martian sol keeps shifting the schedule; drowsiness starts earlier than on the ISS.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "drowsy",
+      "microsleep",
+      "nominal"
+    ],
+    "file": "data/live/mars_fatigue_microsleep.csv"
+  },
+  {
+    "id": "cognitive_overload",
+    "base": "cognitive_overload",
+    "missionId": "ISS",
+    "title": "Cognitive overload",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Docking of a visiting vehicle with multiple malfunctions: workload index, HR, BP and skin conductance rise; HRV falls.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "cognitive_overload",
+      "nominal"
+    ],
+    "file": "data/live/cognitive_overload.csv"
+  },
+  {
+    "id": "moon_cognitive_overload",
+    "base": "cognitive_overload",
+    "missionId": "Moon",
+    "title": "Cognitive overload (manual landing)",
+    "environment": "Lunar lander",
+    "mission": {
+      "where": "Human landing system, final descent to the lunar surface",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Final descent with a failed landing sensor: the commander flies the last 500 m by hand among boulders.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "cognitive_overload",
+      "nominal"
+    ],
+    "file": "data/live/moon_cognitive_overload.csv"
+  },
+  {
+    "id": "mars_cognitive_overload",
+    "base": "cognitive_overload",
+    "missionId": "Mars",
+    "title": "Cognitive overload (medical emergency, no ground help)",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "A crewmate is injured; with a 24-min round trip the crew handles the emergency alone.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "cognitive_overload",
+      "nominal"
+    ],
+    "file": "data/live/mars_cognitive_overload.csv"
+  },
+  {
+    "id": "hypoxia_leak",
+    "base": "hypoxia_leak",
+    "missionId": "ISS",
+    "title": "Hypoxia (slow cabin leak)",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Undetected depressurisation: ppO2, SpO2 and brain oxygenation fall; crew dons O2 mask at 11:30.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "hypoxia",
+      "mild_hypoxia",
+      "nominal"
+    ],
+    "file": "data/live/hypoxia_leak.csv"
+  },
+  {
+    "id": "moon_hypoxia_leak",
+    "base": "hypoxia_leak",
+    "missionId": "Moon",
+    "title": "Hypoxia (slow habitat leak)",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Abrasive lunar dust wears a hatch seal: slow leak, ppO2, SpO2 and brain oxygenation fall; crew dons O2 mask at 11:30.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "hypoxia",
+      "mild_hypoxia",
+      "nominal"
+    ],
+    "file": "data/live/moon_hypoxia_leak.csv"
+  },
+  {
+    "id": "mars_hypoxia_leak",
+    "base": "hypoxia_leak",
+    "missionId": "Mars",
+    "title": "Hypoxia (slow habitat leak)",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "A cracked seal in the cold Martian night leaks air; ppO2, SpO2 and brain oxygenation fall; crew dons O2 mask at 11:30.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "hypoxia",
+      "mild_hypoxia",
+      "nominal"
+    ],
+    "file": "data/live/mars_hypoxia_leak.csv"
+  },
+  {
+    "id": "gloc_high_g",
+    "base": "gloc_high_g",
+    "missionId": "ISS",
+    "title": "High-G / G-LOC precursor",
+    "environment": "Earth entry",
+    "mission": {
+      "where": "Capsule re-entry to Earth after a long stay in microgravity",
+      "gravity": "microgravity → up to 6.5 G → 1 g",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Return to Earth after 6 months on the ISS, with an abort-profile load peak: brain oxygenation (fNIRS) falls with sustained +Gz.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "A-LOC (G-LOC precursor)",
+      "high_G",
+      "high_G_risk",
+      "nominal"
+    ],
+    "file": "data/live/gloc_high_g.csv"
+  },
+  {
+    "id": "moon_gloc_high_g",
+    "base": "gloc_high_g",
+    "missionId": "Moon",
+    "title": "High-G / G-LOC precursor",
+    "environment": "Lunar return",
+    "mission": {
+      "where": "Orion skip entry to Earth on the way back from the Moon",
+      "gravity": "microgravity → up to 7 G → 1 g",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Orion returns from the Moon at 11 km/s; the skip entry peaks higher than an ISS return.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "A-LOC (G-LOC precursor)",
+      "high_G",
+      "high_G_risk",
+      "nominal"
+    ],
+    "file": "data/live/moon_gloc_high_g.csv"
+  },
+  {
+    "id": "mars_gloc_high_g",
+    "base": "gloc_high_g",
+    "missionId": "Mars",
+    "title": "High-G / G-LOC precursor (deconditioned crew)",
+    "environment": "Mars EDL",
+    "mission": {
+      "where": "Mars entry, descent & landing after 7 months in microgravity",
+      "gravity": "microgravity → up to 5.5 G → 0.38 g",
+      "g": 0.0,
+      "delay_s": 720
+    },
+    "description": "Mars entry after 7 months in microgravity: the peak G is lower than an Earth entry, but deconditioning lowers G tolerance, so brain oxygen still falls fast.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "A-LOC (G-LOC precursor)",
+      "high_G",
+      "high_G_risk",
+      "nominal"
+    ],
+    "file": "data/live/mars_gloc_high_g.csv"
+  },
+  {
+    "id": "spatial_disorientation",
+    "base": "spatial_disorientation",
+    "missionId": "ISS",
+    "title": "Spatial disorientation",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Visual reorientation illusion when moving between modules with different 'up' directions; weaker than on a planetary surface.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "disorientation_risk",
+      "nominal",
+      "spatial_disorientation"
+    ],
+    "file": "data/live/spatial_disorientation.csv"
+  },
+  {
+    "id": "moon_spatial_disorientation",
+    "base": "spatial_disorientation",
+    "missionId": "Moon",
+    "title": "Spatial disorientation",
+    "environment": "Lunar rover",
+    "mission": {
+      "where": "Pressurised rover traverse on the Moon",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Rover traverse in 0.17 g: weak gravity cues and long shadows make tilt and slope hard to judge.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "disorientation_risk",
+      "nominal",
+      "spatial_disorientation"
+    ],
+    "file": "data/live/moon_spatial_disorientation.csv"
+  },
+  {
+    "id": "mars_spatial_disorientation",
+    "base": "spatial_disorientation",
+    "missionId": "Mars",
+    "title": "Spatial disorientation",
+    "environment": "Mars rover",
+    "mission": {
+      "where": "Pressurised rover traverse on Mars",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "Rover traverse soon after landing: the inner ear is still adapting from 7 months of microgravity to 0.38 g.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "disorientation_risk",
+      "nominal",
+      "spatial_disorientation"
+    ],
+    "file": "data/live/mars_spatial_disorientation.csv"
+  },
+  {
+    "id": "hypercapnia_scrubber",
+    "base": "hypercapnia_scrubber",
+    "missionId": "ISS",
+    "title": "CO2 build-up (scrubber failure)",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "CO2 removal (CDRA) fails; respiration, HR and BP rise, drowsiness/headache markers follow.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "elevated_CO2",
+      "hypercapnia",
+      "nominal"
+    ],
+    "file": "data/live/hypercapnia_scrubber.csv"
+  },
+  {
+    "id": "moon_hypercapnia_scrubber",
+    "base": "hypercapnia_scrubber",
+    "missionId": "Moon",
+    "title": "CO2 build-up (scrubber failure)",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Lunar dust clogs the CO2 scrubber; respiration, HR and BP rise, drowsiness/headache markers follow.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "elevated_CO2",
+      "hypercapnia",
+      "nominal"
+    ],
+    "file": "data/live/moon_hypercapnia_scrubber.csv"
+  },
+  {
+    "id": "mars_hypercapnia_scrubber",
+    "base": "hypercapnia_scrubber",
+    "missionId": "Mars",
+    "title": "CO2 build-up (scrubber failure)",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "CO2 scrubber fails with no resupply possible; respiration, HR and BP rise, drowsiness/headache markers follow.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "elevated_CO2",
+      "hypercapnia",
+      "nominal"
+    ],
+    "file": "data/live/mars_hypercapnia_scrubber.csv"
+  },
+  {
+    "id": "hypoglycaemia",
+    "base": "hypoglycaemia",
+    "missionId": "ISS",
+    "title": "Hypoglycaemia after exercise",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Exercise after a skipped meal; glucose falls below 70 then 54 mg/dL, recovers after 15 g carbs.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "hypoglycaemia_L1",
+      "hypoglycaemia_L2",
+      "nominal"
+    ],
+    "file": "data/live/hypoglycaemia.csv"
+  },
+  {
+    "id": "moon_hypoglycaemia",
+    "base": "hypoglycaemia",
+    "missionId": "Moon",
+    "title": "Hypoglycaemia after exercise",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Heavy shovelling of regolith after a skipped meal; glucose falls below 70 then 54 mg/dL, recovers after 15 g carbs.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "hypoglycaemia_L1",
+      "hypoglycaemia_L2",
+      "nominal"
+    ],
+    "file": "data/live/moon_hypoglycaemia.csv"
+  },
+  {
+    "id": "mars_hypoglycaemia",
+    "base": "hypoglycaemia",
+    "missionId": "Mars",
+    "title": "Hypoglycaemia after exercise",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "Treadmill session in 0.38 g after a skipped meal; glucose falls below 70 then 54 mg/dL, recovers after 15 g carbs.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "hypoglycaemia_L1",
+      "hypoglycaemia_L2",
+      "nominal"
+    ],
+    "file": "data/live/mars_hypoglycaemia.csv"
+  },
+  {
+    "id": "fever_infection",
+    "base": "fever_infection",
+    "missionId": "ISS",
+    "title": "Fever / immune response",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Latent virus reactivation (time-compressed): temperature, HR and respiration rise, HRV falls.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "fever",
+      "nominal",
+      "subfebrile"
+    ],
+    "file": "data/live/fever_infection.csv"
+  },
+  {
+    "id": "moon_fever_infection",
+    "base": "fever_infection",
+    "missionId": "Moon",
+    "title": "Fever / immune response",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Latent virus reactivation (time-compressed); evacuation to Earth would take about 3 days.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "fever",
+      "nominal",
+      "subfebrile"
+    ],
+    "file": "data/live/moon_fever_infection.csv"
+  },
+  {
+    "id": "mars_fever_infection",
+    "base": "fever_infection",
+    "missionId": "Mars",
+    "title": "Fever / immune response",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "Latent virus reactivation (time-compressed); no evacuation possible, the Crew Medical Officer treats on site.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "fever",
+      "nominal",
+      "subfebrile"
+    ],
+    "file": "data/live/mars_fever_infection.csv"
+  },
+  {
+    "id": "solar_particle_event",
+    "base": "solar_particle_event",
+    "missionId": "ISS",
+    "title": "Solar particle event (magnetosphere shields)",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "The same solar storm seen from the ISS: Earth's magnetic field deflects most protons, so the dose rate rises only to the caution band.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "elevated_radiation",
+      "nominal"
+    ],
+    "file": "data/live/solar_particle_event.csv"
+  },
+  {
+    "id": "moon_solar_particle_event",
+    "base": "solar_particle_event",
+    "missionId": "Moon",
+    "title": "Solar particle event",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "No magnetosphere: the full proton storm reaches the surface; crew moves to the storm shelter and dose rate drops.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "elevated_radiation",
+      "nominal",
+      "solar_particle_event"
+    ],
+    "file": "data/live/moon_solar_particle_event.csv"
+  },
+  {
+    "id": "mars_solar_particle_event",
+    "base": "solar_particle_event",
+    "missionId": "Mars",
+    "title": "Solar particle event (thin atmosphere)",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "Mars' thin atmosphere absorbs part of the storm; dose still exceeds the alert limit, crew shelters.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "elevated_radiation",
+      "nominal",
+      "solar_particle_event"
+    ],
+    "file": "data/live/mars_solar_particle_event.csv"
+  },
+  {
+    "id": "eva_dcs",
+    "base": "eva_dcs",
+    "missionId": "ISS",
+    "title": "EVA: decompression sickness risk",
+    "environment": "ISS EVA",
+    "mission": {
+      "where": "Spacewalk outside the ISS",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Spacewalk after a shortened O2 prebreathe: tissue N2 ratio is high at 29.6 kPa suit pressure; a suit pressure bump resolves it.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "dcs_high_risk",
+      "dcs_risk",
+      "dcs_symptoms",
+      "nominal"
+    ],
+    "file": "data/live/eva_dcs.csv"
+  },
+  {
+    "id": "moon_eva_dcs",
+    "base": "eva_dcs",
+    "missionId": "Moon",
+    "title": "Moonwalk: decompression sickness risk",
+    "environment": "Lunar EVA",
+    "mission": {
+      "where": "Moonwalk from the lunar base",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "Habitat at 70.3 kPa (26.5 % O2) shortens prebreathe, but walking in 0.17 g works the joints harder than floating, and the prebreathe was skipped.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "dcs_risk",
+      "dcs_symptoms",
+      "nominal"
+    ],
+    "file": "data/live/moon_eva_dcs.csv"
+  },
+  {
+    "id": "mars_eva_dcs",
+    "base": "eva_dcs",
+    "missionId": "Mars",
+    "title": "Mars EVA: decompression sickness risk",
+    "environment": "Mars EVA",
+    "mission": {
+      "where": "Surface EVA from the Mars base",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "Habitat at 70.3 kPa; walking in 0.38 g is heavy work in the suit and the prebreathe was skipped.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "dcs_risk",
+      "dcs_symptoms",
+      "nominal"
+    ],
+    "file": "data/live/mars_eva_dcs.csv"
+  },
+  {
+    "id": "thermal_failure",
+    "base": "thermal_failure",
+    "missionId": "ISS",
+    "title": "Cabin heat & humidity (thermal-control failure)",
+    "environment": "ISS",
+    "mission": {
+      "where": "Low Earth orbit, inside the magnetosphere",
+      "gravity": "microgravity",
+      "g": 0.0,
+      "delay_s": 0.5
+    },
+    "description": "Coolant pump fails: cabin temperature, humidity and fan noise rise; heart rate and body temperature follow.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "heat_stress",
+      "noise_exposure",
+      "nominal",
+      "warm_humid_cabin"
+    ],
+    "file": "data/live/thermal_failure.csv"
+  },
+  {
+    "id": "moon_thermal_failure",
+    "base": "thermal_failure",
+    "missionId": "Moon",
+    "title": "Cabin heat (lunar day, radiator failure)",
+    "environment": "Lunar base",
+    "mission": {
+      "where": "Lunar south-pole surface habitat, no magnetosphere",
+      "gravity": "0.17 g",
+      "g": 0.17,
+      "delay_s": 1.3
+    },
+    "description": "At lunar noon the surface reaches +120 °C; a radiator pump fails and the cabin heats faster than on the ISS.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "heat_stress",
+      "noise_exposure",
+      "nominal",
+      "warm_humid_cabin"
+    ],
+    "file": "data/live/moon_thermal_failure.csv"
+  },
+  {
+    "id": "mars_thermal_failure",
+    "base": "thermal_failure",
+    "missionId": "Mars",
+    "title": "Cold cabin (heater failure at night)",
+    "environment": "Mars base",
+    "mission": {
+      "where": "Mars surface habitat; thin CO2 atmosphere shields part of the radiation",
+      "gravity": "0.38 g",
+      "g": 0.38,
+      "delay_s": 720
+    },
+    "description": "Night at −80 °C outside: the heater bus fails and the cabin cools; shivering raises heart rate and blood pressure.",
+    "duration_s": 900,
+    "rate_hz": 1,
+    "labels": [
+      "cold_cabin",
+      "cool_cabin",
+      "nominal"
+    ],
+    "file": "data/live/mars_thermal_failure.csv"
+  }
+]

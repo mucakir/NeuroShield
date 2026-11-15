@@ -1,0 +1,128 @@
+[
+  {
+    "crew": "A",
+    "days": [
+      18,
+      21
+    ],
+    "type": "Sleep deprivation (docking ops shift)",
+    "metrics": [
+      "sleep_h",
+      "sleep_eff",
+      "work_h",
+      "pvt_rt",
+      "pvt_lapses",
+      "mood",
+      "stress",
+      "cortisol"
+    ]
+  },
+  {
+    "crew": "ALL",
+    "days": [
+      37,
+      44
+    ],
+    "type": "Real ISS CO2 excursion (OSDR EDA RR-7, 20-27 Aug 2018)",
+    "metrics": [
+      "co2_avg"
+    ],
+    "env": true,
+    "real": true
+  },
+  {
+    "crew": "B",
+    "days": [
+      37,
+      41
+    ],
+    "type": "CO2-related headache and BP rise",
+    "metrics": [
+      "sbp",
+      "dbp",
+      "symptoms"
+    ]
+  },
+  {
+    "crew": "C",
+    "days": [
+      40,
+      44
+    ],
+    "type": "Fever / viral reactivation",
+    "metrics": [
+      "temp",
+      "rhr",
+      "rmssd",
+      "sleep_h",
+      "cortisol",
+      "kcal_pct"
+    ]
+  },
+  {
+    "crew": "D",
+    "days": [
+      25,
+      60
+    ],
+    "type": "Progressive body-mass loss (low intake)",
+    "metrics": [
+      "mass_change",
+      "kcal_pct",
+      "exercise_min",
+      "water_l",
+      "strength_pct",
+      "u_ca"
+    ]
+  },
+  {
+    "crew": "B",
+    "days": [
+      42,
+      60
+    ],
+    "type": "Early SANS sign (optic-disc swelling, Frisén grade 1)",
+    "metrics": [
+      "sans_grade"
+    ]
+  },
+  {
+    "crew": "D",
+    "days": [
+      45,
+      60
+    ],
+    "type": "Low mood / isolation",
+    "metrics": [
+      "mood",
+      "stress",
+      "team",
+      "sleep_h",
+      "cortisol"
+    ]
+  },
+  {
+    "crew": "ALL",
+    "days": [
+      20,
+      20
+    ],
+    "type": "Solar particle event (synthetic, added to the real ISS dose)",
+    "metrics": [
+      "dose_mGy"
+    ],
+    "env": true
+  },
+  {
+    "crew": "ALL",
+    "days": [
+      50,
+      56
+    ],
+    "type": "Microbial growth in cabin air (condensate leak)",
+    "metrics": [
+      "microbe_cfu"
+    ],
+    "env": true
+  }
+]

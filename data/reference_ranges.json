@@ -1,0 +1,1550 @@
+{
+  "_note": "Reference ranges used by the NeuroShield Crew Health Monitor. 'normal' = green band, 'warn' = outer limit of the caution (amber) band; values beyond 'warn' are critical (red). null means the side is not bounded. Thresholds are for demonstration and decision support only; they are not medical criteria and must be individualised by flight surgeons.",
+  "live": {
+    "HR": {
+      "label": "Heart rate",
+      "unit": "bpm",
+      "system": "cardio",
+      "dec": 0,
+      "normal": [
+        50,
+        100
+      ],
+      "warn": [
+        40,
+        120
+      ],
+      "axis": [
+        30,
+        180
+      ],
+      "sensor": "PPG (helmet/headband)",
+      "desc": "Beats per minute. Spaceflight fluid shifts and deconditioning change resting HR; sustained tachycardia at rest can signal hypoxia, fever, hypoglycaemia or stress.",
+      "source": "AHA adult resting HR 60-100 bpm; athletic crew may rest near 50 bpm.",
+      "source_links": [
+        [
+          "AHA adult resting HR 60-100 bpm",
+          "https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/all-about-heart-rate-pulse"
+        ]
+      ]
+    },
+    "RMSSD": {
+      "label": "Heart-rate variability (RMSSD)",
+      "unit": "ms",
+      "system": "cardio",
+      "dec": 0,
+      "normal": [
+        13,
+        null
+      ],
+      "warn": [
+        10,
+        null
+      ],
+      "axis": [
+        0,
+        120
+      ],
+      "sensor": "PPG beat-to-beat",
+      "desc": "Short-term HRV. Low RMSSD reflects sympathetic dominance (stress, overload, illness). Limits checked on real data: in 54 healthy 24-h ECGs (PhysioNet NSR) the 5-min RMSSD median is 21 ms, 10 % of windows are below 13 ms and 5 % below 12 ms.",
+      "source": "Shaffer & Ginsberg 2017, Front Public Health.",
+      "source_links": [
+        [
+          "Shaffer & Ginsberg 2017, Front Public Health",
+          "https://doi.org/10.3389/fpubh.2017.00258"
+        ]
+      ]
+    },
+    "SBP": {
+      "label": "Systolic blood pressure",
+      "unit": "mmHg",
+      "system": "cardio",
+      "dec": 0,
+      "normal": [
+        90,
+        129
+      ],
+      "warn": [
+        85,
+        139
+      ],
+      "axis": [
+        70,
+        180
+      ],
+      "sensor": "Cuffless PTT estimate / cuff",
+      "desc": "Upper BP value. Microgravity headward fluid shift and CO2 exposure can raise BP.",
+      "source": "2017 ACC/AHA BP guideline (elevated 120-129, stage 1 130-139, stage 2 >=140).",
+      "source_links": [
+        [
+          "2017 ACC/AHA BP guideline",
+          "https://doi.org/10.1161/HYP.0000000000000065"
+        ]
+      ]
+    },
+    "DBP": {
+      "label": "Diastolic blood pressure",
+      "unit": "mmHg",
+      "system": "cardio",
+      "dec": 0,
+      "normal": [
+        60,
+        79
+      ],
+      "warn": [
+        50,
+        89
+      ],
+      "axis": [
+        40,
+        120
+      ],
+      "sensor": "Cuffless PTT estimate / cuff",
+      "desc": "Lower BP value.",
+      "source": "2017 ACC/AHA BP guideline.",
+      "source_links": [
+        [
+          "2017 ACC/AHA BP guideline",
+          "https://doi.org/10.1161/HYP.0000000000000065"
+        ]
+      ]
+    },
+    "SPO2": {
+      "label": "Blood oxygen saturation",
+      "unit": "%",
+      "system": "resp",
+      "dec": 0,
+      "normal": [
+        95,
+        100
+      ],
+      "warn": [
+        90,
+        100
+      ],
+      "axis": [
+        70,
+        100
+      ],
+      "sensor": "PPG / pulse oximetry",
+      "desc": "Fraction of haemoglobin carrying oxygen. Falls quickly with cabin depressurisation or low ppO2 (hypoxia).",
+      "source": "WHO Pulse Oximetry Training Manual 2011 (<90% = hypoxaemia).",
+      "source_links": [
+        [
+          "WHO Pulse Oximetry Training Manual 2011",
+          "https://cdn.who.int/media/docs/default-source/patient-safety/pulse-oximetry/who-ps-pulse-oxymetry-training-manual-en.pdf"
+        ]
+      ]
+    },
+    "RR": {
+      "label": "Respiration rate",
+      "unit": "/min",
+      "system": "resp",
+      "dec": 0,
+      "normal": [
+        12,
+        20
+      ],
+      "warn": [
+        10,
+        25
+      ],
+      "axis": [
+        5,
+        35
+      ],
+      "sensor": "PPG-derived / IMU chest motion",
+      "desc": "Breaths per minute. Rises with CO2 build-up, hypoxia, fever and stress.",
+      "source": "Standard adult resting range 12-20 /min.",
+      "source_links": [
+        [
+          "Standard adult resting range 12-20 /min",
+          "https://my.clevelandclinic.org/health/articles/10881-vital-signs"
+        ]
+      ]
+    },
+    "TR": {
+      "label": "DCS tissue ratio (N2)",
+      "unit": "TR",
+      "system": "resp",
+      "dec": 2,
+      "normal": [
+        0,
+        1.4
+      ],
+      "warn": [
+        0,
+        1.65
+      ],
+      "axis": [
+        0,
+        2.0
+      ],
+      "sensor": "Computed model (EVA only)",
+      "desc": "Computed from the prebreathe log and suit pressure: nitrogen pressure left in body tissue (360-min compartment) divided by suit pressure. The higher the ratio, the more likely N2 bubbles form (decompression sickness, 'the bends'). Shown only during spacewalks.",
+      "source": "Conkin 2011, NASA/TP-2011-216147; NASA HRP Risk of Decompression Sickness. Limits illustrative.",
+      "source_links": [
+        [
+          "Conkin 2011, NASA/TP-2011-216147",
+          "https://purl.fdlp.gov/GPO/gpo23332"
+        ],
+        [
+          "NASA HRP Risk of Decompression Sickness",
+          "https://www.nasa.gov/reference/risk-of-decompression-sickness/"
+        ]
+      ]
+    },
+    "TEMP": {
+      "label": "Body temperature",
+      "unit": "°C",
+      "system": "thermal",
+      "dec": 1,
+      "normal": [
+        36.1,
+        37.5
+      ],
+      "warn": [
+        35.5,
+        38.0
+      ],
+      "axis": [
+        35,
+        40
+      ],
+      "sensor": "Skin/ear thermistor",
+      "desc": "Core temperature is ~1 °C higher in long-duration microgravity; >38 °C suggests fever or heat stress.",
+      "source": "Stahn et al. 2017, Sci Rep 7:16180.",
+      "source_links": [
+        [
+          "Stahn et al. 2017, Sci Rep 7:16180",
+          "https://doi.org/10.1038/s41598-017-15560-w"
+        ]
+      ]
+    },
+    "GLU": {
+      "label": "Blood glucose (CGM)",
+      "unit": "mg/dL",
+      "system": "metabolic",
+      "dec": 0,
+      "normal": [
+        70,
+        140
+      ],
+      "warn": [
+        54,
+        180
+      ],
+      "axis": [
+        40,
+        220
+      ],
+      "sensor": "Continuous glucose monitor",
+      "desc": "<70 mg/dL is hypoglycaemia level 1, <54 level 2. Insulin resistance has been reported in spaceflight.",
+      "source": "Battelino et al. 2019, Diabetes Care (CGM time-in-range consensus).",
+      "source_links": [
+        [
+          "Battelino et al. 2019, Diabetes Care",
+          "https://doi.org/10.2337/dci19-0028"
+        ]
+      ]
+    },
+    "EEG_FI": {
+      "label": "EEG drowsiness index (θ+α)/β",
+      "unit": "×baseline",
+      "system": "neuro",
+      "dec": 2,
+      "normal": [
+        0.7,
+        1.3
+      ],
+      "warn": [
+        0.5,
+        1.6
+      ],
+      "axis": [
+        0.3,
+        3.0
+      ],
+      "sensor": "Dry-electrode EEG",
+      "desc": "Ratio of slow (theta+alpha) to fast (beta) EEG power, normalised to the crew member's rested baseline. Rises before microsleep.",
+      "source": "Jap et al. 2009, Expert Syst Appl; Lal & Craig 2001, Biol Psychol.",
+      "source_links": [
+        [
+          "Jap et al. 2009, Expert Syst Appl",
+          "https://doi.org/10.1016/j.eswa.2007.12.043"
+        ],
+        [
+          "Lal & Craig 2001, Biol Psychol",
+          "https://doi.org/10.1016/S0301-0511(00)00085-5"
+        ]
+      ]
+    },
+    "EEG_WL": {
+      "label": "EEG workload index θf/αp",
+      "unit": "×baseline",
+      "system": "neuro",
+      "dec": 2,
+      "normal": [
+        0.7,
+        1.4
+      ],
+      "warn": [
+        0.5,
+        1.8
+      ],
+      "axis": [
+        0.3,
+        2.6
+      ],
+      "sensor": "Dry-electrode EEG",
+      "desc": "Frontal theta over parietal alpha, normalised to baseline. Rises with mental workload.",
+      "source": "Gevins & Smith 2003, Theor Issues Ergon Sci.",
+      "source_links": [
+        [
+          "Gevins & Smith 2003, Theor Issues Ergon Sci",
+          "https://doi.org/10.1080/14639220210159717"
+        ]
+      ]
+    },
+    "RSO2": {
+      "label": "Cerebral oxygenation (fNIRS rSO2)",
+      "unit": "%",
+      "system": "neuro",
+      "dec": 0,
+      "normal": [
+        60,
+        80
+      ],
+      "warn": [
+        50,
+        85
+      ],
+      "axis": [
+        30,
+        90
+      ],
+      "sensor": "Prefrontal fNIRS",
+      "desc": "Regional brain tissue oxygen saturation. Drops precede G-induced loss of consciousness (G-LOC) and hypoxic impairment.",
+      "source": "Kikukawa et al. 2008, Dynamic Medicine; Murkin & Arango 2009, Br J Anaesth.",
+      "source_links": [
+        [
+          "Kikukawa et al. 2008, Dynamic Medicine",
+          "https://doi.org/10.1186/1476-5918-7-10"
+        ],
+        [
+          "Murkin & Arango 2009, Br J Anaesth",
+          "https://doi.org/10.1093/bja/aep299"
+        ]
+      ]
+    },
+    "GSR": {
+      "label": "Skin conductance (EDA)",
+      "unit": "µS",
+      "system": "neuro",
+      "dec": 1,
+      "normal": [
+        0,
+        12
+      ],
+      "warn": [
+        0,
+        20
+      ],
+      "axis": [
+        0,
+        25
+      ],
+      "sensor": "GSR electrodes",
+      "desc": "Sympathetic arousal marker; rises with stress, sweating (hypoglycaemia) and motion sickness.",
+      "source": "Boucsein 2012, Electrodermal Activity.",
+      "source_links": [
+        [
+          "Boucsein 2012, Electrodermal Activity",
+          "https://doi.org/10.1007/978-1-4614-1126-0"
+        ]
+      ]
+    },
+    "NOD": {
+      "label": "Head nods (microsleep)",
+      "unit": "/min",
+      "system": "neuro",
+      "dec": 0,
+      "normal": [
+        0,
+        1
+      ],
+      "warn": [
+        0,
+        3
+      ],
+      "axis": [
+        0,
+        15
+      ],
+      "sensor": "Head IMU",
+      "desc": "Sudden head drops detected by the helmet IMU; a late sign of drowsiness.",
+      "source": "NeuroShield project method (IMU-based head-drop detection)."
+    },
+    "GZ": {
+      "label": "Acceleration (+Gz)",
+      "unit": "G",
+      "system": "env",
+      "dec": 1,
+      "normal": [
+        -0.5,
+        3.0
+      ],
+      "warn": [
+        -1.0,
+        4.5
+      ],
+      "axis": [
+        -1,
+        8
+      ],
+      "sensor": "Vehicle IMU",
+      "desc": "Head-to-foot acceleration. Relaxed G tolerance is ~4.5-5 G; sustained high G drains blood from the brain.",
+      "source": "Whinnery & Forster 2013; USAF G-LOC data.",
+      "source_links": [
+        [
+          "Whinnery & Forster 2013",
+          "https://doi.org/10.1186/2046-7648-2-19"
+        ]
+      ]
+    },
+    "VMIS": {
+      "label": "Vestibular mismatch",
+      "unit": "°/s",
+      "system": "neuro",
+      "dec": 0,
+      "normal": [
+        0,
+        15
+      ],
+      "warn": [
+        0,
+        30
+      ],
+      "axis": [
+        0,
+        80
+      ],
+      "sensor": "Head IMU vs vehicle IMU",
+      "desc": "Difference between head and vehicle angular rates; high values indicate spatial disorientation / motion sickness risk.",
+      "source": "Clément & Reschke 2008, Neuroscience in Space.",
+      "source_links": [
+        [
+          "Clément & Reschke 2008, Neuroscience in Space",
+          "https://doi.org/10.1007/978-0-387-78950-7"
+        ]
+      ]
+    },
+    "CO2": {
+      "label": "Cabin CO2",
+      "unit": "ppm",
+      "system": "env",
+      "dec": 0,
+      "normal": [
+        0,
+        3950
+      ],
+      "warn": [
+        0,
+        5300
+      ],
+      "axis": [
+        0,
+        12000
+      ],
+      "sensor": "Cabin sensor",
+      "desc": "Real ISS cabin CO2 is usually 2,500-3,500 ppm (≈2-2.7 mmHg; OSDR EDA telemetry). NASA keeps the 24-h average at or below 3 mmHg (≈3,950 ppm); some crews report headaches from ~2.3 mmHg. 1 mmHg ≈ 1316 ppm.",
+      "source": "Law et al. 2014, J Occup Environ Med; NASA SMAC (JSC-20584).",
+      "source_links": [
+        [
+          "Law et al. 2014, J Occup Environ Med",
+          "https://doi.org/10.1097/JOM.0000000000000158"
+        ],
+        [
+          "NASA SMAC (JSC-20584)",
+          "https://ntrs.nasa.gov/citations/20090014213"
+        ]
+      ]
+    },
+    "PPO2": {
+      "label": "Cabin oxygen partial pressure",
+      "unit": "kPa",
+      "system": "env",
+      "dec": 1,
+      "normal": [
+        19.5,
+        24.0
+      ],
+      "warn": [
+        16.0,
+        26.0
+      ],
+      "axis": [
+        10,
+        28
+      ],
+      "sensor": "Cabin sensor",
+      "desc": "Oxygen available for breathing. Below ~16 kPa hypoxic symptoms appear.",
+      "source": "NASA-STD-3001 Vol. 2.",
+      "source_links": [
+        [
+          "NASA-STD-3001 Vol. 2",
+          "https://www.nasa.gov/reference/nasa-std-3001v2"
+        ]
+      ]
+    },
+    "PCAB": {
+      "label": "Cabin pressure",
+      "unit": "kPa",
+      "system": "env",
+      "dec": 1,
+      "normal": [
+        97,
+        103
+      ],
+      "warn": [
+        69,
+        105
+      ],
+      "axis": [
+        50,
+        110
+      ],
+      "sensor": "Cabin sensor",
+      "desc": "Total pressure. 70.3 kPa is the proposed exploration atmosphere (with 34% O2).",
+      "source": "NASA-STD-3001 Vol. 2; NASA Exploration Atmospheres Working Group 2012.",
+      "source_links": [
+        [
+          "NASA-STD-3001 Vol. 2",
+          "https://www.nasa.gov/reference/nasa-std-3001v2"
+        ],
+        [
+          "NASA Exploration Atmospheres Working Group 2012",
+          "https://purl.fdlp.gov/GPO/gpo7190"
+        ]
+      ]
+    },
+    "PSUIT": {
+      "label": "Suit pressure",
+      "unit": "kPa",
+      "system": "env",
+      "dec": 1,
+      "normal": [
+        27.5,
+        105
+      ],
+      "warn": [
+        24,
+        105
+      ],
+      "axis": [
+        0,
+        110
+      ],
+      "sensor": "Spacesuit telemetry (EVA only)",
+      "desc": "The ISS spacesuit runs at 29.6 kPa (4.3 psi) of pure O2. A variable-pressure suit can raise its pressure to treat DCS. Shown only during spacewalks.",
+      "source": "NASA HRP Risks of Decompression Sickness and of EVA injury; NASA-STD-3001 Vol. 2.",
+      "source_links": [
+        [
+          "Decompression Sickness",
+          "https://www.nasa.gov/reference/risk-of-decompression-sickness/"
+        ],
+        [
+          "EVA injury",
+          "https://www.nasa.gov/reference/risk-of-injury-and-compromised-performance-from-extravehicular-activity-eva/"
+        ],
+        [
+          "NASA-STD-3001 Vol. 2",
+          "https://www.nasa.gov/reference/nasa-std-3001v2"
+        ]
+      ]
+    },
+    "CO": {
+      "label": "Cabin carbon monoxide",
+      "unit": "ppm",
+      "system": "env",
+      "dec": 0,
+      "normal": [
+        0,
+        15
+      ],
+      "warn": [
+        0,
+        55
+      ],
+      "axis": [
+        0,
+        120
+      ],
+      "sensor": "Cabin gas sensor",
+      "desc": "Toxic combustion product (fire, overheating).",
+      "source": "NASA Spacecraft Maximum Allowable Concentrations, JSC-20584.",
+      "source_links": [
+        [
+          "NASA Spacecraft Maximum Allowable Concentrations, JSC-20584",
+          "https://ntrs.nasa.gov/citations/20090014213"
+        ]
+      ]
+    },
+    "CABT": {
+      "label": "Cabin temperature",
+      "unit": "°C",
+      "system": "env",
+      "dec": 1,
+      "normal": [
+        18,
+        27
+      ],
+      "warn": [
+        15,
+        30
+      ],
+      "axis": [
+        12,
+        36
+      ],
+      "sensor": "Cabin sensor",
+      "desc": "A thermal-control failure makes the cabin hot and humid; heat stress raises heart rate and body temperature and impairs performance.",
+      "source": "NASA-STD-3001 Vol. 2 (18–27 °C).",
+      "source_links": [
+        [
+          "NASA-STD-3001 Vol. 2",
+          "https://www.nasa.gov/reference/nasa-std-3001v2"
+        ]
+      ]
+    },
+    "RH": {
+      "label": "Cabin humidity",
+      "unit": "% RH",
+      "system": "env",
+      "dec": 0,
+      "normal": [
+        25,
+        75
+      ],
+      "warn": [
+        15,
+        85
+      ],
+      "axis": [
+        0,
+        100
+      ],
+      "sensor": "Cabin sensor",
+      "desc": "High humidity causes condensation and microbial growth; low humidity dries eyes and airways.",
+      "source": "NASA-STD-3001 Vol. 2 (25–75 % RH).",
+      "source_links": [
+        [
+          "NASA-STD-3001 Vol. 2",
+          "https://www.nasa.gov/reference/nasa-std-3001v2"
+        ]
+      ]
+    },
+    "SPL": {
+      "label": "Cabin noise",
+      "unit": "dBA",
+      "system": "env",
+      "dec": 0,
+      "normal": [
+        0,
+        60
+      ],
+      "warn": [
+        0,
+        85
+      ],
+      "axis": [
+        30,
+        95
+      ],
+      "sensor": "Acoustic dosimeter",
+      "desc": "Fan and pump noise disturbs sleep and communication. About 67 dBA over a day, or any level above 85 dBA, calls for hearing protection.",
+      "source": "NASA-STD-3001 Vol. 2 (acoustics); NASA HRP hostile/closed environment hazard.",
+      "source_links": [
+        [
+          "NASA-STD-3001 Vol. 2",
+          "https://www.nasa.gov/reference/nasa-std-3001v2"
+        ],
+        [
+          "NASA HRP hostile/closed environment hazard",
+          "https://www.nasa.gov/hrp/hazard-hostile-closed-environments/"
+        ]
+      ]
+    },
+    "DOSE": {
+      "label": "Radiation dose rate",
+      "unit": "µGy/h",
+      "system": "env",
+      "dec": 0,
+      "normal": [
+        0,
+        25
+      ],
+      "warn": [
+        0,
+        100
+      ],
+      "axis": [
+        0,
+        400
+      ],
+      "sensor": "Active dosimeter",
+      "desc": "Absorbed dose rate. Real ISS area dosimetry averages ≈0.29 mGy/day (≈12 µGy/h; OSDR EDA, 2014-2020), mostly galactic cosmic rays plus South Atlantic Anomaly passes. A solar particle event can raise it by orders of magnitude; shelter in the most shielded area.",
+      "source": "Zeitlin et al. 2013, Science; NASA-STD-3001 Vol. 1.",
+      "source_links": [
+        [
+          "Zeitlin et al. 2013, Science",
+          "https://doi.org/10.1126/science.1235989"
+        ],
+        [
+          "NASA-STD-3001 Vol. 1",
+          "https://www.nasa.gov/reference/nasa-std-3001"
+        ]
+      ]
+    },
+    "NEUT": {
+      "label": "Neutron dose rate",
+      "unit": "µSv/h",
+      "system": "env",
+      "dec": 1,
+      "normal": [
+        0,
+        10
+      ],
+      "warn": [
+        0,
+        40
+      ],
+      "axis": [
+        0,
+        60
+      ],
+      "sensor": "CANS-type spectrometer",
+      "desc": "Neutron dose-equivalent rate. Neutrons make up about 30 % of the radiation on the ISS and are especially damaging to tissue. Measured continuously and autonomously, like CSA's CANS instrument.",
+      "source": "Canadian Space Agency 2026 (CANS contract news); Zeitlin et al. 2013. Limits illustrative.",
+      "source_links": [
+        [
+          "Canadian Space Agency 2026 (CANS contract news)",
+          "https://www.canada.ca/en/space-agency/news/2026/02/canadian-space-radiation-technology-to-support-health-and-safety.html"
+        ],
+        [
+          "Zeitlin et al. 2013",
+          "https://doi.org/10.1126/science.1235989"
+        ]
+      ]
+    }
+  },
+  "daily": {
+    "sleep_h": {
+      "label": "Sleep duration",
+      "unit": "h",
+      "dec": 1,
+      "normal": [
+        7,
+        9.5
+      ],
+      "warn": [
+        6,
+        11
+      ],
+      "axis": [
+        3,
+        11
+      ],
+      "desc": "NASA schedules 8.5 h for sleep; ISS crew average ~6 h.",
+      "source": "Barger et al. 2014, Lancet Neurol.",
+      "system": "neuro",
+      "sensor": "Actigraphy watch / self-report",
+      "source_links": [
+        [
+          "Barger et al. 2014, Lancet Neurol",
+          "https://doi.org/10.1016/S1474-4422(14)70122-X"
+        ]
+      ]
+    },
+    "sleep_eff": {
+      "label": "Sleep efficiency",
+      "unit": "%",
+      "system": "neuro",
+      "sensor": "Actigraphy watch",
+      "dec": 0,
+      "normal": [
+        85,
+        100
+      ],
+      "warn": [
+        75,
+        100
+      ],
+      "axis": [
+        60,
+        100
+      ],
+      "desc": "Share of time in bed spent asleep, from the wrist actigraph (as in NASA Standard Measures and ARCHeR).",
+      "source": "Ohayon et al. 2017, Sleep Health; NASA HRP Sleep & Irregular Schedules risk.",
+      "source_links": [
+        [
+          "Ohayon et al. 2017, Sleep Health",
+          "https://doi.org/10.1016/j.sleh.2016.11.006"
+        ],
+        [
+          "NASA HRP Sleep & Irregular Schedules risk",
+          "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/"
+        ]
+      ]
+    },
+    "work_h": {
+      "label": "Work hours",
+      "unit": "h",
+      "system": "neuro",
+      "sensor": "Mission timeline",
+      "dec": 1,
+      "normal": [
+        0,
+        10
+      ],
+      "warn": [
+        0,
+        12
+      ],
+      "axis": [
+        0,
+        16
+      ],
+      "desc": "Scheduled plus overtime work. Work overload is one of the three named stressors of the HRP sleep risk.",
+      "source": "NASA HRP Risk from Inadequate Sleep and Irregular Schedules (work overload).",
+      "source_links": [
+        [
+          "NASA HRP Risk from Inadequate Sleep and Irregular Schedules",
+          "https://www.nasa.gov/reference/risk-from-inadequate-sleep-and-irregular-schedules/"
+        ]
+      ]
+    },
+    "mood": {
+      "label": "Mood (self-rated 1-5)",
+      "unit": "",
+      "dec": 0,
+      "normal": [
+        3,
+        5
+      ],
+      "warn": [
+        2,
+        5
+      ],
+      "axis": [
+        1,
+        5
+      ],
+      "desc": "1 = very low, 5 = very good.",
+      "source": "NASA HRP Risk of Behavioral Conditions and Psychiatric Disorders.",
+      "system": "neuro",
+      "sensor": "Daily check-in",
+      "source_links": [
+        [
+          "NASA HRP Risk of Behavioral Conditions and Psychiatric Disorders",
+          "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/"
+        ]
+      ]
+    },
+    "stress": {
+      "label": "Stress (self-rated 1-5)",
+      "unit": "",
+      "dec": 0,
+      "normal": [
+        1,
+        3
+      ],
+      "warn": [
+        1,
+        4
+      ],
+      "axis": [
+        1,
+        5
+      ],
+      "desc": "1 = calm, 5 = very stressed.",
+      "source": "NASA HRP Risk of Behavioral Conditions and Psychiatric Disorders.",
+      "system": "neuro",
+      "sensor": "Daily check-in",
+      "source_links": [
+        [
+          "NASA HRP Risk of Behavioral Conditions and Psychiatric Disorders",
+          "https://www.nasa.gov/reference/risk-of-behavioral-conditions-and-psychiatric-disorders/"
+        ]
+      ]
+    },
+    "team": {
+      "label": "Team cohesion (self-rated 1-5)",
+      "unit": "",
+      "system": "neuro",
+      "sensor": "Daily check-in",
+      "dec": 0,
+      "normal": [
+        3,
+        5
+      ],
+      "warn": [
+        2,
+        5
+      ],
+      "axis": [
+        1,
+        5
+      ],
+      "desc": "1 = conflict / isolated, 5 = working very well together.",
+      "source": "NASA HRP Risk of Inadequate Teamwork.",
+      "source_links": [
+        [
+          "NASA HRP Risk of Inadequate Teamwork",
+          "https://www.nasa.gov/reference/risk-of-inadequate-teamwork/"
+        ]
+      ]
+    },
+    "msq": {
+      "label": "Motion sickness (0-10)",
+      "unit": "",
+      "system": "neuro",
+      "sensor": "Daily check-in",
+      "dec": 0,
+      "normal": [
+        0,
+        2
+      ],
+      "warn": [
+        0,
+        5
+      ],
+      "axis": [
+        0,
+        10
+      ],
+      "desc": "Self-rated nausea / dizziness. Most astronauts get space motion sickness in the first days and after gravity transitions.",
+      "source": "NASA HRP Risk of Altered Sensorimotor and Vestibular Function.",
+      "source_links": [
+        [
+          "NASA HRP Risk of Altered Sensorimotor and Vestibular Function",
+          "https://www.nasa.gov/reference/risk-of-altered-sensorimotor-and-vestibular-function/"
+        ]
+      ]
+    },
+    "pvt_rt": {
+      "label": "Reaction time (PVT)",
+      "unit": "ms",
+      "dec": 0,
+      "normal": [
+        180,
+        300
+      ],
+      "warn": [
+        150,
+        360
+      ],
+      "axis": [
+        150,
+        500
+      ],
+      "desc": "3-min psychomotor vigilance test, like the ISS Reaction Self Test.",
+      "source": "Basner & Dinges 2011, Sleep; Dinges et al. ISS Reaction Self Test.",
+      "system": "neuro",
+      "sensor": "Reaction self-test (PVT)",
+      "source_links": [
+        [
+          "Basner & Dinges 2011, Sleep",
+          "https://doi.org/10.1093/sleep/34.5.581"
+        ],
+        [
+          "Dinges et al. ISS Reaction Self Test",
+          "https://www.med.upenn.edu/uep/astronaut.html"
+        ]
+      ]
+    },
+    "pvt_lapses": {
+      "label": "PVT lapses (>500 ms)",
+      "unit": "",
+      "dec": 0,
+      "normal": [
+        0,
+        2
+      ],
+      "warn": [
+        0,
+        5
+      ],
+      "axis": [
+        0,
+        12
+      ],
+      "desc": "Attention lapses; increase with sleep loss.",
+      "source": "Basner & Dinges 2011.",
+      "system": "neuro",
+      "sensor": "Reaction self-test (PVT)",
+      "source_links": [
+        [
+          "Basner & Dinges 2011",
+          "https://doi.org/10.1093/sleep/34.5.581"
+        ]
+      ]
+    },
+    "sans_grade": {
+      "label": "Optic-disc swelling (Frisén grade)",
+      "unit": "",
+      "system": "neuro",
+      "sensor": "Weekly fundoscopy / OCT (last exam)",
+      "dec": 0,
+      "normal": [
+        0,
+        0
+      ],
+      "warn": [
+        0,
+        1
+      ],
+      "axis": [
+        0,
+        5
+      ],
+      "desc": "Swelling of the optic nerve head, the key sign of spaceflight associated neuro-ocular syndrome (SANS). About 70 % of ISS crew show some swelling at the back of the eye.",
+      "source": "Frisén 1982; Lee et al. 2020, npj Microgravity; NASA HRP SANS risk.",
+      "source_links": [
+        [
+          "Frisén 1982",
+          "https://doi.org/10.1136/jnnp.45.1.13"
+        ],
+        [
+          "Lee et al. 2020, npj Microgravity",
+          "https://doi.org/10.1038/s41526-020-0097-9"
+        ],
+        [
+          "NASA HRP SANS risk",
+          "https://www.nasa.gov/reference/risk-of-spaceflight-associated-neuro-ocular-syndrome-sans/"
+        ]
+      ]
+    },
+    "rhr": {
+      "label": "Resting heart rate",
+      "unit": "bpm",
+      "dec": 0,
+      "normal": [
+        50,
+        90
+      ],
+      "warn": [
+        42,
+        100
+      ],
+      "axis": [
+        40,
+        110
+      ],
+      "desc": "Measured on waking.",
+      "source": "AHA.",
+      "system": "cardio",
+      "sensor": "Morning vitals",
+      "source_links": [
+        [
+          "AHA",
+          "https://www.heart.org/en/health-topics/high-blood-pressure/the-facts-about-high-blood-pressure/all-about-heart-rate-pulse"
+        ]
+      ]
+    },
+    "rmssd": {
+      "label": "Morning HRV (RMSSD)",
+      "unit": "ms",
+      "dec": 0,
+      "normal": [
+        20,
+        null
+      ],
+      "warn": [
+        12,
+        null
+      ],
+      "axis": [
+        0,
+        100
+      ],
+      "desc": "Measured on waking, 2 min.",
+      "source": "Shaffer & Ginsberg 2017.",
+      "system": "cardio",
+      "sensor": "Morning vitals",
+      "source_links": [
+        [
+          "Shaffer & Ginsberg 2017",
+          "https://doi.org/10.3389/fpubh.2017.00258"
+        ]
+      ]
+    },
+    "sbp": {
+      "label": "Systolic BP",
+      "unit": "mmHg",
+      "dec": 0,
+      "normal": [
+        90,
+        129
+      ],
+      "warn": [
+        85,
+        139
+      ],
+      "axis": [
+        80,
+        160
+      ],
+      "desc": "Morning seated cuff measurement.",
+      "source": "ACC/AHA 2017.",
+      "system": "cardio",
+      "sensor": "Morning vitals",
+      "source_links": [
+        [
+          "ACC/AHA 2017",
+          "https://doi.org/10.1161/HYP.0000000000000065"
+        ]
+      ]
+    },
+    "dbp": {
+      "label": "Diastolic BP",
+      "unit": "mmHg",
+      "dec": 0,
+      "normal": [
+        60,
+        79
+      ],
+      "warn": [
+        50,
+        89
+      ],
+      "axis": [
+        40,
+        110
+      ],
+      "desc": "Morning seated cuff measurement.",
+      "source": "ACC/AHA 2017.",
+      "system": "cardio",
+      "sensor": "Morning vitals",
+      "source_links": [
+        [
+          "ACC/AHA 2017",
+          "https://doi.org/10.1161/HYP.0000000000000065"
+        ]
+      ]
+    },
+    "spo2": {
+      "label": "SpO2",
+      "unit": "%",
+      "dec": 0,
+      "normal": [
+        95,
+        100
+      ],
+      "warn": [
+        90,
+        100
+      ],
+      "axis": [
+        85,
+        100
+      ],
+      "desc": "Morning pulse oximetry.",
+      "source": "WHO 2011.",
+      "system": "resp",
+      "sensor": "Morning vitals",
+      "source_links": [
+        [
+          "WHO 2011",
+          "https://cdn.who.int/media/docs/default-source/patient-safety/pulse-oximetry/who-ps-pulse-oxymetry-training-manual-en.pdf"
+        ]
+      ]
+    },
+    "temp": {
+      "label": "Body temperature",
+      "unit": "°C",
+      "dec": 1,
+      "normal": [
+        36.1,
+        37.5
+      ],
+      "warn": [
+        35.5,
+        38.0
+      ],
+      "axis": [
+        35.5,
+        39.5
+      ],
+      "desc": "Morning ear/oral temperature.",
+      "source": "Stahn et al. 2017.",
+      "system": "thermal",
+      "sensor": "Morning vitals",
+      "source_links": [
+        [
+          "Stahn et al. 2017",
+          "https://doi.org/10.1038/s41598-017-15560-w"
+        ]
+      ]
+    },
+    "cortisol": {
+      "label": "Salivary cortisol (morning)",
+      "unit": "nmol/L",
+      "system": "thermal",
+      "sensor": "Dry saliva booklet",
+      "dec": 1,
+      "normal": [
+        5,
+        25
+      ],
+      "warn": [
+        3,
+        35
+      ],
+      "axis": [
+        0,
+        45
+      ],
+      "desc": "Stress hormone. Persistently high levels weaken immunity and can let dormant viruses (shingles, cold sores) reawaken.",
+      "source": "NASA Immune Biomarkers study (Artemis II dry saliva); Crucian et al. 2014. Limits illustrative.",
+      "source_links": [
+        [
+          "NASA Immune Biomarkers study (Artemis II dry saliva)",
+          "https://www.nasa.gov/reference/immune-biomarkers"
+        ],
+        [
+          "Crucian et al. 2014",
+          "https://doi.org/10.1089/jir.2013.0129"
+        ]
+      ]
+    },
+    "glucose": {
+      "label": "Fasting glucose",
+      "unit": "mg/dL",
+      "dec": 0,
+      "normal": [
+        70,
+        99
+      ],
+      "warn": [
+        60,
+        125
+      ],
+      "axis": [
+        50,
+        150
+      ],
+      "desc": "Fasting finger-stick or CGM.",
+      "source": "ADA Standards of Care (fasting 70-99 normal, 100-125 prediabetes).",
+      "system": "metabolic",
+      "sensor": "Finger-stick / CGM",
+      "source_links": [
+        [
+          "ADA Standards of Care",
+          "https://doi.org/10.2337/dc25-S002"
+        ]
+      ]
+    },
+    "body_mass": {
+      "label": "Body mass",
+      "unit": "kg",
+      "dec": 1,
+      "normal": null,
+      "warn": null,
+      "axis": null,
+      "desc": "Measured with a mass-measurement device (SLAMMD on ISS). Assessed as % change from pre-flight baseline.",
+      "source": "Smith et al. 2005, J Nutr.",
+      "system": "metabolic",
+      "sensor": "Mass-measurement device"
+    },
+    "mass_change": {
+      "label": "Body mass change",
+      "unit": "%",
+      "dec": 1,
+      "normal": [
+        -2,
+        2
+      ],
+      "warn": [
+        -5,
+        5
+      ],
+      "axis": [
+        -8,
+        4
+      ],
+      "desc": ">5% loss suggests inadequate energy intake.",
+      "source": "Smith et al. 2005; NASA Nutritional Biochemistry.",
+      "system": "metabolic",
+      "sensor": "Mass-measurement device",
+      "source_links": [
+        [
+          "Smith et al. 2005",
+          "https://doi.org/10.1093/jn/135.3.437"
+        ],
+        [
+          "NASA Nutritional Biochemistry",
+          "https://www.nasa.gov/reference/jsc-food-nutrition/"
+        ]
+      ]
+    },
+    "kcal_pct": {
+      "label": "Energy intake",
+      "unit": "% of need",
+      "system": "metabolic",
+      "sensor": "Food log",
+      "dec": 0,
+      "normal": [
+        90,
+        115
+      ],
+      "warn": [
+        80,
+        130
+      ],
+      "axis": [
+        50,
+        140
+      ],
+      "desc": "Calories eaten versus the crew member's requirement. ISS crews often eat less than they need, and menu fatigue makes this worse on long missions.",
+      "source": "Smith et al. 2005, J Nutr; NASA HRP Risk of Inadequate Food and Nutrition.",
+      "source_links": [
+        [
+          "Smith et al. 2005, J Nutr",
+          "https://doi.org/10.1093/jn/135.3.437"
+        ],
+        [
+          "NASA HRP Risk of Inadequate Food and Nutrition",
+          "https://www.nasa.gov/reference/risk-of-inadequate-food-and-nutrition/"
+        ]
+      ]
+    },
+    "exercise_min": {
+      "label": "Exercise",
+      "unit": "min",
+      "dec": 0,
+      "normal": [
+        120,
+        240
+      ],
+      "warn": [
+        60,
+        300
+      ],
+      "axis": [
+        0,
+        300
+      ],
+      "desc": "ISS countermeasure: ~2.5 h/day (ARED, treadmill, cycle) to limit bone and muscle loss.",
+      "source": "Loehr et al. 2015, Aerosp Med Hum Perform.",
+      "system": "metabolic",
+      "sensor": "Exercise device log",
+      "source_links": [
+        [
+          "Loehr et al. 2015, Aerosp Med Hum Perform",
+          "https://doi.org/10.3357/AMHP.EC03.2015"
+        ]
+      ]
+    },
+    "strength_pct": {
+      "label": "Muscle strength",
+      "unit": "% pre-flight",
+      "system": "metabolic",
+      "sensor": "Weekly strength test on the exercise device",
+      "dec": 1,
+      "normal": [
+        90,
+        115
+      ],
+      "warn": [
+        80,
+        115
+      ],
+      "axis": [
+        70,
+        110
+      ],
+      "desc": "Total-body strength versus pre-flight. ISS crews lose 10–12 % on average and 12–38 % of them lose more than 20 %.",
+      "source": "NASA HRP Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness.",
+      "source_links": [
+        [
+          "NASA HRP Risk of Reduced Cardiorespiratory and Musculoskeletal Fitness",
+          "https://www.nasa.gov/reference/risk-of-reduced-cardiorespiratory-and-musculoskeletal-fitness/"
+        ]
+      ]
+    },
+    "u_ca": {
+      "label": "Urinary calcium",
+      "unit": "mg/day",
+      "system": "metabolic",
+      "sensor": "Urine sample",
+      "dec": 0,
+      "normal": [
+        0,
+        250
+      ],
+      "warn": [
+        0,
+        300
+      ],
+      "axis": [
+        100,
+        350
+      ],
+      "desc": "Calcium released from bone. Rises when bone breaks down (1–1.5 % of density lost per month) and raises the kidney-stone risk.",
+      "source": "NASA HRP Risk of Spaceflight-Induced Bone Changes; CIPHER Bone Health study; hypercalciuria > 250–300 mg/day.",
+      "source_links": [
+        [
+          "NASA HRP Risk of Spaceflight-Induced Bone Changes",
+          "https://www.nasa.gov/reference/risk-of-spaceflight-induced-bone-changes/"
+        ],
+        [
+          "CIPHER Bone Health study",
+          "https://www.nasa.gov/reference/cipher/"
+        ]
+      ]
+    },
+    "water_l": {
+      "label": "Water intake",
+      "unit": "L",
+      "dec": 1,
+      "normal": [
+        2.0,
+        3.5
+      ],
+      "warn": [
+        1.5,
+        4.5
+      ],
+      "axis": [
+        0.5,
+        5
+      ],
+      "desc": "Adequate hydration reduces kidney-stone risk (bone demineralisation raises urinary calcium).",
+      "source": "NASA HRP Renal Stone risk.",
+      "system": "metabolic",
+      "sensor": "Daily check-in",
+      "source_links": [
+        [
+          "NASA HRP Renal Stone risk",
+          "https://www.nasa.gov/directorates/esdmd/hhp/risk-of-renal-stone-formation/"
+        ]
+      ]
+    },
+    "co2_avg": {
+      "label": "Cabin CO2 (daily mean)",
+      "unit": "ppm",
+      "dec": 0,
+      "normal": [
+        0,
+        3950
+      ],
+      "warn": [
+        0,
+        5300
+      ],
+      "axis": [
+        1000,
+        9000
+      ],
+      "desc": "Daily mean cabin CO2. The 60-day log uses real ISS telemetry (NASA OSDR EDA, mission RR-7, Jul-Sep 2018).",
+      "source": "Law et al. 2014, J Occup Environ Med.",
+      "system": "env",
+      "sensor": "Cabin sensor (daily mean)",
+      "source_links": [
+        [
+          "Law et al. 2014, J Occup Environ Med",
+          "https://doi.org/10.1097/JOM.0000000000000158"
+        ]
+      ]
+    },
+    "microbe_cfu": {
+      "label": "Cabin air bacteria",
+      "unit": "CFU/m³",
+      "system": "env",
+      "sensor": "Habitat air sampler",
+      "dec": 0,
+      "normal": [
+        0,
+        500
+      ],
+      "warn": [
+        0,
+        1000
+      ],
+      "axis": [
+        0,
+        1600
+      ],
+      "desc": "Colony-forming units of bacteria per cubic metre of cabin air. Humidity and condensate leaks let microbes grow.",
+      "source": "ISS microbial limit < 1000 CFU/m³ (SSP 50260); NASA HRP Risk of Host-Microorganism Interactions.",
+      "source_links": [
+        [
+          "ISS microbial limit < 1000 CFU/m³ (SSP 50260)",
+          "https://ntrs.nasa.gov/api/citations/20130013534/downloads/20130013534.pdf"
+        ],
+        [
+          "NASA HRP Risk of Host-Microorganism Interactions",
+          "https://www.nasa.gov/reference/risk-of-host-microorganism-interactions/"
+        ]
+      ]
+    },
+    "dose_mGy": {
+      "label": "Daily absorbed dose",
+      "unit": "mGy",
+      "dec": 3,
+      "normal": [
+        0,
+        0.6
+      ],
+      "warn": [
+        0,
+        2.0
+      ],
+      "axis": [
+        0,
+        6
+      ],
+      "desc": "Daily absorbed dose. Real ISS area dosimetry (NASA OSDR EDA, RR-7): ≈0.27 mGy/day, of which ≈0.17 from galactic cosmic rays and ≈0.11 from South Atlantic Anomaly passes; ±4 % personal-dosimeter variation added.",
+      "source": "Zeitlin et al. 2013; Berger et al. 2020.",
+      "system": "env",
+      "sensor": "Personal dosimeter",
+      "source_links": [
+        [
+          "Zeitlin et al. 2013",
+          "https://doi.org/10.1126/science.1235989"
+        ],
+        [
+          "Berger et al. 2020",
+          "https://doi.org/10.1051/swsc/2020028"
+        ]
+      ]
+    }
+  },
+  "systems": {
+    "cardio": {
+      "label": "Cardiovascular",
+      "weight": 0.22
+    },
+    "resp": {
+      "label": "Respiratory / O2",
+      "weight": 0.22
+    },
+    "neuro": {
+      "label": "Neuro-cognitive",
+      "weight": 0.22
+    },
+    "metabolic": {
+      "label": "Metabolic & muscle",
+      "weight": 0.1
+    },
+    "thermal": {
+      "label": "Thermal / Immune",
+      "weight": 0.09
+    },
+    "env": {
+      "label": "Habitat environment",
+      "weight": 0.15
+    }
+  }
+}
