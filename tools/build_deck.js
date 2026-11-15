@@ -19,6 +19,7 @@ const OUT = path.join(ROOT, 'presentation', 'NeuroShield_TeamParagon.pptx');
 const A = (f) => path.join(ROOT, 'presentation', 'assets', f);
 const DEMO = 'paragonaerotech.com/spaceappschallenge/app';
 const VIDEO = 'youtube.com/watch?v=gFMQSDXIvwI';
+const REPO = 'github.com/mucakir/NeuroShield';
 
 const THEME = {
   name: 'NeuroShield Mission Control',
@@ -39,6 +40,11 @@ async function icon(Comp, color = '#0A1222') {
   const svg = renderToStaticMarkup(React.createElement(Comp, { size: 256, color }));
   const buf = await sharp(Buffer.from(svg)).resize(256, 256).png().toBuffer();
   return 'image/png;base64,' + buf.toString('base64');
+}
+async function svgPng(file, width) {
+  const buf = await sharp(file, { density: 200 }).resize({ width }).flatten({ background: '#ffffff' }).png().toBuffer();
+  const m = await sharp(buf).metadata();
+  return { data: 'image/png;base64,' + buf.toString('base64'), ratio: m.height / m.width };
 }
 // a region of an image (fractions of width/height), as a data URL plus its height/width ratio
 async function crop(file, top, bottom, left = 0, right = 1) {
@@ -248,8 +254,24 @@ async function crop(file, top, bottom, left = 0, right = 1) {
   s = pres.addSlide({ masterName: 'CONTENT', sectionTitle: 'Evidence' });
   s.addText('The details of the study are in the paper', { placeholder: 'title' });
   const page = await crop(A('paper_p1.png'), 0, 1);
-  fit(s, page, 0.6, 1.3, 12.1, 5.55, 'Paper first page');
-  s.addNotes('The full method, the validation on synthetic scenarios and on open human datasets, and all 68 references are in our IEEE-format paper. This is its first page.');
+  fit(s, page, 0.6, 1.3, 4.3, 5.55, 'Paper first page');
+  // the paper's study figures (Fig. 2-7)
+  const F = (f) => path.join(ROOT, 'paper', 'figures', f);
+  const figs = [
+    ['Fig. 2  Live monitor, cabin leak', await crop(F('fig_ui_live.png'), 0, 1)],
+    ['Fig. 3  Daily routine', await crop(F('fig_ui_checkin.png'), 0, 1)],
+    ['Fig. 4  Image log', await crop(F('fig_ui_images.png'), 0, 1)],
+    ['Fig. 5  Fatigue → microsleep', await svgPng(F('fig_fatigue.svg'), 1400)],
+    ['Fig. 6  Slow cabin leak', await svgPng(F('fig_hypoxia.svg'), 1400)],
+    ['Fig. 7  Crew D logbook', await crop(F('fig_ui_logbook.png'), 0, 1)],
+  ];
+  figs.forEach(([cap, img], i) => {
+    const x = 5.2 + (i % 2) * 3.8, y = 1.3 + Math.floor(i / 2) * 1.88;
+    card(s, x, y, 3.7, 1.78, 'Figure card ' + (i + 1));
+    fit(s, img, x + 0.1, y + 0.1, 3.5, 1.3, 'Paper figure ' + (i + 2), false);
+    text(s, cap, { x: x + 0.15, y: y + 1.45, w: 3.4, h: 0.26, fontSize: 11, color: C.background2, align: 'center' });
+  });
+  s.addNotes('The full method, the validation on synthetic scenarios and on open human datasets, and all 68 references are in our IEEE-format paper. On the left is its first page; on the right are the study figures: the live monitor, the daily routine, the image log, the fatigue and cabin-leak scenarios, and a crew logbook.');
 
   // ================================================================ 7 Next steps + closing (Impact)
   pres.addSection({ title: 'Next steps' });
@@ -273,12 +295,13 @@ async function crop(file, top, bottom, left = 0, right = 1) {
   text(s, [{ text: 'On Earth too: ', options: { bold: true } }, { text: 'pilots, miners, divers and remote health workers face the same "help is far" problem.', options: { color: C.background2 } }],
     { x: 0.6, y: 3.85, w: 12.1, h: 0.35, fontSize: 14, align: 'center' });
   card(s, 0.6, 4.4, 12.1, 2.45, 'Closing card', '0F2A4A');
-  text(s, 'See it before you feel it.', { x: 0.95, y: 4.55, w: 11.4, h: 0.85, fontSize: 30, bold: true, color: C.accent1, valign: 'middle' });
+  text(s, 'See it before you feel it.', { x: 0.95, y: 4.5, w: 11.4, h: 0.75, fontSize: 30, bold: true, color: C.accent1, valign: 'middle' });
   text(s, [
     { text: 'Demo  ', options: { bold: true } }, { text: DEMO, options: { color: C.accent1, hyperlink: { url: 'https://' + DEMO + '/index.html' }, breakLine: true } },
     { text: 'Video  ', options: { bold: true } }, { text: VIDEO, options: { color: C.accent1, hyperlink: { url: 'https://www.' + VIDEO }, breakLine: true } },
-    { text: 'Paper  ', options: { bold: true } }, { text: 'NeuroShield_IEEE.pdf (68 references)', options: { color: C.background2 } },
-  ], { x: 0.95, y: 5.5, w: 6.2, h: 1.2, fontSize: 13 });
+    { text: 'Code  ', options: { bold: true } }, { text: REPO, options: { color: C.accent1, hyperlink: { url: 'https://' + REPO }, breakLine: true } },
+    { text: 'Paper  ', options: { bold: true } }, { text: 'NeuroShield_IEEE.pdf (68 references)', options: { color: C.accent1, hyperlink: { url: 'https://' + REPO + '/blob/main/paper/NeuroShield_IEEE.pdf' } } },
+  ], { x: 0.95, y: 5.3, w: 6.2, h: 1.45, fontSize: 13 });
   text(s, [
     { text: 'Team Paragon', options: { bold: true, breakLine: true } },
     { text: 'M. U. Çakır · E. Ö. Çakır · Dr. R. Uğurlutan · Dr. E. Ayvaz', options: { color: C.background2, breakLine: true } },
