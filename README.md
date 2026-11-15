@@ -13,6 +13,7 @@ From these it scores health, explains every alert, says what to do and who leads
 | **Live demo** | [paragonaerotech.com/spaceappschallenge/app](https://paragonaerotech.com/spaceappschallenge/app/index.html): free, no login, runs in the browser |
 | **Video (30 s)** | [youtube.com/watch?v=gFMQSDXIvwI](https://www.youtube.com/watch?v=gFMQSDXIvwI) |
 | **Paper (IEEE format)** | [paper/NeuroShield_IEEE.pdf](paper/NeuroShield_IEEE.pdf) · [.docx](paper/NeuroShield_IEEE.docx) · [.html](paper/NeuroShield_IEEE.html) |
+| **Presentation (7 slides)** | [presentation/NeuroShield_TeamParagon.pptx](presentation/NeuroShield_TeamParagon.pptx): PowerPoint / Keynote |
 | **Challenge** | [spaceappschallenge.org/2026/challenges/health-monitoring-software](https://www.spaceappschallenge.org/2026/challenges/health-monitoring-software/) |
 
 [![NeuroShield 30-second demo video on YouTube](https://img.youtube.com/vi/gFMQSDXIvwI/hqdefault.jpg)](https://www.youtube.com/watch?v=gFMQSDXIvwI)
